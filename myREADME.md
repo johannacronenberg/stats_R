@@ -1,4 +1,4 @@
-Dies ist das GitHub Repo basic_R, das auf meiner Webseite verlinkt ist!
+Dies ist das GitHub Repo stats_R, das auf meiner Webseite verlinkt ist!
 
 - beide index.Rmd files (deutsch und englisch) nacheinander knitten
 - knit_books.R wird nicht benötigt!

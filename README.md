@@ -1,1 +1,3 @@
-# stats_R
+This is an introduction to inferential statistics for phoneticians, available both in English and German! Use the little button on the top right to switch between the languages. The material has been developed over a number of years for the students of phonetics and speech processing at the University of Munich (LMU).
+
+Dies ist eine in Deutsch und Englisch verfügbare Einführung in die Inferenzstatistik für PhonetikerInnen. Man kann über einen Button oben rechts zwischen den Sprachen hin und her schalten. Das Lehrmaterial wurde über mehrere Jahre hinweg für die Studierenden der Phonetik und Sprachverarbeitung der LMU München entwickelt.

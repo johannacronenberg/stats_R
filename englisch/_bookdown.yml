@@ -1,0 +1,15 @@
+book_filename: "statistik_r"
+language:
+  ui:
+    chapter_name: ""
+delete_merged_file: true
+output_dir: "_book"
+rmd_files: [
+  "index_eng.Rmd",
+  "01_intro_statistics.Rmd",
+  "02_simpleLinearRegression.Rmd",
+  "03_multipleLinearRegression.Rmd",
+  "04_mixedLinearRegression.Rmd",
+  "05_logisticRegression.Rmd"
+]
+
