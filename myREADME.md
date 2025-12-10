@@ -6,6 +6,11 @@ Dies ist das GitHub Repo stats_R, das auf meiner Webseite verlinkt ist!
   (muss angepasst werden, falls das output directory in den jeweiligen bookdown.yml files geändert wurden!)
 - dann alle Neuerungen auf den branch main committen + pushen
 
+- wenn gh-pages schon existiert, muss er erst gelöscht werden:
+  git push -d origin gh-pages
+  git branch -D gh-pages
+- dieses README temporär in neues Dokument kopieren, weil es gleich temporär gelöscht wird
+
 - der branch gh-pages wurde als orphan branch erstellt:
   git checkout --orphan gh-pages
   git rm -rf .
