@@ -2,8 +2,6 @@
 
 ## Packages und Daten laden
 
-Starten Sie das R Projekt, das Sie für diesen Kurs angelegt haben. Öffnen Sie hierfür RStudio und benutzen Sie die Schaltfläche oben rechts oder navigieren Sie zu Ihrem Kursverzeichnis und klicken Sie auf die `.Rproj` Datei.
-
 Laden Sie die folgenden Packages und Data Frame:
 
 ```{r}
@@ -25,7 +23,7 @@ Die Korrelation, auch *Pearson's correlation* $r$, ist ein Maß für die Assozia
 queen %>% head()
 ```
 
-Darin sind die durchschnittlichen Grundfrequenzwerte von Queen Elizabeth II. bei ihren jährlichen Weihnachtsansprachen festgehalten. Uns interessiert, ob das Alter der Queen einen Einfluss auf ihre Grundfrequenz hat. Erstmal machen wir uns ein Bild von der Lage. Es ist wichtig, dass wir bei Abbildungen für Daten, bei denen wir eine Korrelation vermuten, die unabhängige Variable (hier: Alter) immer auf die x-Achse und die abhängige Variable (hier: f0) immer auf die y-Achse packen.
+Darin sind die durchschnittlichen Grundfrequenzwerte von Queen Elizabeth II. bei ihren jährlichen Weihnachtsansprachen festgehalten. Uns interessiert, ob das Alter der Queen einen Einfluss auf ihre Grundfrequenz hatte. Erstmal machen wir uns ein Bild von der Lage. Es ist wichtig, dass wir bei Abbildungen für Daten, bei denen wir eine Korrelation vermuten, die unabhängige Variable (hier: Alter) immer auf die x-Achse und die abhängige Variable (hier: f0) immer auf die y-Achse packen.
 
 ```{r}
 ggplot(queen) + 
@@ -33,7 +31,7 @@ ggplot(queen) +
   geom_point()
 ```
 
-Es sieht so aus, als ob es da einen Zusammenhang geben könnte: Je älter die Queen wird, desto mehr sinkt ihre Grundfrequenz! Unseren visuellen Eindruck können wir anhand der Korrelation $r$ überprüfen:
+Es sieht so aus, als ob es da einen Zusammenhang geben könnte: Je älter die Queen wurde, desto mehr sank ihre Grundfrequenz! Unseren visuellen Eindruck können wir anhand der Korrelation $r$ überprüfen:
 
 ```{r}
 cor(queen$Alter, queen$f0)
@@ -56,9 +54,9 @@ In der folgenden Abbildung sehen Sie drei Regressionslinien: blau und grün habe
 ```{r}
 ggplot() + 
   xlim(-0.5, 1) + ylim(-0.5, 3) + xlab("x") + ylab("y") +
-  geom_abline(slope = 0.5, intercept = 1, color = "blue", size = 1.2) + 
-  geom_abline(slope = -0.5, intercept = 1, color = "darkgreen", size = 1.2) + 
-  geom_abline(slope = 0.5, intercept = 2, color = "orange", size = 1.2) + 
+  geom_abline(slope = 0.5, intercept = 1, color = "blue", linewidth = 1.2) + 
+  geom_abline(slope = -0.5, intercept = 1, color = "darkgreen", linewidth = 1.2) + 
+  geom_abline(slope = 0.5, intercept = 2, color = "orange", linewidth = 1.2) + 
   geom_vline(xintercept = 0, lty = "dashed")
 ```
 
@@ -81,7 +79,7 @@ Der Unterschied zwischen `geom_abline()` und `geom_smooth()` ist, dass `geom_abl
 
 ## Lineare Regression mit `lm()`
 
-Nun sind wir bereit, eine lineare Regression mittels der Funktion `lm()` durchzuführen. Diese Funktion bekommt als Argumente nur eine Formel und den Data Frame. Die Formel lautet `y ~ x`, d.h. wir wollen die $y$-Werte (die Grundfrequenz) in Abhängigkeit von den $x$-Werten (dem Alter) vorhersagen. Die lineare Regression schätzt Intercept und Slope so ein, dass eine Regressionslinie durch die Datenpunkte gelegt werden kann, die den kleinstmöglichen Abstand zu allen Punkten hat (dieses Verfahren heißt auch **least squares**).
+Nun sind wir bereit, eine lineare Regression mittels der Funktion `lm()` durchzuführen. Diese Funktion bekommt als Argumente nur eine Formel und den Data Frame. Die Formel lautet `y ~ x`, d.h. wir wollen die $y$-Werte (die Grundfrequenz) in Abhängigkeit von den $x$-Werten (dem Alter) vorhersagen. Die lineare Regression schätzt Intercept und Slope so ein, dass eine Regressionslinie durch die Datenpunkte gelegt werden kann, die den kleinstmöglichen Abstand zu allen Punkten hat (dieses Verfahren heißt auch **least squares**, mehr dazu später).
 
 ```{r}
 queen.lm <- lm(f0 ~ Alter, data = queen)
@@ -94,7 +92,7 @@ Die Koeffizienten lassen sich separat auch mit `coef()` ausgeben:
 queen.lm %>% coef()
 ```
 
-Wir sehen also, dass das geschätzte Intercept bei 288.2 liegt und die Steigung bei -1.07. Die Steigung wird leider verwirrenderweise immer wie die $x$-Variable genannt, in diesem Fall also "Alter". Die Koeffizienten bedeuten folgendes: Bei einem Alter von Null Jahren ($x = 0$) liegt die mittlere Grundfrequenz bei ca. 288 Hz, wenn es einen perfekten linearen Zusammenhang zwischen dem Alter und der Grundfrequenz der Queen gibt. Mit jeden weiteren Jahr ($x$ wird um 1 erhöht) sinkt die Grundfrequenz um 1.07 Hz. Indem wir Intercept und Slope in unsere Formel von vorhin einsetzen, können wir nun für alle möglichen Alter die entsprechende Grundfrequenz vorhersagen:
+Wir sehen also, dass das geschätzte Intercept bei 288.2 liegt und die Steigung bei -1.07. Die Steigung wird verwirrenderweise immer wie die $x$-Variable genannt, in diesem Fall also "Alter". Die Koeffizienten bedeuten folgendes: Bei einem Alter von Null Jahren ($x = 0$) liegt die mittlere Grundfrequenz bei ca. 288 Hz, wenn es einen perfekten linearen Zusammenhang zwischen dem Alter und der Grundfrequenz der Queen gibt. Mit jeden weiteren Jahr ($x$ wird um 1 erhöht) sinkt die Grundfrequenz um 1.07 Hz. Indem wir Intercept und Slope in unsere Formel von vorhin einsetzen, können wir nun für alle möglichen Alter die entsprechende Grundfrequenz vorhersagen:
 
 ```{r}
 x <- c(0, 40, 50)
@@ -102,7 +100,7 @@ f0_fitted <- coef(queen.lm)[1] + coef(queen.lm)[2] * x
 f0_fitted
 ```
 
-Bei einem Alter von Null Jahren lag die geschätzte Grundfrequenz der Queen wie schon gesagt bei 288 Hz. Bei einem Alter von 40 Jahren waren es vermutlich schon nur noch 245 Hz, bei 50 Jahren 234.5 Hz. Wie Sie sehen, lassen sich anhand des von uns "gefitteten Modells" auch $y$-Werte vorhersagen bzw. schätzen, die nicht im originalen Datensatz enthalten waren (wie z.B. den f0-Wert für die 50-jährige Queen). Alle diese Punkte liegen aber genau auf der Regressionslinie und da die Regressionslinie unendlich lang ist, ergibt die Schätzung nicht zwangsläufig für alle Werte Sinn. Halten Sie es beispielsweise für wahrscheinlich, dass die Grundfrequenz der Queen bei ihrer Geburt bei 288 Hz lag? Normalerweise haben Kinder eine Grundfrequenz von 300 bis 400 Hz. Sie müssen für Ihre Daten immer wissen, ob die Schätzungen sinnvoll sind oder nicht. In R können Sie die Schätzungen mit der Funktion `predict()` durchführen, die als Argumente das Modell `queen.lm` und einen Data Frame mit den $x$-Werten bekommt, für die $y$ geschätzt werden soll. Dabei muss die $x$-Variable genauso heißen wie in dem ursprünglichen Data Frame, also hier "Alter":
+Bei einem Alter von Null Jahren lag die geschätzte Grundfrequenz der Queen wie schon gesagt bei 288 Hz. Bei einem Alter von 40 Jahren waren es vermutlich schon nur noch 245 Hz, bei 50 Jahren 234.5 Hz. Wie Sie sehen, lassen sich anhand des von uns "gefitteten" Modells auch $y$-Werte vorhersagen bzw. schätzen, die nicht im originalen Datensatz enthalten waren (wie z.B. den f0-Wert für die 50-jährige Queen). Alle diese Punkte liegen aber genau auf der Regressionslinie und da die Regressionslinie unendlich lang ist, ergibt die Schätzung nicht zwangsläufig für alle Werte Sinn. Halten Sie es beispielsweise für wahrscheinlich, dass die Grundfrequenz der Queen bei ihrer Geburt bei 288 Hz lag? Normalerweise haben Kinder eine Grundfrequenz von 300 bis 400 Hz. Sie müssen für Ihre Daten immer wissen, ob die Schätzungen sinnvoll sind oder nicht. In R können Sie die Schätzungen mit der Funktion `predict()` durchführen, die als Argumente das Modell `queen.lm` und einen Data Frame mit den $x$-Werten bekommt, für die $y$ geschätzt werden soll. Dabei muss die $x$-Variable genauso heißen wie in dem ursprünglichen Data Frame, also hier "Alter":
 
 ```{r}
 predict(queen.lm, data.frame(Alter = seq(0, 100, by = 10)))
@@ -171,7 +169,7 @@ Wenn wir uns jetzt immer noch unschlüssig sind, können wir noch einen Shapiro-
 shapiro.test(augment(queen.lm)$.resid)
 ```
 
-Da der p-Wert hier höher ist als $\alpha = 0.05$, scheinen die Residuals normalverteilt zu sein.
+Da der $p$-Wert hier höher ist als $\alpha = 0.05$, scheinen die Residuals annähernd normalverteilt zu sein.
 
 ### Konstante Varianz der Residuals
 
@@ -186,11 +184,11 @@ ggplot(augment(queen.lm)) +
   geom_hline(yintercept = 0, lty = "dashed")
 ```
 
-Da wir hier nur sehr wenige Datenpunkte haben, ist es schwierig einzuschätzen, ob es in dem Plot ein erkennbares Muster gibt, das darauf hinweisen würde, dass die Errors keine konstante Varianz hätten. Die zwei Ausreißer oben rechts sind jedenfalls kein gutes Zeichen, der Rest sieht okay aus. Um Ihre Intuition dafür zu schulen, was gute und schlechte Residual Plots sind, empfehle ich die Abbildungen 6.2 und 6.3 in Winter (2020, S. 111f.).
+Da wir hier nur sehr wenige Datenpunkte haben, ist es schwierig einzuschätzen, ob es in dem Plot ein erkennbares Muster gibt, das darauf hinweisen würde, dass die Errors keine konstante Varianz hätten. Die zwei Ausreißer oben rechts sind jedenfalls kein gutes Zeichen, der Rest sieht okay aus. Wir gehen deshalb erstmal davon aus, dass die Residuals homoskedastisch sind. Um Ihre Intuition dafür zu schulen, was gute und schlechte Residual Plots sind, empfehle ich die Abbildungen 6.2 und 6.3 in Winter (2020, S. 111f.).
 
 ## Alle Ergebnisse von `lm()` verstehen
 
-Die in diesem Abschnitt genannten Details zur Berechnung der verschiedenen Werte finden sich extrem selten in Büchern über Statistik, Statistik-Blogs, R-Vignetten oder sonstigen Informationsquellen. Sie müssen diese Details nicht auswendig lernen, es geht darum, dass Sie die Ergebnisse von `lm()` nachvollziehen können -- und dazu gehört mehr als nur der p-Wert.
+Die in diesem Abschnitt genannten Details zur Berechnung der verschiedenen Werte finden sich extrem selten in Büchern über Statistik, Statistik-Blogs, R-Vignetten oder sonstigen Informationsquellen. Sie müssen diese Details nicht auswendig lernen; es geht nur darum, dass Sie die Ergebnisse von `lm()` nachvollziehen können -- und dazu gehört mehr als nur der $p$-Wert.
 
 ### Geschätzte y-Werte und Residuals
 
@@ -209,7 +207,7 @@ queen.lm %>% augment()
 
 Diese Funktion hängt an die originalen Daten (Spalten `f0` und `Alter`) weitere Spalten an, nämlich die gefitteten (also die vom Modell geschätzten) f0-Werte `.fitted`, die Residuals `.resid`, und weitere, die erstmal nicht interessant für uns sind.
 
-### Regressionskoeffizienten und t-Statistik
+### Regressionskoeffizienten und $t$-Statistik
 
 Die Funktion `tidy()` gibt eine Tabelle für die geschätzten Regressionskoeffizienten zurück:
 
@@ -217,13 +215,13 @@ Die Funktion `tidy()` gibt eine Tabelle für die geschätzten Regressionskoeffiz
 queen.lm %>% tidy()
 ```
 
-Die Spalte `estimate` enthält die Schätzungen für Intercept (erste Zeile) und Slope (zweite Zeile). Die Spalte `std.error` enthält den sogenannten **Standard Error**, ein Maß für die Genauigkeit der Schätzung. Hier wollen wir möglichst kleine Werte (in Relation zum Estimate), weil das bedeutet, dass die Schätzungen des Modells für die Regressionskoeffizienten präzise sind. Es folgt eine Spalte mit der Teststatistik `statistic`. Bisher haben wir noch nicht über die statistische Signifikanz der Regression gesprochen. Hier wird ein **t-Test** durchgeführt, um herauszufinden, ob sich die Schätzungen der Regressionskoeffizienten signifikant von Null unterscheiden. Wenn die Regressionskoeffizienten nahe Null sind, tragen sie nichts dazu bei, den $y$-Wert vorherzusagen (erinnern Sie sich an die Formel für die Regressionslinie: Wenn $k$ oder $b$ gleich Null sind, haben sie keinen Einfluss auf die Regressionslinie). Der Wert in der Spalte `statistic`, der in diesem Fall auch **t-Wert** genannt wird, wird berechnet als `estimate / std.error`, so z.B. für die Slope:
+Die Spalte `estimate` enthält die Schätzungen für Intercept (erste Zeile) und Slope (zweite Zeile). Die Spalte `std.error` enthält den sogenannten **Standard Error**, ein Maß für die Genauigkeit der Schätzung. Hier wollen wir möglichst kleine Werte (in Relation zum Estimate), weil das bedeutet, dass die Schätzungen des Modells für die Regressionskoeffizienten präzise sind. Es folgt eine Spalte mit der Teststatistik `statistic`. Bisher haben wir noch nicht über die statistische Signifikanz der Regression gesprochen. Hier wird ein **$t$-Test** durchgeführt, um herauszufinden, ob sich die Schätzungen der Regressionskoeffizienten signifikant von Null unterscheiden. Wenn die Regressionskoeffizienten nahe Null sind, tragen sie nichts dazu bei, den $y$-Wert vorherzusagen (erinnern Sie sich an die Formel für die Regressionslinie: Wenn $k$ oder $b$ gleich Null sind, haben sie keinen Einfluss auf die Regressionslinie). Der Wert in der Spalte `statistic`, der in diesem Fall auch **$t$-Wert** genannt wird, wird berechnet als `estimate / std.error`, so z.B. für die Slope:
 
 ```{r}
 as.numeric(tidy(queen.lm)[2, "estimate"] / tidy(queen.lm)[2, "std.error"])
 ```
 
-Die $t$-Statistik hat ihre eigene Wahrscheinlichkeitsdichteverteilung, genannt Student-$t$-Verteilung oder einfach $t$-Verteilung, die wir (analog zur Funktion `dnorm()` für Normalverteilungen) mit der Funktion `dt()` in `ggplot2` zeichnen lassen können. Diese Funktion bekommt ein Argument namens `df`, das steht hier für **degrees of freedom** (Freiheitsgrade). Die Freiheitsgrade sind üblicherweise die Größe der Stichprobe minus die Anzahl der Koeffizienten, also hier `nrow(queen) - 2`.
+Die $t$-Statistik hat ihre eigene Wahrscheinlichkeitsdichteverteilung, genannt Student-$t$-Verteilung oder einfach $t$-Verteilung, die wir (analog zur Funktion `dnorm()` für Normalverteilungen) mit der Funktion `dt()` in `ggplot2` zeichnen lassen können. Diese Funktion bekommt ein Argument namens `df`, das steht in diesem Fall für **degrees of freedom** (Freiheitsgrade). Die Freiheitsgrade sind üblicherweise die Größe der Stichprobe minus die Anzahl der Koeffizienten, also hier `nrow(queen) - 2`.
 
 ```{r}
 ggplot() +
@@ -234,7 +232,7 @@ ggplot() +
   xlab("") + ylab("density")
 ```
 
-Hier sehen Sie die $t$-Verteilung in orange gegen die schwarze Normalverteilung mit Mittelwert Null und Standardabweichung Eins; die beiden Verteilungen sind sich sehr ähnlich. Mit abnehmenden Freiheitsgeraden (zum Beispiel 5 Freiheitsgrade bei der dunkelgrünen Verteilung) werden sich die Normal- und $t$-Verteilung unähnlicher. Wie Sie wissen, ist die Fläche unter diesen Verteilungen immer 1, d.h. auch bei der $t$-Verteilung können wir mittels einer Funktion berechnen, wie groß die Wahrscheinlichkeit ist, dass ein Wert in einen bestimmten Wertebereich fällt. Der t-Wert für die Slope ist in unserem Beispiel ca. -8.02. Unter der orangen $t$-Verteilung, die zu unseren Daten passt, ist nur ein sehr sehr kleine Fläche unter der Kurve für den Wertebereich von minus unendlich bis -8.02 (um dies nachzuvollziehen, brauchen Sie ein bisschen Fantasie, da der Wertebereich in der Abbildung oben erst bei -5 beginnt). In Anlehnung an `pnorm()` heißt die Funktion für die Berechnung der Fläche unter der $t$-Verteilung `pt()`. So können wir unter Einsatz des t-Werts und der Freiheitsgrade den p-Wert berechnen:
+Hier sehen Sie die $t$-Verteilung in orange gegen die schwarze Normalverteilung mit Mittelwert Null und Standardabweichung Eins; die beiden Verteilungen sind sich sehr ähnlich. Mit abnehmenden Freiheitsgeraden (zum Beispiel 5 Freiheitsgrade bei der dunkelgrünen Verteilung) werden sich die Normal- und $t$-Verteilung unähnlicher. Wie Sie wissen, ist die Fläche unter diesen Verteilungen immer 1, d.h. auch bei der $t$-Verteilung können wir mittels einer Funktion berechnen, wie groß die Wahrscheinlichkeit ist, dass ein Wert in einen bestimmten Wertebereich fällt. Der $t$-Wert für die Slope ist in unserem Beispiel ca. -8.02. Unter der orangen $t$-Verteilung, die zu unseren Daten passt, ist nur eine sehr sehr kleine Fläche unter der Kurve für den Wertebereich von minus unendlich bis -8.02 (um dies nachzuvollziehen, brauchen Sie ein bisschen Fantasie, da der Wertebereich in der Abbildung oben erst bei -5 beginnt). In Anlehnung an `pnorm()` heißt die Funktion für die Berechnung der Fläche unter der $t$-Verteilung `pt()`. So können wir unter Einsatz des $t$-Werts und der Freiheitsgrade den $p$-Wert berechnen:
 
 ```{r}
 2 * pt(-8.016248, df = 28)
@@ -243,7 +241,7 @@ Hier sehen Sie die $t$-Verteilung in orange gegen die schwarze Normalverteilung 
 <div class="gray">
 **Weiterführende Infos: two-tailed t-Test**
 
-Wir müssen den Wahrscheinlichkeitswert, den `pt()` berechnet, mit 2 multiplizieren, weil es sich bei dem berechneten t-Test nicht um einen one-tailed, sondern um einen two-tailed t-Test handelt. Als *tail* werden die extremen Enden der Verteilungen bezeichnet; für Normal- und $t$-Verteilung gilt, dass sehr hohe und sehr niedrige Werte unwahrscheinlich sind (d.h. es ist nur sehr wenig Fläche unter den Verteilungen von minus unendlich bis zu einem sehr niedrigen x-Wert bzw. von einem sehr hohen x-Wert bis plus unendlich).
+Wir müssen den Wahrscheinlichkeitswert, den `pt()` berechnet, mit 2 multiplizieren, weil es sich bei dem berechneten $t$-Test nicht um einen *one-tailed*, sondern um einen *two-tailed* $t$-Test handelt. Als *tail* werden die extremen Enden der Verteilungen bezeichnet; für Normal- und $t$-Verteilung gilt, dass sehr hohe und sehr niedrige Werte unwahrscheinlich sind (d.h. es ist nur sehr wenig Fläche unter den Verteilungen von minus unendlich bis zu einem sehr niedrigen x-Wert bzw. von einem sehr hohen x-Wert bis plus unendlich).
 
 Wenn wir hier mit `pt()` eine Wahrscheinlichkeit (bzw. Fläche) berechnen, gilt das nur für den *lower tail* von minus unendlich bis zu dem angegebenen x-Wert. Dieselbe Wahrscheinlichkeit gilt aber für die Fläche von dem ins Positive verkehrten x-Wert (hier: `abs(-8.016248)`) bis plus unendlich (den *upper tail*). Daher machen wir es uns hier einfach, indem wir das Ergebnis oben mit 2 multiplizieren. Wir hätten auch schreiben können:
 
@@ -255,11 +253,11 @@ Etwas Ähnliches haben Sie übrigens schon bei der Berechnung des 95%-Konfidenzi
 
 </div>
 
-Der p-Wert kann hier wie folgt interpretiert werden: Wenn wir davon ausgehen, dass die tatsächliche Steigung Null ist (das ist die Null-Hypothese dieses t-Tests), dann ist die hier beobachtete Steigung von -1.07 höchst unerwartet.
+Der $p$-Wert kann hier wie folgt interpretiert werden: Wenn wir davon ausgehen, dass die tatsächliche Steigung Null ist (das ist die Null-Hypothese dieses $t$-Tests), dann ist die hier beobachtete Steigung von -1.07 höchst unerwartet.
 
 ### Gütekriterien für das Modell und F-Statistik
 
-Nun, da wir die Ausgabe von `tidy()` verstehen, bleibt nur noch `glance()`. Die Funktion `glance()` zeigt auf einen Blick ein paar Kriterien, mit denen man die **Güte des Modells** einschätzen kann (für bessere Lesbarkeit verwandeln wir den Data Frame ins lange Format):
+Nun, da wir die Ausgabe von `tidy()` verstehen, bleibt nur noch `glance()`. Die Funktion `glance()` zeigt auf einen Blick ein paar Kriterien, mit denen man die **Güte des Modells** (auch: *goodness-of-fit*) einschätzen kann (für bessere Lesbarkeit verwandeln wir den Data Frame ins lange Format):
 
 ```{r}
 queen.lm %>% glance() %>% pivot_longer(cols = c(r.squared:nobs))
@@ -279,7 +277,7 @@ Die Spalte `sigma` enthält den **Residual Standard Error**, das ist eine Schät
 queen.lm %>% sigma()
 ```
 
-Dann sehen wir wieder eine `statistic` samt `p.value`. Dieses Mal handelt es sich um die **$F$-Statistik**, d.h. diesmal lesen wir den p-Wert aus der F-Verteilung ab, die mit `df()` in `ggplot2` gezeichnet werden kann. Diese Verteilung ist von zwei Parametern abhängig, nämlich `glance(queen.lm)$df` und `glance(queen.lm)$df.residual`. Dies sind die Freiheitsgrade für das Modell und für die Residuals. In orange sehen Sie wieder die F-Verteilung, die zu unseren Daten passt (nämlich mit einem Freiheitsgrad für das Modell und 28 Freiheitsgraden für die Residuals). Die Verteilung kann nur Werte größer als Null annehmen. In dunkelgrün sehen Sie eine $F$-Verteilung, bei der die Freiheitsgrade für das Modell verändert wurden, und in schwarz zum Vergleich die Normalverteilung.
+Dann sehen wir wieder eine `statistic` samt `p.value`. Dieses Mal handelt es sich um die **$F$-Statistik**, d.h. diesmal lesen wir den $p$-Wert aus der $F$-Verteilung ab, die mit `df()` in `ggplot2` gezeichnet werden kann (der Funktionsname steht für *$F$ distribution*, und nicht für *degrees of freedom*). Diese Verteilung ist von zwei Parametern abhängig, nämlich `glance(queen.lm)$df` und `glance(queen.lm)$df.residual`. Dies sind die Freiheitsgrade für das Modell und für die Residuals. In orange sehen Sie wieder die $F$-Verteilung, die zu unseren Daten passt (nämlich mit einem Freiheitsgrad für das Modell und 28 Freiheitsgraden für die Residuals). Die Verteilung kann nur Werte größer als Null annehmen. In dunkelgrün sehen Sie eine $F$-Verteilung, bei der die Freiheitsgrade für das Modell verändert wurden, und in schwarz zum Vergleich die Normalverteilung.
 
 ```{r}
 ggplot(data.frame(x = 0:5)) +
@@ -290,7 +288,7 @@ ggplot(data.frame(x = 0:5)) +
   xlab("") + ylab("density")
 ```
 
-Wenn wir uns hier die orange Verteilung anschauen, sehen wir schon, dass ein $F$-Wert von 64.3 (s. `statistic`) extrem unwahrscheinlich wäre, daher ist der p-Wert auch sehr klein. Die Null-Hypothese im F-Test, der hier ausgeführt wurde, lautet, dass ein Modell ohne Prädiktoren die Daten genauso gut oder besser erklärt, als das Modell mit dem Prädiktor `Alter`. Das heißt, wenn der p-Wert, der aus dem F-Test resultiert, sehr klein ist, können wir daraus schließen, dass unser Modell mit der unabhängigen Variable `Alter` die Daten besser erklärt, als ein Modell ohne Prädiktoren.
+Wenn wir uns hier die orange Verteilung anschauen, sehen wir schon, dass ein $F$-Wert von 64.3 (s. `statistic`) extrem unwahrscheinlich wäre, daher ist der $p$-Wert auch sehr klein. Die Null-Hypothese im $F$-Test, der hier ausgeführt wurde, lautet, dass ein Modell ohne Prädiktoren die Daten genauso gut oder besser erklärt, als das Modell mit dem Prädiktor `Alter`. Das heißt, wenn der $p$-Wert, der aus dem $F$-Test resultiert, sehr klein ist, können wir daraus schließen, dass unser Modell mit der unabhängigen Variable `Alter` die Daten besser erklärt, als ein Modell ohne Prädiktoren.
 
 Wir versuchen nun die Werte in den Spalten `statistic`, `df`, `df.residual` und `deviance` nachzuvollziehen. Letzteren kennen Sie schon unter dem Namen **SSE** (*sum of squared error*): 
 
@@ -357,7 +355,7 @@ Zwischen der $t$-Statistik und unserer $F$-Statistik besteht übrigens ein quadr
 sqrt(F_wert)
 ```
 
-Deshalb ist auch der p-Wert bei beiden Statistiken genau derselbe.
+Deshalb ist auch der $p$-Wert bei beiden Statistiken genau derselbe.
 
 Zuletzt kommen wir nochmal auf den *residual standard error* zurück, den wir oben als eine Schätzung für die Standardabweichung der Residuen bezeichnet hatten. Dieser berechnet sich als die Quadratwurzel aus MSE:
 
@@ -365,7 +363,7 @@ Zuletzt kommen wir nochmal auf den *residual standard error* zurück, den wir ob
 sqrt(MSE)
 ```
 
-Wenn wir die Standardabweichung der Residuen ermitteln, sollte das sehr nah an dem *residual standard error* liegen (allerdings ist letzterer nur eine Schätzung, daher, müssen die Werte nicht gleich sein):
+Wenn wir die Standardabweichung der Residuen ermitteln, sollte das sehr nah an dem *residual standard error* liegen (allerdings ist letzterer nur eine Schätzung, daher müssen die Werte nicht gleich sein):
 
 ```{r}
 queen.lm %>% augment() %>% pull(.resid) %>% sd()
@@ -388,7 +386,7 @@ Es ist außerordentlich wichtig, dass wir unser Ergebnis korrekt berichten. Daf�
 - $R^2$ (oder, weil stabiler: *adjusted* $R^2$): 0.69
 - den $F$-Wert: 64.3
 - die Freiheitsgrade für das Modell und die Residuals: 1 und 28
-- den p-Wert, bzw. das nächst höhere Signifikanzniveau: p < 0.001
+- den $p$-Wert, bzw. das nächst höhere Signifikanzniveau: $p$ < 0.001
 
 Wir berichten: **Es besteht eine signifikante lineare Beziehung zwischen dem Alter der Queen und ihrer Grundfrequenz ($R^2$ = 0.69, $F$[1, 28] = 64.3, $p$ < 0.001).**
 
@@ -397,9 +395,9 @@ Wir berichten: **Es besteht eine signifikante lineare Beziehung zwischen dem Alt
 - Bei der linearen Regression werden die Werte der abhängigen Variable $y$ durch die Werte der unabhängigen Variable $x$ geschätzt unter der Annahme, dass zwischen beiden eine lineare Beziehung besteht.
 - Die Regressionslinie ist die gerade Linie, zu der der Abstand der Datenpunkte möglichst gering ist (*least squares* Verfahren).
 - Die Funktion `lm()` schätzt die Regressionskoeffizienten y-Achsenabschnitt (*intercept*) und Steigung (*slope*).
-- Es wird ein t-Test ausgeführt, um zu testen, ob sich die Regressionskoeffizienten von Null unterscheiden. Wenn $p < 0.05$ im t-Test für $x$, dann unterscheidet sich die Steigung signifikant von Null, d.h. $x$ ist ein guter Prädiktor für $y$.
+- Es wird ein $t$-Test ausgeführt, um zu testen, ob sich die Regressionskoeffizienten von Null unterscheiden. Wenn $p < 0.05$ im $t$-Test für $x$, dann unterscheidet sich die Steigung signifikant von Null, d.h. $x$ ist ein guter Prädiktor für $y$.
 - Die Differenzen zwischen den tatsächlichen und den geschätzten y-Werten heißen *Residuals* oder *Error*; der *residual standard error* ist eine Schätzung für die Standardabweichung der Fehlerverteilung.
-- $R^2$ sind das Quadrat des Korrelationswertes $r$ und beschreibt die Proportion der Varianz in der abhängigen Variable $y$, die von dem linearen Modell beschrieben wird.
+- $R^2$ ist das Quadrat des Korrelationswertes $r$ und beschreibt die Proportion der Varianz in der abhängigen Variable $y$, die von dem linearen Modell beschrieben wird.
 - Es wird außerdem ein $F$-Test ausgeführt, um zu prüfen, ob das lineare Modell erfolgreich einen signifikanten Anteil der Varianz in der abhängigen Variable erklärt. Wenn $p < 0.05$ im $F$-Test, dann beschreibt das Modell mit dem gewählten Prädiktor besser die empirischen Daten als ein Modell ohne Prädiktoren (Mittelwertmodell).
 - *SSE* ist die *sum of squares of error* und beschreibt den Abstand der Datenpunkte zur Regressionslinie; im *least squares* Verfahren wird versucht, SSE zu minimieren
 - *SSR* ist die *sum of squares of regression* und beschreibt, wie gut das Regressionsmodell im Vergleich zum Mittelwertmodell ist (SSY)

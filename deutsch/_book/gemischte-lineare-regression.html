@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>5 Gemischte Lineare Regression | Statistik in R: eine Einführung für PhonetikerInnen</title>
   <meta name="description" content="Eine Einführung in die Statistik mit R mit Fokus auf lineare Regressionen. Diese Einführung wurde als Lehrmaterial für die Studierenden des Instituts für Phonetik und Sprachverarbeitung der LMU konzipiert." />
-  <meta name="generator" content="bookdown 0.44 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.46 and GitBook 2.6.7" />
 
   <meta property="og:title" content="5 Gemischte Lineare Regression | Statistik in R: eine Einführung für PhonetikerInnen" />
   <meta property="og:type" content="book" />
@@ -23,7 +23,7 @@
 <meta name="author" content="Johanna Cronenberg" />
 
 
-<meta name="date" content="2025-09-28" />
+<meta name="date" content="2025-12-10" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -154,16 +154,17 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="1.6" data-path="index.html"><a href="index.html#hilfe-zur-selbsthilfe"><i class="fa fa-check"></i><b>1.6</b> Hilfe zur Selbsthilfe</a>
 <ul>
-<li class="chapter" data-level="1.6.1" data-path="index.html"><a href="index.html#fehler-erkennen"><i class="fa fa-check"></i><b>1.6.1</b> Fehler erkennen</a></li>
-<li class="chapter" data-level="1.6.2" data-path="index.html"><a href="index.html#community-nutzen"><i class="fa fa-check"></i><b>1.6.2</b> Community nutzen</a></li>
-<li class="chapter" data-level="1.6.3" data-path="index.html"><a href="index.html#hilfe-zu-ggplot2"><i class="fa fa-check"></i><b>1.6.3</b> Hilfe zu <code>ggplot2</code></a></li>
-<li class="chapter" data-level="1.6.4" data-path="index.html"><a href="index.html#statistik-in-r-literatur"><i class="fa fa-check"></i><b>1.6.4</b> Statistik in R: Literatur</a></li>
+<li class="chapter" data-level="1.6.1" data-path="index.html"><a href="index.html#einf%C3%BChrung-in-programmieren-mit-r"><i class="fa fa-check"></i><b>1.6.1</b> Einführung in Programmieren mit R</a></li>
+<li class="chapter" data-level="1.6.2" data-path="index.html"><a href="index.html#fehler-erkennen"><i class="fa fa-check"></i><b>1.6.2</b> Fehler erkennen</a></li>
+<li class="chapter" data-level="1.6.3" data-path="index.html"><a href="index.html#community-nutzen"><i class="fa fa-check"></i><b>1.6.3</b> Community nutzen</a></li>
+<li class="chapter" data-level="1.6.4" data-path="index.html"><a href="index.html#hilfe-zu-ggplot2"><i class="fa fa-check"></i><b>1.6.4</b> Hilfe zu <code>ggplot2</code></a></li>
+<li class="chapter" data-level="1.6.5" data-path="index.html"><a href="index.html#statistik-in-r-literatur"><i class="fa fa-check"></i><b>1.6.5</b> Statistik in R: Literatur</a></li>
 </ul></li>
 <li class="chapter" data-level="1.7" data-path="index.html"><a href="index.html#acknowledgements"><i class="fa fa-check"></i><b>1.7</b> Acknowledgements</a></li>
 </ul></li>
-<li class="chapter" data-level="2" data-path="04_gemischteLineareRegression.html"><a href="#einf%C3%BChrung-in-die-inferenzstatistik"><i class="fa fa-check"></i><b>2</b> Einführung in die Inferenzstatistik</a>
+<li class="chapter" data-level="2" data-path="einführung-in-die-inferenzstatistik.html"><a href="einführung-in-die-inferenzstatistik.html"><i class="fa fa-check"></i><b>2</b> Einführung in die Inferenzstatistik</a>
 <ul>
-<li class="chapter" data-level="2.1" data-path="einführung-in-die-inferenzstatistik.html"><a href="einführung-in-die-inferenzstatistik.html"><i class="fa fa-check"></i><b>2.1</b> Packages und Daten laden</a></li>
+<li class="chapter" data-level="2.1" data-path="einführung-in-die-inferenzstatistik.html"><a href="einführung-in-die-inferenzstatistik.html#packages-und-daten-laden"><i class="fa fa-check"></i><b>2.1</b> Packages und Daten laden</a></li>
 <li class="chapter" data-level="2.2" data-path="einführung-in-die-inferenzstatistik.html"><a href="einführung-in-die-inferenzstatistik.html#grundbegriffe"><i class="fa fa-check"></i><b>2.2</b> Grundbegriffe</a></li>
 <li class="chapter" data-level="2.3" data-path="einführung-in-die-inferenzstatistik.html"><a href="einführung-in-die-inferenzstatistik.html#normalverteilung"><i class="fa fa-check"></i><b>2.3</b> Normalverteilung</a>
 <ul>
@@ -174,7 +175,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="3" data-path="einfache-lineare-regression.html"><a href="einfache-lineare-regression.html"><i class="fa fa-check"></i><b>3</b> Einfache lineare Regression</a>
 <ul>
 <li class="chapter" data-level="3.1" data-path="einfache-lineare-regression.html"><a href="einfache-lineare-regression.html#packages-und-daten-laden-1"><i class="fa fa-check"></i><b>3.1</b> Packages und Daten laden</a></li>
-<li class="chapter" data-level="3.2" data-path="04_gemischteLineareRegression.html"><a href="#einf%C3%BChrung"><i class="fa fa-check"></i><b>3.2</b> Einführung</a></li>
+<li class="chapter" data-level="3.2" data-path="einfache-lineare-regression.html"><a href="einfache-lineare-regression.html#einf%C3%BChrung"><i class="fa fa-check"></i><b>3.2</b> Einführung</a></li>
 <li class="chapter" data-level="3.3" data-path="einfache-lineare-regression.html"><a href="einfache-lineare-regression.html#korrelation"><i class="fa fa-check"></i><b>3.3</b> Korrelation</a></li>
 <li class="chapter" data-level="3.4" data-path="einfache-lineare-regression.html"><a href="einfache-lineare-regression.html#die-regressionslinie"><i class="fa fa-check"></i><b>3.4</b> Die Regressionslinie</a>
 <ul>
@@ -183,16 +184,16 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="3.5" data-path="einfache-lineare-regression.html"><a href="einfache-lineare-regression.html#lineare-regression-mit-lm"><i class="fa fa-check"></i><b>3.5</b> Lineare Regression mit <code>lm()</code></a></li>
 <li class="chapter" data-level="3.6" data-path="einfache-lineare-regression.html"><a href="einfache-lineare-regression.html#residuals"><i class="fa fa-check"></i><b>3.6</b> Residuals</a></li>
-<li class="chapter" data-level="3.7" data-path="04_gemischteLineareRegression.html"><a href="#annahmen-%C3%BCberpr%C3%BCfen"><i class="fa fa-check"></i><b>3.7</b> Annahmen überprüfen</a>
+<li class="chapter" data-level="3.7" data-path="einfache-lineare-regression.html"><a href="einfache-lineare-regression.html#annahmen-%C3%BCberpr%C3%BCfen"><i class="fa fa-check"></i><b>3.7</b> Annahmen überprüfen</a>
 <ul>
-<li class="chapter" data-level="3.7.1" data-path="04_gemischteLineareRegression.html"><a href="#normalit%C3%A4t-der-residuals"><i class="fa fa-check"></i><b>3.7.1</b> Normalität der Residuals</a></li>
+<li class="chapter" data-level="3.7.1" data-path="einfache-lineare-regression.html"><a href="einfache-lineare-regression.html#normalit%C3%A4t-der-residuals"><i class="fa fa-check"></i><b>3.7.1</b> Normalität der Residuals</a></li>
 <li class="chapter" data-level="3.7.2" data-path="einfache-lineare-regression.html"><a href="einfache-lineare-regression.html#konstante-varianz-der-residuals"><i class="fa fa-check"></i><b>3.7.2</b> Konstante Varianz der Residuals</a></li>
 </ul></li>
 <li class="chapter" data-level="3.8" data-path="einfache-lineare-regression.html"><a href="einfache-lineare-regression.html#alle-ergebnisse-von-lm-verstehen"><i class="fa fa-check"></i><b>3.8</b> Alle Ergebnisse von <code>lm()</code> verstehen</a>
 <ul>
-<li class="chapter" data-level="3.8.1" data-path="04_gemischteLineareRegression.html"><a href="#gesch%C3%A4tzte-y-werte-und-residuals"><i class="fa fa-check"></i><b>3.8.1</b> Geschätzte y-Werte und Residuals</a></li>
-<li class="chapter" data-level="3.8.2" data-path="einfache-lineare-regression.html"><a href="einfache-lineare-regression.html#regressionskoeffizienten-und-t-statistik"><i class="fa fa-check"></i><b>3.8.2</b> Regressionskoeffizienten und t-Statistik</a></li>
-<li class="chapter" data-level="3.8.3" data-path="04_gemischteLineareRegression.html"><a href="#g%C3%BCtekriterien-f%C3%BCr-das-modell-und-f-statistik"><i class="fa fa-check"></i><b>3.8.3</b> Gütekriterien für das Modell und F-Statistik</a></li>
+<li class="chapter" data-level="3.8.1" data-path="einfache-lineare-regression.html"><a href="einfache-lineare-regression.html#gesch%C3%A4tzte-y-werte-und-residuals"><i class="fa fa-check"></i><b>3.8.1</b> Geschätzte y-Werte und Residuals</a></li>
+<li class="chapter" data-level="3.8.2" data-path="einfache-lineare-regression.html"><a href="einfache-lineare-regression.html#regressionskoeffizienten-und-t-statistik"><i class="fa fa-check"></i><b>3.8.2</b> Regressionskoeffizienten und <span class="math inline">\(t\)</span>-Statistik</a></li>
+<li class="chapter" data-level="3.8.3" data-path="einfache-lineare-regression.html"><a href="einfache-lineare-regression.html#g%C3%BCtekriterien-f%C3%BCr-das-modell-und-f-statistik"><i class="fa fa-check"></i><b>3.8.3</b> Gütekriterien für das Modell und F-Statistik</a></li>
 </ul></li>
 <li class="chapter" data-level="3.9" data-path="einfache-lineare-regression.html"><a href="einfache-lineare-regression.html#ergebnis-berichten"><i class="fa fa-check"></i><b>3.9</b> Ergebnis berichten</a></li>
 <li class="chapter" data-level="3.10" data-path="einfache-lineare-regression.html"><a href="einfache-lineare-regression.html#zusammenfassung"><i class="fa fa-check"></i><b>3.10</b> Zusammenfassung</a></li>
@@ -200,18 +201,18 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="4" data-path="multiple-lineare-regression.html"><a href="multiple-lineare-regression.html"><i class="fa fa-check"></i><b>4</b> Multiple Lineare Regression</a>
 <ul>
 <li class="chapter" data-level="4.1" data-path="multiple-lineare-regression.html"><a href="multiple-lineare-regression.html#packages-und-daten-laden-2"><i class="fa fa-check"></i><b>4.1</b> Packages und Daten laden</a></li>
-<li class="chapter" data-level="4.2" data-path="04_gemischteLineareRegression.html"><a href="#einf%C3%BChrung-1"><i class="fa fa-check"></i><b>4.2</b> Einführung</a></li>
-<li class="chapter" data-level="4.3" data-path="04_gemischteLineareRegression.html"><a href="#kontinuierliche-unabh%C3%A4ngige-variablen"><i class="fa fa-check"></i><b>4.3</b> Kontinuierliche unabhängige Variablen</a>
+<li class="chapter" data-level="4.2" data-path="multiple-lineare-regression.html"><a href="multiple-lineare-regression.html#einf%C3%BChrung-1"><i class="fa fa-check"></i><b>4.2</b> Einführung</a></li>
+<li class="chapter" data-level="4.3" data-path="multiple-lineare-regression.html"><a href="multiple-lineare-regression.html#kontinuierliche-unabh%C3%A4ngige-variablen"><i class="fa fa-check"></i><b>4.3</b> Kontinuierliche unabhängige Variablen</a>
 <ul>
 <li class="chapter" data-level="4.3.1" data-path="multiple-lineare-regression.html"><a href="multiple-lineare-regression.html#ohne-interaktion"><i class="fa fa-check"></i><b>4.3.1</b> Ohne Interaktion</a></li>
 <li class="chapter" data-level="4.3.2" data-path="multiple-lineare-regression.html"><a href="multiple-lineare-regression.html#mit-interaktion"><i class="fa fa-check"></i><b>4.3.2</b> Mit Interaktion</a></li>
 </ul></li>
-<li class="chapter" data-level="4.4" data-path="04_gemischteLineareRegression.html"><a href="#kategorische-unabh%C3%A4ngige-variablen"><i class="fa fa-check"></i><b>4.4</b> Kategorische unabhängige Variablen</a>
+<li class="chapter" data-level="4.4" data-path="multiple-lineare-regression.html"><a href="multiple-lineare-regression.html#kategorische-unabh%C3%A4ngige-variablen"><i class="fa fa-check"></i><b>4.4</b> Kategorische unabhängige Variablen</a>
 <ul>
 <li class="chapter" data-level="4.4.1" data-path="multiple-lineare-regression.html"><a href="multiple-lineare-regression.html#ohne-interaktion-1"><i class="fa fa-check"></i><b>4.4.1</b> Ohne Interaktion</a></li>
 <li class="chapter" data-level="4.4.2" data-path="multiple-lineare-regression.html"><a href="multiple-lineare-regression.html#mit-interaktion-1"><i class="fa fa-check"></i><b>4.4.2</b> Mit Interaktion</a></li>
 </ul></li>
-<li class="chapter" data-level="4.5" data-path="04_gemischteLineareRegression.html"><a href="#mix-aus-kontinuierlichen-und-kategorischen-unabh%C3%A4ngigen-variablen"><i class="fa fa-check"></i><b>4.5</b> Mix aus kontinuierlichen und kategorischen unabhängigen Variablen</a>
+<li class="chapter" data-level="4.5" data-path="multiple-lineare-regression.html"><a href="multiple-lineare-regression.html#mix-aus-kontinuierlichen-und-kategorischen-unabh%C3%A4ngigen-variablen"><i class="fa fa-check"></i><b>4.5</b> Mix aus kontinuierlichen und kategorischen unabhängigen Variablen</a>
 <ul>
 <li class="chapter" data-level="4.5.1" data-path="multiple-lineare-regression.html"><a href="multiple-lineare-regression.html#ohne-interaktion-2"><i class="fa fa-check"></i><b>4.5.1</b> Ohne Interaktion</a></li>
 <li class="chapter" data-level="4.5.2" data-path="multiple-lineare-regression.html"><a href="multiple-lineare-regression.html#mit-interaktion-2"><i class="fa fa-check"></i><b>4.5.2</b> Mit Interaktion</a></li>
@@ -220,12 +221,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="5" data-path="gemischte-lineare-regression.html"><a href="gemischte-lineare-regression.html"><i class="fa fa-check"></i><b>5</b> Gemischte Lineare Regression</a>
 <ul>
 <li class="chapter" data-level="5.1" data-path="gemischte-lineare-regression.html"><a href="gemischte-lineare-regression.html#packages-und-daten-laden-3"><i class="fa fa-check"></i><b>5.1</b> Packages und Daten laden</a></li>
-<li class="chapter" data-level="5.2" data-path="04_gemischteLineareRegression.html"><a href="#mixed-models-lmers-einf%C3%BChrung"><i class="fa fa-check"></i><b>5.2</b> Mixed Models (LMERs): Einführung</a></li>
+<li class="chapter" data-level="5.2" data-path="gemischte-lineare-regression.html"><a href="gemischte-lineare-regression.html#mixed-models-lmers-einf%C3%BChrung"><i class="fa fa-check"></i><b>5.2</b> Mixed Models (LMERs): Einführung</a></li>
 <li class="chapter" data-level="5.3" data-path="gemischte-lineare-regression.html"><a href="gemischte-lineare-regression.html#random-intercepts-vs.-random-slopes"><i class="fa fa-check"></i><b>5.3</b> Random Intercepts vs. Random Slopes</a>
 <ul>
 <li class="chapter" data-level="5.3.1" data-path="gemischte-lineare-regression.html"><a href="gemischte-lineare-regression.html#random-intercepts"><i class="fa fa-check"></i><b>5.3.1</b> Random Intercepts</a></li>
 <li class="chapter" data-level="5.3.2" data-path="gemischte-lineare-regression.html"><a href="gemischte-lineare-regression.html#random-slopes"><i class="fa fa-check"></i><b>5.3.2</b> Random Slopes</a></li>
-<li class="chapter" data-level="5.3.3" data-path="04_gemischteLineareRegression.html"><a href="#random-effects-struktur-f%C3%BCr-word-bestimmen"><i class="fa fa-check"></i><b>5.3.3</b> Random Effects Struktur für <code>word</code> bestimmen</a></li>
+<li class="chapter" data-level="5.3.3" data-path="gemischte-lineare-regression.html"><a href="gemischte-lineare-regression.html#random-effects-struktur-f%C3%BCr-word-bestimmen"><i class="fa fa-check"></i><b>5.3.3</b> Random Effects Struktur für <code>word</code> bestimmen</a></li>
 </ul></li>
 <li class="chapter" data-level="5.4" data-path="gemischte-lineare-regression.html"><a href="gemischte-lineare-regression.html#lmer-in-r"><i class="fa fa-check"></i><b>5.4</b> LMER in R</a>
 <ul>
@@ -234,7 +235,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="5.5" data-path="gemischte-lineare-regression.html"><a href="gemischte-lineare-regression.html#konvergenzprobleme-und-modell-vereinfachen"><i class="fa fa-check"></i><b>5.5</b> Konvergenzprobleme und Modell vereinfachen</a></li>
 <li class="chapter" data-level="5.6" data-path="gemischte-lineare-regression.html"><a href="gemischte-lineare-regression.html#ergebnisse-berichten"><i class="fa fa-check"></i><b>5.6</b> Ergebnisse berichten</a></li>
-<li class="chapter" data-level="5.7" data-path="04_gemischteLineareRegression.html"><a href="#g%C3%BCtekriterien-f%C3%BCr-mixed-models"><i class="fa fa-check"></i><b>5.7</b> Gütekriterien für Mixed Models</a>
+<li class="chapter" data-level="5.7" data-path="gemischte-lineare-regression.html"><a href="gemischte-lineare-regression.html#g%C3%BCtekriterien-f%C3%BCr-mixed-models"><i class="fa fa-check"></i><b>5.7</b> Gütekriterien für Mixed Models</a>
 <ul>
 <li class="chapter" data-level="5.7.1" data-path="gemischte-lineare-regression.html"><a href="gemischte-lineare-regression.html#marginal-und-conditional-r2"><i class="fa fa-check"></i><b>5.7.1</b> Marginal und Conditional <span class="math inline">\(R^2\)</span></a></li>
 <li class="chapter" data-level="5.7.2" data-path="gemischte-lineare-regression.html"><a href="gemischte-lineare-regression.html#likelihood-ratio-tests"><i class="fa fa-check"></i><b>5.7.2</b> Likelihood Ratio Tests</a></li>
@@ -242,13 +243,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="6" data-path="logistische-regression.html"><a href="logistische-regression.html"><i class="fa fa-check"></i><b>6</b> Logistische Regression</a>
 <ul>
-<li class="chapter" data-level="6.1" data-path="logistische-regression.html"><a href="logistische-regression.html#setup-und-pakete-laden"><i class="fa fa-check"></i><b>6.1</b> Setup und Pakete laden</a></li>
+<li class="chapter" data-level="6.1" data-path="logistische-regression.html"><a href="logistische-regression.html#pakete-und-daten-laden"><i class="fa fa-check"></i><b>6.1</b> Pakete und Daten laden</a></li>
 <li class="chapter" data-level="6.2" data-path="logistische-regression.html"><a href="logistische-regression.html#von-der-linearen-zur-logistischen-regression"><i class="fa fa-check"></i><b>6.2</b> Von der linearen zur logistischen Regression</a>
 <ul>
-<li class="chapter" data-level="6.2.1" data-path="04_gemischteLineareRegression.html"><a href="#ein-beispiel-f%C3%BCr-p-q-und-logit"><i class="fa fa-check"></i><b>6.2.1</b> Ein Beispiel für <span class="math inline">\(P\)</span>, <span class="math inline">\(Q\)</span> und Logit</a></li>
+<li class="chapter" data-level="6.2.1" data-path="logistische-regression.html"><a href="logistische-regression.html#ein-beispiel-f%C3%BCr-p-q-und-logit"><i class="fa fa-check"></i><b>6.2.1</b> Ein Beispiel für <span class="math inline">\(P\)</span>, <span class="math inline">\(Q\)</span> und Logit</a></li>
 <li class="chapter" data-level="6.2.2" data-path="logistische-regression.html"><a href="logistische-regression.html#die-logistische-regressionslinie"><i class="fa fa-check"></i><b>6.2.2</b> Die logistische Regressionslinie</a></li>
 <li class="chapter" data-level="6.2.3" data-path="logistische-regression.html"><a href="logistische-regression.html#regression-mit-glm"><i class="fa fa-check"></i><b>6.2.3</b> Regression mit <code>glm()</code></a></li>
-<li class="chapter" data-level="6.2.4" data-path="logistische-regression.html"><a href="logistische-regression.html#der-chi-square-test-ergebnisse-berichten"><i class="fa fa-check"></i><b>6.2.4</b> Der Chi-Square Test &amp; Ergebnisse berichten</a></li>
+<li class="chapter" data-level="6.2.4" data-path="logistische-regression.html"><a href="logistische-regression.html#der-chi2-test-ergebnisse-berichten"><i class="fa fa-check"></i><b>6.2.4</b> Der <span class="math inline">\(\chi^2\)</span>-Test &amp; Ergebnisse berichten</a></li>
 </ul></li>
 <li class="chapter" data-level="6.3" data-path="logistische-regression.html"><a href="logistische-regression.html#die-sigmoidal-funktion-und-der-umkipppunkt"><i class="fa fa-check"></i><b>6.3</b> Die Sigmoidal-Funktion und der Umkipppunkt</a>
 <ul>
@@ -256,7 +257,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="6.3.2" data-path="logistische-regression.html"><a href="logistische-regression.html#proportionen-abbilden"><i class="fa fa-check"></i><b>6.3.2</b> Proportionen abbilden</a></li>
 </ul></li>
 <li class="chapter" data-level="6.4" data-path="logistische-regression.html"><a href="logistische-regression.html#umkipppunkte-in-perzeptionstests"><i class="fa fa-check"></i><b>6.4</b> Umkipppunkte in Perzeptionstests</a></li>
-<li class="chapter" data-level="6.5" data-path="04_gemischteLineareRegression.html"><a href="#kategorialer-unabh%C3%A4ngiger-faktor"><i class="fa fa-check"></i><b>6.5</b> Kategorialer unabhängiger Faktor</a></li>
+<li class="chapter" data-level="6.5" data-path="logistische-regression.html"><a href="logistische-regression.html#kategorialer-unabh%C3%A4ngiger-faktor"><i class="fa fa-check"></i><b>6.5</b> Kategorialer unabhängiger Faktor</a></li>
 </ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
@@ -283,11 +284,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h1><span class="header-section-number">5</span> Gemischte Lineare Regression<a href="gemischte-lineare-regression.html#gemischte-lineare-regression" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <div id="packages-und-daten-laden-3" class="section level2 hasAnchor" number="5.1">
 <h2><span class="header-section-number">5.1</span> Packages und Daten laden<a href="gemischte-lineare-regression.html#packages-und-daten-laden-3" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Installieren Sie die folgenden Pakete:</p>
-<div class="sourceCode" id="cb280"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb280-1"><a href="gemischte-lineare-regression.html#cb280-1" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="fu">c</span>(<span class="st">&quot;pbkrtest&quot;</span>, <span class="st">&quot;MuMIn&quot;</span>, <span class="st">&quot;lmerTest&quot;</span>))</span></code></pre></div>
 <p>Laden Sie die Pakete und Data Frames:</p>
-<div class="sourceCode" id="cb281"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb281-1"><a href="gemischte-lineare-regression.html#cb281-1" tabindex="-1"></a><span class="fu">library</span>(emmeans)</span>
-<span id="cb281-2"><a href="gemischte-lineare-regression.html#cb281-2" tabindex="-1"></a><span class="fu">library</span>(lmerTest)</span></code></pre></div>
+<div class="sourceCode" id="cb279"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb279-1"><a href="gemischte-lineare-regression.html#cb279-1" tabindex="-1"></a><span class="fu">library</span>(emmeans)</span>
+<span id="cb279-2"><a href="gemischte-lineare-regression.html#cb279-2" tabindex="-1"></a><span class="fu">library</span>(lmerTest)</span></code></pre></div>
 <pre><code>## Loading required package: lme4</code></pre>
 <pre><code>## Loading required package: Matrix</code></pre>
 <pre><code>## 
@@ -303,24 +302,24 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <pre><code>## The following object is masked from &#39;package:stats&#39;:
 ## 
 ##     step</code></pre>
-<div class="sourceCode" id="cb289"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb289-1"><a href="gemischte-lineare-regression.html#cb289-1" tabindex="-1"></a><span class="fu">library</span>(MuMIn)</span></code></pre></div>
+<div class="sourceCode" id="cb287"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb287-1"><a href="gemischte-lineare-regression.html#cb287-1" tabindex="-1"></a><span class="fu">library</span>(MuMIn)</span></code></pre></div>
 <pre><code>## Registered S3 methods overwritten by &#39;MuMIn&#39;:
 ##   method        from 
 ##   nobs.multinom broom
 ##   nobs.fitdistr broom</code></pre>
-<div class="sourceCode" id="cb291"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb291-1"><a href="gemischte-lineare-regression.html#cb291-1" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
-<span id="cb291-2"><a href="gemischte-lineare-regression.html#cb291-2" tabindex="-1"></a><span class="fu">library</span>(magrittr)</span>
-<span id="cb291-3"><a href="gemischte-lineare-regression.html#cb291-3" tabindex="-1"></a>url <span class="ot">&lt;-</span> <span class="st">&quot;http://www.phonetik.uni-muenchen.de/~jmh/lehre/Rdf&quot;</span></span>
-<span id="cb291-4"><a href="gemischte-lineare-regression.html#cb291-4" tabindex="-1"></a>df <span class="ot">&lt;-</span> <span class="fu">read.table</span>(<span class="fu">file.path</span>(url, <span class="st">&quot;int_new.txt&quot;</span>), <span class="at">stringsAsFactors =</span> T, <span class="at">header =</span> T) <span class="sc">%&gt;%</span> </span>
-<span id="cb291-5"><a href="gemischte-lineare-regression.html#cb291-5" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">subject =</span> <span class="fu">factor</span>(subject, <span class="at">levels =</span> <span class="fu">paste0</span>(<span class="st">&quot;S&quot;</span>, <span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>))) <span class="sc">%&gt;%</span> </span>
-<span id="cb291-6"><a href="gemischte-lineare-regression.html#cb291-6" tabindex="-1"></a>  <span class="fu">as_tibble</span>()</span></code></pre></div>
+<div class="sourceCode" id="cb289"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb289-1"><a href="gemischte-lineare-regression.html#cb289-1" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb289-2"><a href="gemischte-lineare-regression.html#cb289-2" tabindex="-1"></a><span class="fu">library</span>(magrittr)</span>
+<span id="cb289-3"><a href="gemischte-lineare-regression.html#cb289-3" tabindex="-1"></a>url <span class="ot">&lt;-</span> <span class="st">&quot;http://www.phonetik.uni-muenchen.de/~jmh/lehre/Rdf&quot;</span></span>
+<span id="cb289-4"><a href="gemischte-lineare-regression.html#cb289-4" tabindex="-1"></a>df <span class="ot">&lt;-</span> <span class="fu">read.table</span>(<span class="fu">file.path</span>(url, <span class="st">&quot;int_new.txt&quot;</span>), <span class="at">stringsAsFactors =</span> T, <span class="at">header =</span> T) <span class="sc">%&gt;%</span> </span>
+<span id="cb289-5"><a href="gemischte-lineare-regression.html#cb289-5" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">subject =</span> <span class="fu">factor</span>(subject, <span class="at">levels =</span> <span class="fu">paste0</span>(<span class="st">&quot;S&quot;</span>, <span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>))) <span class="sc">%&gt;%</span> </span>
+<span id="cb289-6"><a href="gemischte-lineare-regression.html#cb289-6" tabindex="-1"></a>  <span class="fu">as_tibble</span>()</span></code></pre></div>
 </div>
 <div id="mixed-models-lmers-einführung" class="section level2 hasAnchor" number="5.2">
-<h2><span class="header-section-number">5.2</span> Mixed Models (LMERs): Einführung<a href="#mixed-models-lmers-einf%C3%BChrung" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Mit einem Linear Mixed Effect Model (auch: Linear Mixed Effect Regression oder LMER) wird geprüft, ob eine gemessene abhängige Variable von einer oder mehreren unabhängigen Variablen beeinflusst wird. Diese Art von Modellen wird als “gemischt” (<em>mixed</em>) bezeichnet, weil sowohl Variablen, deren Einfluss auf die abhängige Variable für die Forschenden interessant ist (<strong>Fixed Effects</strong>), als auch Variablen, deren Einfluss uninteressant ist (<strong>Random Effects</strong>), Teil des Modells sein können. Die Fixed Effects in einem Mixed Model können sowohl kategorial als auch numerisch sein, die Random Effects ausschließlich kategorial.</p>
+<h2><span class="header-section-number">5.2</span> Mixed Models (LMERs): Einführung<a href="gemischte-lineare-regression.html#mixed-models-lmers-einf%C3%BChrung" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Mit einem Linear Mixed Effect Model (auch: Linear Mixed Effect Regression oder LMER) wird geprüft, ob eine gemessene abhängige Variable von einer oder mehreren unabhängigen Variablen beeinflusst wird. Diese Art von Modellen wird als “gemischt” (<em>mixed</em>) bezeichnet, weil sowohl Variablen, deren Einfluss auf die abhängige Variable für die Forschenden interessant ist (<strong>Fixed Effects</strong>), als auch Variablen, deren Einfluss uninteressant ist (<strong>Random Effects</strong>), Teil des Modells sein können. Die Fixed Effects in einem Mixed Model können sowohl kategorial als auch kontinuierlich sein, die Random Effects ausschließlich kategorial.</p>
 <p>Damit erweitern wir die einfache und multiple lineare Regression, die nur Fixed Effects als Prädiktoren genutzt haben. In der Phonetik und Linguistik werden häufig die StudienteilnehmerInnen und Items oder Wörter als Random Effects im LMER verwendet. Das liegt daran, dass wir eine <em>zufällige</em> Auswahl an Probanden und/oder Wörtern einer bestimmten Sprache auswählen und hoffen, dass sich die Ergebnisse auf andere Probanden und/oder Wörter derselben Sprache übertragen lassen. Dieser zufällige Auswahlprozess hat zur Folge, dass wir <em>noise</em> in unser Experiment bringen, das wir dann mittels LMER wieder “herausrechnen” können. Während wir also für Fixed Effects einen vorhersagbaren Einfluss auf die abhängige Variable vermuten, ist der Einfluss der Random Effects nicht vorhersagbar, d.h. <em>random</em>.</p>
-<p>Schauen wir uns den Data Frame <code>df</code> an, den wir bereits aus früheren Kapiteln kennen (für diese Vorlesung wurde er leicht verändert):</p>
-<div class="sourceCode" id="cb292"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb292-1"><a href="gemischte-lineare-regression.html#cb292-1" tabindex="-1"></a>df</span></code></pre></div>
+<p>Schauen wir uns den Data Frame <code>df</code> an, den wir bereits aus früheren Kapiteln kennen (für dieses Kapitel wurde er leicht verändert):</p>
+<div class="sourceCode" id="cb290"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb290-1"><a href="gemischte-lineare-regression.html#cb290-1" tabindex="-1"></a>df</span></code></pre></div>
 <pre><code>## # A tibble: 120 × 5
 ##       db vowel gender subject word 
 ##    &lt;dbl&gt; &lt;fct&gt; &lt;fct&gt;  &lt;fct&gt;   &lt;fct&gt;
@@ -336,22 +335,22 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 10    20 a     f      S10     w1   
 ## # ℹ 110 more rows</code></pre>
 <p>Hier haben wir die SprecherInnen in der Spalte <code>subject</code> und die produzierten Wörter in der Spalte <code>word</code>. Uns interessiert, ob der Vokal <code>vowel</code> und das Geschlecht <code>gender</code> einen Einfluss auf die Lautstärke <code>db</code> haben. Für diese Fragestellung schauen wir uns die Daten in einer Abbildung an:</p>
-<div class="sourceCode" id="cb294"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb294-1"><a href="gemischte-lineare-regression.html#cb294-1" tabindex="-1"></a><span class="fu">ggplot</span>(df) <span class="sc">+</span> </span>
-<span id="cb294-2"><a href="gemischte-lineare-regression.html#cb294-2" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> vowel, <span class="at">y =</span> db, <span class="at">fill =</span> gender) <span class="sc">+</span> </span>
-<span id="cb294-3"><a href="gemischte-lineare-regression.html#cb294-3" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>()</span></code></pre></div>
-<p><img src="statistik_r_files/figure-html/unnamed-chunk-116-1.svg" width="672" /></p>
-<p>Wir sehen (wie schon in VL 9), dass Frauen die Vokale leiser produzierten als Männer und dass /i/ etwas leiser produziert wurde als /a/. Es ist außerdem zu vermuten, dass eine Interaktion zwischen Geschlecht und Vokal vorliegt, denn der Effekt von Geschlecht ist stärker ausgeprägt für /a/ als für /i/ (bzw. umgekehrt: der Effekt von Vokal ist stärker ausgeprägt für Männer als für Frauen).</p>
+<div class="sourceCode" id="cb292"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb292-1"><a href="gemischte-lineare-regression.html#cb292-1" tabindex="-1"></a><span class="fu">ggplot</span>(df) <span class="sc">+</span> </span>
+<span id="cb292-2"><a href="gemischte-lineare-regression.html#cb292-2" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> vowel, <span class="at">y =</span> db, <span class="at">fill =</span> gender) <span class="sc">+</span> </span>
+<span id="cb292-3"><a href="gemischte-lineare-regression.html#cb292-3" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>()</span></code></pre></div>
+<p><img src="statistik_r_files/figure-html/unnamed-chunk-115-1.svg" width="672" /></p>
+<p>Wir sehen (wie schon im vorherigen Kapitel), dass Frauen die Vokale leiser produzierten als Männer und dass /i/ etwas leiser produziert wurde als /a/. Es ist außerdem zu vermuten, dass eine Interaktion zwischen Geschlecht und Vokal vorliegt, denn der Effekt von Geschlecht ist stärker ausgeprägt für /a/ als für /i/ (bzw. umgekehrt: der Effekt von Vokal ist stärker ausgeprägt für Männer als für Frauen).</p>
 <p>Nun wissen wir aber, dass wir mehrere ProbandInnen und verschiedene Wörter aufgenommen haben, um die Fragestellung zu untersuchen. Dabei interessiert uns nicht der genaue Einfluss der Individuen oder Wörter auf die Lautstärke, im Gegenteil: Wir wollen über die ProbandInnen und Wörter eine allgemeine Aussage ableiten, die (theoretisch) für alle möglichen ProbandInnen und Wörter gilt. Sollte es nennenswerte Lautstärke-Unterschiede zwischen den individuellen ProbandInnen und/oder den individuellen Wörtern geben, haben wir durch unsere zufällige Auswahl der ProbandInnen und Wörter <em>noise</em> verursacht. Mit Boxplots schauen wir, ob es nennenswerte Variationen der Dezibelwerte zwischen den Sprechern und/oder zwischen den Wörtern gibt:</p>
-<div class="sourceCode" id="cb295"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb295-1"><a href="gemischte-lineare-regression.html#cb295-1" tabindex="-1"></a><span class="fu">ggplot</span>(df) <span class="sc">+</span> </span>
-<span id="cb295-2"><a href="gemischte-lineare-regression.html#cb295-2" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> subject, <span class="at">y =</span> db) <span class="sc">+</span> </span>
-<span id="cb295-3"><a href="gemischte-lineare-regression.html#cb295-3" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>()</span></code></pre></div>
-<p><img src="statistik_r_files/figure-html/unnamed-chunk-117-1.svg" width="672" /></p>
-<div class="sourceCode" id="cb296"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb296-1"><a href="gemischte-lineare-regression.html#cb296-1" tabindex="-1"></a><span class="fu">ggplot</span>(df) <span class="sc">+</span> </span>
-<span id="cb296-2"><a href="gemischte-lineare-regression.html#cb296-2" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> word, <span class="at">y =</span> db) <span class="sc">+</span> </span>
-<span id="cb296-3"><a href="gemischte-lineare-regression.html#cb296-3" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>()</span></code></pre></div>
-<p><img src="statistik_r_files/figure-html/unnamed-chunk-117-2.svg" width="672" /></p>
-<p>Da es hier z.T. große Lautstärke-Unterschiede zwischen einzelnen Sprechern und zwischen einzelnen Wörtern gibt, ist es unbedingt notwendig, dass wir in dem Mixed Model, das wir für unsere Fragestellung konstruieren werden, mit Random Effects für diese beiden Variablen arbeiten.</p>
-<p>Ein zweiter äußerst wichtiger Grund für Random Effects ist, dass wir häufig sogenannte <em>repeated measure</em> Experimente durchführen, bei denen z.B. mehrere Datenpunkte von demselben Probanden stammen und/oder bei denen Wörter mehrfach wiederholt wurden. Das bedeutet, dass die Datenpunkte nicht mehr <strong>unabhängig</strong> von einander sind (zum Beispiel: Datenpunkte von demselben Probanden werden häufig näher zusammenliegen als solche von unterschiedlichen Probanden). Dies ist jedoch eine wichtige Annahme in Regressionsmodellen, über die wir bislang nicht gesprochen haben. Wenn wir also überlegen, welches statistische Modell zu den Daten und unserer Fragestellung passen könnte, muss einbezogen werden, ob die Datenpunkte unabhängig voneinander sind oder nicht (in früheren Vorlesungen haben wir diese Annahme aus didaktischen Gründen z.T. ignoriert). Wenn die Datenpunkte nicht als unabhängig voneinander betrachtet werden können, muss ein Mixed Model verwendet werden, da sich die Random Effects der Abhängigkeiten zwischen Datenpunkten annehmen. Ein Unterschied zwischen der Unabhängigkeitsannahme und den beiden anderen Annahmen, die Sie hier bisher kennengelernt haben, ist, dass sich die Unabhängigkeitsannahme direkt auf die gemessenen Daten bezieht, während die Normalitäts- und Varianz-Annahmen sich auf die Residuals beziehen.</p>
+<div class="sourceCode" id="cb293"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb293-1"><a href="gemischte-lineare-regression.html#cb293-1" tabindex="-1"></a><span class="fu">ggplot</span>(df) <span class="sc">+</span> </span>
+<span id="cb293-2"><a href="gemischte-lineare-regression.html#cb293-2" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> subject, <span class="at">y =</span> db) <span class="sc">+</span> </span>
+<span id="cb293-3"><a href="gemischte-lineare-regression.html#cb293-3" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>()</span></code></pre></div>
+<p><img src="statistik_r_files/figure-html/unnamed-chunk-116-1.svg" width="672" /></p>
+<div class="sourceCode" id="cb294"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb294-1"><a href="gemischte-lineare-regression.html#cb294-1" tabindex="-1"></a><span class="fu">ggplot</span>(df) <span class="sc">+</span> </span>
+<span id="cb294-2"><a href="gemischte-lineare-regression.html#cb294-2" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> word, <span class="at">y =</span> db) <span class="sc">+</span> </span>
+<span id="cb294-3"><a href="gemischte-lineare-regression.html#cb294-3" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>()</span></code></pre></div>
+<p><img src="statistik_r_files/figure-html/unnamed-chunk-116-2.svg" width="672" /></p>
+<p>Da es hier z.T. große Lautstärke-Unterschiede zwischen einzelnen SprecherInnen und zwischen einzelnen Wörtern gibt, ist es unbedingt notwendig, dass wir in dem Mixed Model, das wir für unsere Fragestellung konstruieren werden, mit Random Effects für diese beiden Variablen arbeiten.</p>
+<p>Ein zweiter äußerst wichtiger Grund für Random Effects ist, dass wir häufig sogenannte <em>repeated measure</em> Experimente durchführen, bei denen z.B. mehrere Datenpunkte von demselben Probanden stammen und/oder bei denen Wörter mehrfach wiederholt wurden. Das bedeutet, dass die Datenpunkte nicht mehr <strong>unabhängig</strong> von einander sind (zum Beispiel: Datenpunkte von demselben Probanden werden häufig näher zusammenliegen als solche von unterschiedlichen Probanden). Dies ist jedoch eine wichtige Annahme in Regressionsmodellen, über die wir bislang nicht gesprochen haben. Wenn wir also überlegen, welches statistische Modell zu den Daten und unserer Fragestellung passen könnte, muss einbezogen werden, ob die Datenpunkte unabhängig voneinander sind oder nicht (in früheren Kapiteln haben wir diese Annahme aus didaktischen Gründen z.T. ignoriert). Wenn die Datenpunkte nicht als unabhängig voneinander betrachtet werden können, muss ein Mixed Model verwendet werden, da sich die Random Effects der Abhängigkeiten zwischen Datenpunkten annehmen. Ein Unterschied zwischen der Unabhängigkeitsannahme und den beiden anderen Annahmen, die Sie hier bisher kennengelernt haben, ist, dass sich die Unabhängigkeitsannahme direkt auf die gemessenen Daten bezieht, während die Normalitäts- und Varianz-Annahmen sich auf die Residuals beziehen.</p>
 <p>Bei der einfachen und multiplen linearen Regression wird ein Intercept und dann eine Slope pro unabhängiger Variable (pro Fixed Effect) geschätzt. Bei den gemischten Modellen wird das ebenfalls gemacht, aber wir können jetzt erlauben, dass das Intercept und die Slope(s) sich für die Levels der Random Effects unterscheiden. Um die Konzepte <strong>Random Intercept</strong> und <strong>Random Slope</strong> zu erklären, konzentrieren wir uns hier erstmal auf <code>subject</code> als Random Effect.</p>
 </div>
 <div id="random-intercepts-vs.-random-slopes" class="section level2 hasAnchor" number="5.3">
@@ -359,33 +358,33 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="random-intercepts" class="section level3 hasAnchor" number="5.3.1">
 <h3><span class="header-section-number">5.3.1</span> Random Intercepts<a href="gemischte-lineare-regression.html#random-intercepts" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Sie erinnern sich, dass mittels Treatment Coding der Vokal /a/ als Null und der Vokal /i/ als Eins interpretiert wird, genauso wird das Level <code>f</code> (<em>female</em>) der Variable <code>gender</code> als Null und <code>m</code> (<em>male</em>) als Eins interpretiert. Die Schätzung des Lautstärke-Mittelwerts für /a/ von Frauen ist folglich in unserem Mixed Model das Intercept (genauso wie vorher in der multiplen Regression). Wir haben mittels der Boxplots oben festgestellt, dass sich die Versuchspersonen hinsichtlich der Lautstärke deutlich voneinander unterscheiden. Interessant ist jetzt für uns, ob sich Versuchspersonen desselben Geschlechts auch im Lautstärke-Mittelwert für /a/ (dem im “allgemeinen” Intercept verarbeiteten Level von <code>vowel</code>) unterscheiden. Denn wenn dem so ist, dann können wir mittels eines Random Intercepts für die Variable <code>subject</code> verlangen, dass das Intercept von Person zu Person variieren darf (deshalb spricht man manchmal auch von <em>varying intercepts</em>).</p>
-<p>In der folgenden Abbildung sehen Sie die Dezibelwerte für die Vokale /a/ und /i/, getrennt nach Versuchsperson. Die Personen S1-S5 sind männlich, die Personen S6-S10 sind weiblich. Die Kreuze in orange markieren die Dezibel-Mittelwerte pro Person und Vokal. Wenn wir uns jetzt die Mittelwerte für /a/ pro Versuchsperson innerhalb derselben Zeile anschauen (das jeweils linke orange Kreuz pro Panel), gibt es große Unterschiede, z.B. zwischen S1 und S4 oder zwischen S8 und S10. Das ist ein Indikator dafür, dass es sinnvoll ist, pro Sprecher ein Random Intercept zu berechnen.</p>
-<div class="sourceCode" id="cb297"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb297-1"><a href="gemischte-lineare-regression.html#cb297-1" tabindex="-1"></a><span class="fu">ggplot</span>(df) <span class="sc">+</span> </span>
-<span id="cb297-2"><a href="gemischte-lineare-regression.html#cb297-2" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> vowel, <span class="at">y =</span> db) <span class="sc">+</span> </span>
-<span id="cb297-3"><a href="gemischte-lineare-regression.html#cb297-3" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span> </span>
-<span id="cb297-4"><a href="gemischte-lineare-regression.html#cb297-4" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span>subject, <span class="at">nrow =</span> <span class="dv">2</span>) <span class="sc">+</span> </span>
-<span id="cb297-5"><a href="gemischte-lineare-regression.html#cb297-5" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">data =</span> df <span class="sc">%&gt;%</span> </span>
-<span id="cb297-6"><a href="gemischte-lineare-regression.html#cb297-6" tabindex="-1"></a>               <span class="fu">group_by</span>(subject, vowel) <span class="sc">%&gt;%</span> </span>
-<span id="cb297-7"><a href="gemischte-lineare-regression.html#cb297-7" tabindex="-1"></a>               <span class="fu">summarise</span>(<span class="at">db =</span> <span class="fu">mean</span>(db)),</span>
-<span id="cb297-8"><a href="gemischte-lineare-regression.html#cb297-8" tabindex="-1"></a>             <span class="at">color =</span> <span class="st">&quot;orange&quot;</span>, <span class="at">size =</span> <span class="dv">3</span>, <span class="at">stroke =</span> <span class="dv">2</span>, <span class="at">shape =</span> <span class="dv">4</span>) <span class="sc">+</span> </span>
-<span id="cb297-9"><a href="gemischte-lineare-regression.html#cb297-9" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">data =</span> df <span class="sc">%&gt;%</span> </span>
-<span id="cb297-10"><a href="gemischte-lineare-regression.html#cb297-10" tabindex="-1"></a>              <span class="fu">group_by</span>(subject, vowel) <span class="sc">%&gt;%</span> </span>
-<span id="cb297-11"><a href="gemischte-lineare-regression.html#cb297-11" tabindex="-1"></a>              <span class="fu">summarise</span>(<span class="at">db =</span> <span class="fu">mean</span>(db)),</span>
-<span id="cb297-12"><a href="gemischte-lineare-regression.html#cb297-12" tabindex="-1"></a>            <span class="fu">aes</span>(<span class="at">x =</span> vowel, <span class="at">y =</span> db, <span class="at">group =</span> subject),</span>
-<span id="cb297-13"><a href="gemischte-lineare-regression.html#cb297-13" tabindex="-1"></a>             <span class="at">lty =</span> <span class="st">&quot;dashed&quot;</span>)</span></code></pre></div>
+<p>In der folgenden Abbildung sehen Sie die Dezibelwerte für die Vokale /a/ und /i/, getrennt nach Versuchsperson. Die Personen S1-S5 sind männlich, die Personen S6-S10 sind weiblich. Die Kreuze in orange markieren die Dezibel-Mittelwerte pro Person und Vokal. Wenn wir uns jetzt die Mittelwerte für /a/ pro Versuchsperson innerhalb derselben Zeile anschauen (das jeweils linke orange Kreuz pro Panel), gibt es große Unterschiede, z.B. zwischen S1 und S4 oder zwischen S8 und S10. Das ist ein Indikator dafür, dass es sinnvoll ist, pro SprecherIn ein Random Intercept zu berechnen.</p>
+<div class="sourceCode" id="cb295"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb295-1"><a href="gemischte-lineare-regression.html#cb295-1" tabindex="-1"></a><span class="fu">ggplot</span>(df) <span class="sc">+</span> </span>
+<span id="cb295-2"><a href="gemischte-lineare-regression.html#cb295-2" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> vowel, <span class="at">y =</span> db) <span class="sc">+</span> </span>
+<span id="cb295-3"><a href="gemischte-lineare-regression.html#cb295-3" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span> </span>
+<span id="cb295-4"><a href="gemischte-lineare-regression.html#cb295-4" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span>subject, <span class="at">nrow =</span> <span class="dv">2</span>) <span class="sc">+</span> </span>
+<span id="cb295-5"><a href="gemischte-lineare-regression.html#cb295-5" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">data =</span> df <span class="sc">%&gt;%</span> </span>
+<span id="cb295-6"><a href="gemischte-lineare-regression.html#cb295-6" tabindex="-1"></a>               <span class="fu">group_by</span>(subject, vowel) <span class="sc">%&gt;%</span> </span>
+<span id="cb295-7"><a href="gemischte-lineare-regression.html#cb295-7" tabindex="-1"></a>               <span class="fu">summarise</span>(<span class="at">db =</span> <span class="fu">mean</span>(db)),</span>
+<span id="cb295-8"><a href="gemischte-lineare-regression.html#cb295-8" tabindex="-1"></a>             <span class="at">color =</span> <span class="st">&quot;orange&quot;</span>, <span class="at">size =</span> <span class="dv">3</span>, <span class="at">stroke =</span> <span class="dv">2</span>, <span class="at">shape =</span> <span class="dv">4</span>) <span class="sc">+</span> </span>
+<span id="cb295-9"><a href="gemischte-lineare-regression.html#cb295-9" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">data =</span> df <span class="sc">%&gt;%</span> </span>
+<span id="cb295-10"><a href="gemischte-lineare-regression.html#cb295-10" tabindex="-1"></a>              <span class="fu">group_by</span>(subject, vowel) <span class="sc">%&gt;%</span> </span>
+<span id="cb295-11"><a href="gemischte-lineare-regression.html#cb295-11" tabindex="-1"></a>              <span class="fu">summarise</span>(<span class="at">db =</span> <span class="fu">mean</span>(db)),</span>
+<span id="cb295-12"><a href="gemischte-lineare-regression.html#cb295-12" tabindex="-1"></a>            <span class="fu">aes</span>(<span class="at">x =</span> vowel, <span class="at">y =</span> db, <span class="at">group =</span> subject),</span>
+<span id="cb295-13"><a href="gemischte-lineare-regression.html#cb295-13" tabindex="-1"></a>             <span class="at">lty =</span> <span class="st">&quot;dashed&quot;</span>)</span></code></pre></div>
 <pre><code>## `summarise()` has grouped output by &#39;subject&#39;. You can
 ## override using the `.groups` argument.
 ## `summarise()` has grouped output by &#39;subject&#39;. You can
 ## override using the `.groups` argument.</code></pre>
-<p><img src="statistik_r_files/figure-html/unnamed-chunk-118-1.svg" width="672" /></p>
+<p><img src="statistik_r_files/figure-html/unnamed-chunk-117-1.svg" width="672" /></p>
 <p>In der R Notation wird ein Random Intercept so geschrieben: <code>(1 | subject)</code>. Hierbei steht <code>1</code> für Intercept, ausgesprochen bedeutet die Formel so viel wie “schätze sprecherspezifische Intercepts”. In der Praxis berechnet ein Mixed Model mit einem solchen Random Intercept allerdings nicht ein Intercept pro Person, sondern die <em>Standardabweichung</em> der Versuchspersonen-Intercepts vom geschätzten “allgemeinen” Intercept über alle Datenpunkte. Das ist wichtig, weil die Berechnung des Mixed Models ewig lang dauern und wahrscheinlich Fehler werfen würde, wenn wirklich pro Versuchsperson ein Intercept geschätzt würde.</p>
 </div>
 <div id="random-slopes" class="section level3 hasAnchor" number="5.3.2">
 <h3><span class="header-section-number">5.3.2</span> Random Slopes<a href="gemischte-lineare-regression.html#random-slopes" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>In der obigen Abbildung sehen Sie neben den Mittelwerten für /a/ auch die für /i/ sowie eine gestrichelte Linie, die beide verbindet. Diese stellt hier sozusagen die ideale Regressionslinie pro Versuchsperson dar. Da die Linien ganz unterschiedlich steil verlaufen, können wir erahnen, dass die einzelnen Versuchspersonen unterschiedliche Slopes haben. Versuchsperson S7 macht z.B. kaum einen Lautstärke-Unterschied zwischen /a/ und /i/ (die Slope ist ca. 0), während Versuchsperson S6 das /a/ deutlich lauter produziert als das /i/ (die Slope ist negativ). Wir vergleichen die Slopes auch hier wieder nur innerhalb einer Geschlechtsgruppe, d.h. für S1-S5 und für S6-S10. Hier scheint es sinnvoll zu sein, auch sprecherspezifische Random Slopes zu berechnen, weil der Effekt des Vokals auf die Lautstärke unterschiedlich für die Versuchspersonen ist.</p>
-<p>Allgemein wird davon ausgegangen, dass auch ein Random Intercept geschätzt werden soll, wenn wir Random Slopes schätzen. Daher ist die Formel für Random Slopes <code>(1 + vowel | subject)</code>, also “schätze sprecherspezifische Intercepts und sprecherspezifische Slopes in Relation zum Vokal”. Häufig wird anstatt dieser Notation allerdings die Kurzform <code>(vowel | subject)</code> verwendet, da für die Funktion dann klar ist, dass sowohl Random Slope als auch Random Intercept berechnet werden soll. Auch hier wird wieder die Abweichung von der “allgemeinen” Slope geschätzt, und nicht wirklich eine Slope pro Proband.</p>
+<p>Allgemein wird davon ausgegangen, dass auch ein Random Intercept geschätzt werden soll, wenn wir Random Slopes schätzen. Daher ist die Formel für Random Slopes <code>(1 + vowel | subject)</code>, also “schätze sprecherspezifische Intercepts und sprecherspezifische Slopes in Relation zum Vokal”. Häufig wird anstatt dieser Notation allerdings die Kurzform <code>(vowel | subject)</code> verwendet, da für die Funktion dann klar ist, dass sowohl Random Slope als auch Random Intercept berechnet werden soll. Auch hier wird wieder die Abweichung von der “allgemeinen” Slope geschätzt, und nicht wirklich eine Slope pro Proband. Wenn wirklich nur die sprecherspezifische Slope, nicht aber das <em>varying intercept</em> geschätzt werden soll, lautet die Formel <code>(0 | subject)</code>.</p>
 <p>Vielleicht fragen Sie sich jetzt, warum der Fixed Effect <code>gender</code> im Vergleich zu <code>vowel</code> hier eine irgendwie untergeordnete Rolle zu spielen scheint. Warum z.B. interessieren wir uns nicht für <code>(1 + gender | subject)</code> oder <code>(1 + vowel + gender | subject)</code>? Das liegt daran, dass die Levels der Variable <code>gender</code> nicht pro Versuchsperson variieren, denn die Versuchspersonen sind hier <em>entweder</em> männlich <em>oder</em> weiblich, wie die folgende Tabelle zeigt:</p>
-<div class="sourceCode" id="cb299"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb299-1"><a href="gemischte-lineare-regression.html#cb299-1" tabindex="-1"></a><span class="fu">table</span>(df<span class="sc">$</span>subject, df<span class="sc">$</span>gender)</span></code></pre></div>
+<div class="sourceCode" id="cb297"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb297-1"><a href="gemischte-lineare-regression.html#cb297-1" tabindex="-1"></a><span class="fu">table</span>(df<span class="sc">$</span>subject, df<span class="sc">$</span>gender)</span></code></pre></div>
 <pre><code>##      
 ##        f  m
 ##   S1   0 12
@@ -399,7 +398,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ##   S9  12  0
 ##   S10 12  0</code></pre>
 <p>Hier gibt es also gar keine Variation, die wir durch die entsprechende Random Slope herausrechnen könnten. Für die Stufen der Variable <code>vowel</code> hingegen liegen jeweils Werte für die Versuchspersonen vor (sie haben sowohl /a/ als auch /i/ produziert). Und das wiederum bedeutet, dass sich der Effekt von Vokal auf die Lautstärke von Versuchsperson zu Versuchsperson unterscheiden kann (der Effekt von Geschlecht auf Lautstärke hingegen kann sich nicht pro Versuchsperson unterscheiden).</p>
-<div class="sourceCode" id="cb301"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb301-1"><a href="gemischte-lineare-regression.html#cb301-1" tabindex="-1"></a><span class="fu">table</span>(df<span class="sc">$</span>subject, df<span class="sc">$</span>vowel)</span></code></pre></div>
+<div class="sourceCode" id="cb299"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb299-1"><a href="gemischte-lineare-regression.html#cb299-1" tabindex="-1"></a><span class="fu">table</span>(df<span class="sc">$</span>subject, df<span class="sc">$</span>vowel)</span></code></pre></div>
 <pre><code>##      
 ##       a i
 ##   S1  6 6
@@ -414,9 +413,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ##   S10 6 6</code></pre>
 </div>
 <div id="random-effects-struktur-für-word-bestimmen" class="section level3 hasAnchor" number="5.3.3">
-<h3><span class="header-section-number">5.3.3</span> Random Effects Struktur für <code>word</code> bestimmen<a href="#random-effects-struktur-f%C3%BCr-word-bestimmen" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<h3><span class="header-section-number">5.3.3</span> Random Effects Struktur für <code>word</code> bestimmen<a href="gemischte-lineare-regression.html#random-effects-struktur-f%C3%BCr-word-bestimmen" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Da wir jetzt wissen, wie der Random Effect für <code>subject</code> aussieht, gehen wir dieselbe Prozedur für die Variable <code>word</code> durch. Dieses Mal fangen wir damit an, herauszufinden, ob pro Wort jeweils Messwerte von beiden Geschlechtern und von beiden Vokalen vorliegen:</p>
-<div class="sourceCode" id="cb303"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb303-1"><a href="gemischte-lineare-regression.html#cb303-1" tabindex="-1"></a><span class="fu">table</span>(df<span class="sc">$</span>word, df<span class="sc">$</span>gender)</span></code></pre></div>
+<div class="sourceCode" id="cb301"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb301-1"><a href="gemischte-lineare-regression.html#cb301-1" tabindex="-1"></a><span class="fu">table</span>(df<span class="sc">$</span>word, df<span class="sc">$</span>gender)</span></code></pre></div>
 <pre><code>##     
 ##       f  m
 ##   w1 10 10
@@ -425,7 +424,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ##   w4 10 10
 ##   w5 10 10
 ##   w6 10 10</code></pre>
-<div class="sourceCode" id="cb305"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb305-1"><a href="gemischte-lineare-regression.html#cb305-1" tabindex="-1"></a><span class="fu">table</span>(df<span class="sc">$</span>word, df<span class="sc">$</span>vowel)</span></code></pre></div>
+<div class="sourceCode" id="cb303"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb303-1"><a href="gemischte-lineare-regression.html#cb303-1" tabindex="-1"></a><span class="fu">table</span>(df<span class="sc">$</span>word, df<span class="sc">$</span>vowel)</span></code></pre></div>
 <pre><code>##     
 ##       a  i
 ##   w1 20  0
@@ -436,24 +435,24 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ##   w6  0 20</code></pre>
 <p>Das scheint für Geschlecht, nicht aber für Vokal der Fall zu sein, d.h. der Effekt von Geschlecht auf die Lautstärke kann sich pro Wort unterscheiden. Der Effekt von Vokal auf die Lautstärke kann sich jedoch nicht von Wort zu Wort unterscheiden, weil in jedem Wort <em>entweder</em> /a/ <em>oder</em> /i/ vorkam. Die maximale Random Effects Struktur, die wir also für die Variable <code>word</code> erstellen könnten, ist <code>(1 + gender | word)</code> (sowohl Random Intercept als auch Random Slope in Relation zum Geschlecht).</p>
 <p>Zuerst schauen wir, ob wir überhaupt ein Random Intercept für <code>word</code> benötigen (wobei die wortspezifischen Boxplots oben schon ein guter Hinweis darauf sind, dass wir ein Random Intercept benötigen). Wir nutzen wieder einen ähnlichen Plot wie zuvor, sodass wir pro Wort die Lautstärke-Mittelwerte für Frauen vergleichen können (<code>f</code> war das Level der Variable <code>gender</code>, das im Intercept verarbeitet wird). Natürlich könnten Sie diese Mittelwerte aber auch mittels <em>tidyverse</em>-Funktionen berechnen. Die Wörter in der oberen Zeile der Abbildung enthalten /a/, die in der unteren Zeile enthalten /i/.</p>
-<div class="sourceCode" id="cb307"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb307-1"><a href="gemischte-lineare-regression.html#cb307-1" tabindex="-1"></a><span class="fu">ggplot</span>(df) <span class="sc">+</span> </span>
-<span id="cb307-2"><a href="gemischte-lineare-regression.html#cb307-2" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> gender, <span class="at">y =</span> db) <span class="sc">+</span> </span>
-<span id="cb307-3"><a href="gemischte-lineare-regression.html#cb307-3" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span> </span>
-<span id="cb307-4"><a href="gemischte-lineare-regression.html#cb307-4" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span>word) <span class="sc">+</span> </span>
-<span id="cb307-5"><a href="gemischte-lineare-regression.html#cb307-5" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">data =</span> df <span class="sc">%&gt;%</span> </span>
-<span id="cb307-6"><a href="gemischte-lineare-regression.html#cb307-6" tabindex="-1"></a>               <span class="fu">group_by</span>(word, gender) <span class="sc">%&gt;%</span> </span>
-<span id="cb307-7"><a href="gemischte-lineare-regression.html#cb307-7" tabindex="-1"></a>               <span class="fu">summarise</span>(<span class="at">db =</span> <span class="fu">mean</span>(db)),</span>
-<span id="cb307-8"><a href="gemischte-lineare-regression.html#cb307-8" tabindex="-1"></a>             <span class="at">color =</span> <span class="st">&quot;orange&quot;</span>, <span class="at">size =</span> <span class="dv">3</span>, <span class="at">stroke =</span> <span class="dv">2</span>, <span class="at">shape =</span> <span class="dv">4</span>) <span class="sc">+</span> </span>
-<span id="cb307-9"><a href="gemischte-lineare-regression.html#cb307-9" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">data =</span> df <span class="sc">%&gt;%</span> </span>
-<span id="cb307-10"><a href="gemischte-lineare-regression.html#cb307-10" tabindex="-1"></a>              <span class="fu">group_by</span>(word, gender) <span class="sc">%&gt;%</span> </span>
-<span id="cb307-11"><a href="gemischte-lineare-regression.html#cb307-11" tabindex="-1"></a>              <span class="fu">summarise</span>(<span class="at">db =</span> <span class="fu">mean</span>(db)),</span>
-<span id="cb307-12"><a href="gemischte-lineare-regression.html#cb307-12" tabindex="-1"></a>            <span class="fu">aes</span>(<span class="at">x =</span> gender, <span class="at">y =</span> db, <span class="at">group =</span> word),</span>
-<span id="cb307-13"><a href="gemischte-lineare-regression.html#cb307-13" tabindex="-1"></a>             <span class="at">lty =</span> <span class="st">&quot;dashed&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb305"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb305-1"><a href="gemischte-lineare-regression.html#cb305-1" tabindex="-1"></a><span class="fu">ggplot</span>(df) <span class="sc">+</span> </span>
+<span id="cb305-2"><a href="gemischte-lineare-regression.html#cb305-2" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> gender, <span class="at">y =</span> db) <span class="sc">+</span> </span>
+<span id="cb305-3"><a href="gemischte-lineare-regression.html#cb305-3" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span> </span>
+<span id="cb305-4"><a href="gemischte-lineare-regression.html#cb305-4" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span>word) <span class="sc">+</span> </span>
+<span id="cb305-5"><a href="gemischte-lineare-regression.html#cb305-5" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">data =</span> df <span class="sc">%&gt;%</span> </span>
+<span id="cb305-6"><a href="gemischte-lineare-regression.html#cb305-6" tabindex="-1"></a>               <span class="fu">group_by</span>(word, gender) <span class="sc">%&gt;%</span> </span>
+<span id="cb305-7"><a href="gemischte-lineare-regression.html#cb305-7" tabindex="-1"></a>               <span class="fu">summarise</span>(<span class="at">db =</span> <span class="fu">mean</span>(db)),</span>
+<span id="cb305-8"><a href="gemischte-lineare-regression.html#cb305-8" tabindex="-1"></a>             <span class="at">color =</span> <span class="st">&quot;orange&quot;</span>, <span class="at">size =</span> <span class="dv">3</span>, <span class="at">stroke =</span> <span class="dv">2</span>, <span class="at">shape =</span> <span class="dv">4</span>) <span class="sc">+</span> </span>
+<span id="cb305-9"><a href="gemischte-lineare-regression.html#cb305-9" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">data =</span> df <span class="sc">%&gt;%</span> </span>
+<span id="cb305-10"><a href="gemischte-lineare-regression.html#cb305-10" tabindex="-1"></a>              <span class="fu">group_by</span>(word, gender) <span class="sc">%&gt;%</span> </span>
+<span id="cb305-11"><a href="gemischte-lineare-regression.html#cb305-11" tabindex="-1"></a>              <span class="fu">summarise</span>(<span class="at">db =</span> <span class="fu">mean</span>(db)),</span>
+<span id="cb305-12"><a href="gemischte-lineare-regression.html#cb305-12" tabindex="-1"></a>            <span class="fu">aes</span>(<span class="at">x =</span> gender, <span class="at">y =</span> db, <span class="at">group =</span> word),</span>
+<span id="cb305-13"><a href="gemischte-lineare-regression.html#cb305-13" tabindex="-1"></a>             <span class="at">lty =</span> <span class="st">&quot;dashed&quot;</span>)</span></code></pre></div>
 <pre><code>## `summarise()` has grouped output by &#39;word&#39;. You can
 ## override using the `.groups` argument.
 ## `summarise()` has grouped output by &#39;word&#39;. You can
 ## override using the `.groups` argument.</code></pre>
-<p><img src="statistik_r_files/figure-html/unnamed-chunk-122-1.svg" width="672" /></p>
+<p><img src="statistik_r_files/figure-html/unnamed-chunk-121-1.svg" width="672" /></p>
 <p>Der Lautstärke-Mittelwert für Frauen (jeweils das linke orange Kreuz pro Panel) unterscheidet sich für verschiedene Wörter. Wort <code>w1</code> hat zum Beispiel einen deutlich niedrigeren Lautstärke-Mittelwert als <code>w3</code>, wenn es von Frauen produziert wurde. Auch die Mittelwerte für Frauen in Wörtern, die /i/ enthalten (<code>w4</code>-<code>w6</code>) unterscheiden sich z.T. stark voneinander. Dementsprechend ist die Berechnung eines Random Intercepts für <code>word</code> angebracht: <code>(1 | word)</code>.</p>
 <p>Interessanterweise sind die gestrichelten Linien, die die orangen Kreuze verbinden, quasi parallel für die jeweils drei Wörter pro Zeile in der Abbildung. Das heißt, der Effekt von Geschlecht auf die Wörter <code>w1</code>, <code>w2</code> und <code>w3</code> ist gleich (oder zumindest sehr ähnlich). Gleiches gilt für die Wörter <code>w4</code>, <code>w5</code> und <code>w6</code>, die sich in der Steigung der gestrichelten Linie kaum unterscheiden. Innerhalb einer Vokalgruppe ist der Effekt von Geschlecht auf die verschiedenen Wörter also gleich. Das bedeutet, dass eine wortspezifische Random Slope in Relation zum Geschlecht <code>(1 + gender | word)</code> für diesen Datensatz nicht angebracht wäre. Es bleibt bei <code>(1 | word)</code> als Random Effect Struktur für die Variable <code>word</code>.</p>
 </div>
@@ -466,8 +465,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Anstelle von <code>summary()</code> können Sie sich auch das Paket <a href="https://cran.r-project.org/web/packages/broom.mixed/vignettes/broom_mixed_intro.html"><code>broom.mixed</code></a> herunterladen, das die Funktionen <code>tidy()</code>, <code>augment()</code> und <code>glance()</code> für LMERs bereitstellt.</p>
 </div>
 <p>Die Funktion <code>lmer()</code> bekommt die Formel, die wir uns mühsam erarbeitet haben, mit der bekannten Fixed Effects Struktur <code>db ~ gender * vowel</code> und dann, durch Pluszeichen verbunden, die Random Effects. Zusätzlich wird der Data Frame mit dem Argument <code>data</code> angegeben. In diesem Fall spezifizieren wir außerdem <code>REML = F</code>. <code>REML</code> steht für <em>Restricted Maximum Likelihood</em>. Indem wir der Funktion das Argument <code>REML = F</code> gegeben haben, wird nun stattdessen eine echte Maximum Likelihood Schätzung der gewünschten Parameter ausgeführt (mehr dazu später).</p>
-<div class="sourceCode" id="cb309"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb309-1"><a href="gemischte-lineare-regression.html#cb309-1" tabindex="-1"></a>df.lmer <span class="ot">&lt;-</span> <span class="fu">lmer</span>(db <span class="sc">~</span> gender <span class="sc">*</span> vowel <span class="sc">+</span> (<span class="dv">1</span> <span class="sc">+</span> vowel <span class="sc">|</span> subject) <span class="sc">+</span> (<span class="dv">1</span> <span class="sc">|</span> word), <span class="at">data =</span> df, <span class="at">REML =</span> F)</span>
-<span id="cb309-2"><a href="gemischte-lineare-regression.html#cb309-2" tabindex="-1"></a>df.lmer <span class="sc">%&gt;%</span> <span class="fu">summary</span>(<span class="at">corr =</span> F)</span></code></pre></div>
+<div class="sourceCode" id="cb307"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb307-1"><a href="gemischte-lineare-regression.html#cb307-1" tabindex="-1"></a>df.lmer <span class="ot">&lt;-</span> <span class="fu">lmer</span>(db <span class="sc">~</span> gender <span class="sc">*</span> vowel <span class="sc">+</span> (<span class="dv">1</span> <span class="sc">+</span> vowel <span class="sc">|</span> subject) <span class="sc">+</span> (<span class="dv">1</span> <span class="sc">|</span> word), <span class="at">data =</span> df, <span class="at">REML =</span> F)</span>
+<span id="cb307-2"><a href="gemischte-lineare-regression.html#cb307-2" tabindex="-1"></a>df.lmer <span class="sc">%&gt;%</span> <span class="fu">summary</span>(<span class="at">corr =</span> F)</span></code></pre></div>
 <pre><code>## Linear mixed model fit by maximum likelihood .
 ##   t-tests use Satterthwaite&#39;s method [lmerModLmerTest]
 ## Formula: 
@@ -529,9 +528,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p><img src="img/konvergenz_error.png" /></p>
 <p>Dieser Fehler bedeutet, grob gesagt, dass das gewünschte Modell nicht geschätzt werden konnte. Das liegt meist daran, dass man unnötig komplexe Random Effect Strukturen und/oder insgesamt zu viele unabhängige Variablen und Interaktionen eingebaut hat. Man sollte sich also wirklich gut überlegen, welche Formel man für das Mixed Model verwendet; jeder Fixed Effect, jede Interaktion und jeder Random Effect sollte sinnvoll sein für die Daten und für die Fragestellung.</p>
 <p>Zuvor haben wir festgestellt, dass es für die Daten in <code>df</code> nicht sinnvoll wäre, eine Random Slope für Geschlecht gegeben Wort <code>(1 + gender | word)</code> schätzen zu lassen. Das machen wir jetzt trotzdem, um zu zeigen, wie man mit dem auftretenden Fehler umgehen sollte.</p>
-<div class="sourceCode" id="cb311"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb311-1"><a href="gemischte-lineare-regression.html#cb311-1" tabindex="-1"></a>df.wrong <span class="ot">&lt;-</span> <span class="fu">lmer</span>(db <span class="sc">~</span> gender <span class="sc">*</span> vowel <span class="sc">+</span> (<span class="dv">1</span> <span class="sc">+</span> vowel <span class="sc">|</span> subject) <span class="sc">+</span> (<span class="dv">1</span> <span class="sc">+</span> gender <span class="sc">|</span> word), <span class="at">data =</span> df, <span class="at">REML =</span> F)</span></code></pre></div>
+<div class="sourceCode" id="cb309"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb309-1"><a href="gemischte-lineare-regression.html#cb309-1" tabindex="-1"></a>df.wrong <span class="ot">&lt;-</span> <span class="fu">lmer</span>(db <span class="sc">~</span> gender <span class="sc">*</span> vowel <span class="sc">+</span> (<span class="dv">1</span> <span class="sc">+</span> vowel <span class="sc">|</span> subject) <span class="sc">+</span> (<span class="dv">1</span> <span class="sc">+</span> gender <span class="sc">|</span> word), <span class="at">data =</span> df, <span class="at">REML =</span> F)</span></code></pre></div>
 <pre><code>## boundary (singular) fit: see help(&#39;isSingular&#39;)</code></pre>
-<div class="sourceCode" id="cb313"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb313-1"><a href="gemischte-lineare-regression.html#cb313-1" tabindex="-1"></a>df.wrong <span class="sc">%&gt;%</span> <span class="fu">summary</span>(<span class="at">corr =</span> F)</span></code></pre></div>
+<div class="sourceCode" id="cb311"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb311-1"><a href="gemischte-lineare-regression.html#cb311-1" tabindex="-1"></a>df.wrong <span class="sc">%&gt;%</span> <span class="fu">summary</span>(<span class="at">corr =</span> F)</span></code></pre></div>
 <pre><code>## Linear mixed model fit by maximum likelihood .
 ##   t-tests use Satterthwaite&#39;s method [lmerModLmerTest]
 ## Formula: 
@@ -573,7 +572,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Durch die Einführung der wortspezifischen Random Slope ist tatsächlich ein Konvergenzproblem entstanden – und trotzdem wird uns das Ergebnis angezeigt. Dieses Ergebnis ist jedoch nicht vertrauenswürdig und darf unter keinen Umständen berichtet werden.</p>
 <p>Schauen wir uns den Random Effect <code>word</code> an. Hier wurde zuerst ein Random Intercept geschätzt, für das eine Standardabweichung von 14 dB geschätzt wurde. So weit so gut. Dann sehen wir aber, dass die Random Slope eine extrem kleine Standardabweichung hat mit nur 0.3 dB. Das bedeutet, dass das Wort gar nicht mit dem Geschlecht der Versuchspersonen variiert (das hatten wir zuvor mittels einer Abbildung festgestellt). Das Mixed Model hat aber trotzdem versucht, die Random Slope und die Korrelation zwischen Random Intercept und Random Slope zu schätzen – und ist gescheitert. Das sehen Sie daran, dass <span class="math inline">\(r = -1\)</span> (auch bei <span class="math inline">\(r = 1\)</span>) in der Spalte <code>Corr</code>, denn eine perfekte Korrelation gibt es nicht. Die 1 oder -1 zeigt, dass die Korrelation nicht geschätzt werden konnte.</p>
 <p>Für solche Fälle gibt es die <code>step()</code> Funktion aus dem <code>lmerTest</code> Paket. Diese Funktion schaut sich alle Fixed und Random Effects Strukturen im Modell an und berechnet, welche davon signifikant sind und damit etwas Essentielles zum Modell beitragen und welche nicht. Die Variablen, die nichts beitragen, werden eliminiert. So bleibt am Ende ein Modell, das nur die statistisch relevanten Variablen mit einbezieht. Das heißt aber im übrigen <em>nicht</em>, dass Sie nicht trotzdem Variablen im Modell behalten können, die nicht signifikant sind (solange das Modell dann noch konvergiert)! Hier sehen Sie das Ergebnis von <code>step()</code>:</p>
-<div class="sourceCode" id="cb315"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb315-1"><a href="gemischte-lineare-regression.html#cb315-1" tabindex="-1"></a>df.step <span class="ot">&lt;-</span> df.wrong <span class="sc">%&gt;%</span> <span class="fu">step</span>()</span></code></pre></div>
+<div class="sourceCode" id="cb313"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb313-1"><a href="gemischte-lineare-regression.html#cb313-1" tabindex="-1"></a>df.step <span class="ot">&lt;-</span> df.wrong <span class="sc">%&gt;%</span> <span class="fu">step</span>()</span></code></pre></div>
+<pre><code>## Warning: the &#39;nobars&#39; function has moved to the reformulas package. Please update your imports, or ask an upstream package maintainter to do so.
+## This warning is displayed once per session.</code></pre>
+<pre><code>## Warning: the &#39;findbars&#39; function has moved to the reformulas package. Please update your imports, or ask an upstream package maintainter to do so.
+## This warning is displayed once per session.</code></pre>
 <pre><code>## boundary (singular) fit: see help(&#39;isSingular&#39;)</code></pre>
 <div class="sourceCode" id="cb317"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb317-1"><a href="gemischte-lineare-regression.html#cb317-1" tabindex="-1"></a>df.step</span></code></pre></div>
 <pre><code>## Backward reduced random-effect table:
@@ -656,37 +659,35 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h2><span class="header-section-number">5.6</span> Ergebnisse berichten<a href="gemischte-lineare-regression.html#ergebnisse-berichten" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Wir kennen die Ergebnisse der <span class="math inline">\(t\)</span>-Tests für die Regressionskoeffizienten und haben festgestellt, dass die Interaktion zwischen den beiden kategorialen unabhängigen Variablen signifikant war. Deshalb führen wir hier der Vollständigkeit halber die paarweisen Vergleiche mit <code>emmeans</code> aus:</p>
 <div class="sourceCode" id="cb321"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb321-1"><a href="gemischte-lineare-regression.html#cb321-1" tabindex="-1"></a><span class="fu">emmeans</span>(df.lmer.new, pairwise <span class="sc">~</span> vowel <span class="sc">|</span> gender)<span class="sc">$</span>contrasts</span></code></pre></div>
-<pre><code>## Cannot use mode = &quot;kenward-roger&quot; because *pbkrtest* package is not installed</code></pre>
 <pre><code>## gender = f:
-##  contrast estimate   SE   df t.ratio p.value
-##  a - i        10.0 12.4 7.93   0.810  0.4414
+##  contrast estimate   SE df t.ratio p.value
+##  a - i        10.0 14.4 10   0.696  0.5024
 ## 
 ## gender = m:
-##  contrast estimate   SE   df t.ratio p.value
-##  a - i        30.2 12.4 7.93   2.446  0.0404
+##  contrast estimate   SE df t.ratio p.value
+##  a - i        30.2 14.4 10   2.101  0.0619
 ## 
-## Degrees-of-freedom method: satterthwaite</code></pre>
-<div class="sourceCode" id="cb324"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb324-1"><a href="gemischte-lineare-regression.html#cb324-1" tabindex="-1"></a><span class="fu">emmeans</span>(df.lmer.new, pairwise <span class="sc">~</span> gender <span class="sc">|</span> vowel)<span class="sc">$</span>contrasts</span></code></pre></div>
-<pre><code>## Cannot use mode = &quot;kenward-roger&quot; because *pbkrtest* package is not installed</code></pre>
+## Degrees-of-freedom method: kenward-roger</code></pre>
+<div class="sourceCode" id="cb323"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb323-1"><a href="gemischte-lineare-regression.html#cb323-1" tabindex="-1"></a><span class="fu">emmeans</span>(df.lmer.new, pairwise <span class="sc">~</span> gender <span class="sc">|</span> vowel)<span class="sc">$</span>contrasts</span></code></pre></div>
 <pre><code>## vowel = a:
-##  contrast estimate   SE   df t.ratio p.value
-##  f - m       -40.2 9.39 9.53  -4.280  0.0018
+##  contrast estimate    SE   df t.ratio p.value
+##  f - m       -40.2 10.10 10.9  -3.965  0.0023
 ## 
 ## vowel = i:
-##  contrast estimate   SE   df t.ratio p.value
-##  f - m       -20.0 8.64 9.51  -2.312  0.0446
+##  contrast estimate    SE   df t.ratio p.value
+##  f - m       -20.0  9.32 10.8  -2.144  0.0557
 ## 
-## Degrees-of-freedom method: satterthwaite</code></pre>
+## Degrees-of-freedom method: kenward-roger</code></pre>
 <p>Wenn Sie Ihre Ergebnisse berichten, beschreiben Sie auch das Modell ausführlich; in einer wissenschaftlichen Publikation verwenden Sie zusätzlich einige Zeilen darauf, die Richtung der Fixed Effects zu beschreiben (z.B. “Das Mixed Model zeigte, dass /a/ lauter produziert wurde als /i/, insbesondere von männlichen Probanden”) und ob das mit Ihren Erwartungen/Hypothesen übereinstimmt.</p>
-<p>Hier ist ein Bespiel für einen Ergebnisbericht zu der Fragestellung: Wird die Lautstärke von dem Geschlecht und dem Vokal beeinflusst?</p>
-<p><strong>Es wurde eine Linear Mixed Effect Regression durchgeführt mit der Lautstärke in Dezibel als abhängiger Variable, sowie mit Fixed Effects für Geschlecht und Vokal inklusive der Interaktion zwischen den unabhängigen Variablen, und den Random Effects für Versuchspersonen und Wörter. Für Versuchspersonen wurden sowohl Random Intercept als auch Random Slope und für Wörter nur das Random Intercept geschätzt. Das Modell ergab einen signifikanten Einfluss von Geschlecht (<span class="math inline">\(t\)</span>[9.5] = 4.3, <span class="math inline">\(p\)</span> &lt; 0.01) auf die Lautstärke. Es gab zusätzlich eine signifikante Interaktion zwischen Geschlecht und Vokal (<span class="math inline">\(t\)</span>[9.2] = 2.9, <span class="math inline">\(p\)</span> &lt; 0.05). Post-hoc t-Tests zeigten eine signifikante Differenz zwischen Frauen und Männern für /a/ (<span class="math inline">\(t\)</span>[10.8] = 4.0, <span class="math inline">\(p\)</span> &lt; 0.01), jedoch nicht für /i/.</strong></p>
+<p>Hier ist ein Bespiel für einen kurzen Ergebnisbericht zu der Fragestellung: Wird die Lautstärke von dem Geschlecht und dem Vokal beeinflusst?</p>
+<p><strong>Es wurde eine Linear Mixed Effect Regression durchgeführt mit der Lautstärke in Dezibel als abhängiger Variable, sowie mit Fixed Effects für Geschlecht und Vokal inklusive der Interaktion zwischen den unabhängigen Variablen, und den Random Effects für Versuchspersonen und Wörter. Für Versuchspersonen wurden sowohl Random Intercept als auch Random Slope und für Wörter nur das Random Intercept geschätzt. Das Modell ergab einen signifikanten Einfluss von Geschlecht (<span class="math inline">\(t\)</span>[9.5] = 4.3, <span class="math inline">\(p\)</span> &lt; 0.01) auf die Lautstärke. Es gab zusätzlich eine signifikante Interaktion zwischen Geschlecht und Vokal (<span class="math inline">\(t\)</span>[9.2] = 2.9, <span class="math inline">\(p\)</span> &lt; 0.05). Post-hoc <span class="math inline">\(t\)</span>-Tests zeigten eine signifikante Differenz zwischen Frauen und Männern für /a/ (<span class="math inline">\(t\)</span>[10.8] = 4.0, <span class="math inline">\(p\)</span> &lt; 0.01), jedoch nicht für /i/.</strong></p>
 </div>
 <div id="gütekriterien-für-mixed-models" class="section level2 hasAnchor" number="5.7">
-<h2><span class="header-section-number">5.7</span> Gütekriterien für Mixed Models<a href="#g%C3%BCtekriterien-f%C3%BCr-mixed-models" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<h2><span class="header-section-number">5.7</span> Gütekriterien für Mixed Models<a href="gemischte-lineare-regression.html#g%C3%BCtekriterien-f%C3%BCr-mixed-models" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <div id="marginal-und-conditional-r2" class="section level3 hasAnchor" number="5.7.1">
 <h3><span class="header-section-number">5.7.1</span> Marginal und Conditional <span class="math inline">\(R^2\)</span><a href="gemischte-lineare-regression.html#marginal-und-conditional-r2" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Sie haben vielleicht bemerkt, dass uns die <code>summary()</code> Funktion weder <span class="math inline">\(R^2\)</span> noch die <span class="math inline">\(F\)</span>-Statistik ausgegeben hat, wie das zuvor bei den Regressionen mit <code>lm()</code> der Fall war. Im Fall von <span class="math inline">\(R^2\)</span> liegt das daran, dass jetzt separat für Fixed und Random Effects evaluiert werden muss, wie viel Varianz in den Daten sie jeweils beschreiben. Das Paket <code>MuMIn</code> stellt die Funktion <code>r.squaredGLMM()</code> bereit, die wir auf unser Mixed Model anwenden können:</p>
-<div class="sourceCode" id="cb327"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb327-1"><a href="gemischte-lineare-regression.html#cb327-1" tabindex="-1"></a>df.lmer <span class="sc">%&gt;%</span> <span class="fu">r.squaredGLMM</span>()</span></code></pre></div>
+<div class="sourceCode" id="cb325"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb325-1"><a href="gemischte-lineare-regression.html#cb325-1" tabindex="-1"></a>df.lmer <span class="sc">%&gt;%</span> <span class="fu">r.squaredGLMM</span>()</span></code></pre></div>
 <pre><code>##         R2m    R2c
 ## [1,] 0.4586 0.9637</code></pre>
 <p>Hier werden uns jetzt folgerichtig zwei <span class="math inline">\(R^2\)</span>-Werte angezeigt. Der erste, <code>R2m</code> (das steht für <strong>marginal <span class="math inline">\(R^2\)</span></strong>), ist die Proportion der Varianz in den gemessenen Lautstärkewerten, die durch die Fixed Effects beschrieben wird, hier also 46%. Der zweite, <code>R2c</code> (für <strong>conditional <span class="math inline">\(R^2\)</span></strong>), ist die Proportion der Varianz in den gemessenen Lautstärkewerten, die durch die Fixed Effects und Random Effects <em>zusammen</em> beschrieben wird. Mit 96.4% haben wir also quasi die gesamte Varianz in den Daten beschrieben! (Solch hohe Werte werden Sie in echten linguistischen Studien niemals sehen). Hieraus können wir ableiten, dass die Random Effects <span class="math inline">\(96.4 - 45.9 = 50.5\)</span> Prozent der Varianz beschreiben. Es war also für den Datensatz <code>df</code> sehr wichtig, dass wir die Random Effects im Modell hatten.</p>
@@ -697,9 +698,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>An dieser Stelle sollten wir uns mit dem Begriff <em>likelihood</em> beschäftigen, vor allem im Unterschied zu <em>probability</em> (denn beide werden im Deutschen leider mit “Wahrscheinlichkeit” übersetzt). Im statistischen Kontext ist <em>probability</em> die Wahrscheinlichkeit eines Ergebnisses, wenn die Parameter (z.B. Regressionskoeffizienten) gegeben sind. Die <span class="math inline">\(p\)</span>-Werte beschreiben diese Art von Wahrscheinlichkeit. Die <em>likelihood</em> hingegen ist die Wahrscheinlichkeit von Parametern, wenn die Daten gegeben sind. Wie wahrscheinlich (<em>likely</em>) ist die Schätzung für das Intercept (hier: 48.2 dB) für die Daten in <code>df</code>? Oder wie wahrscheinlich ist die Schätzung für die Slope for Geschlecht (40.2 dB) für die Daten in <code>df</code>? Mixed Models führen diese Schätzungen nach dem <strong>Prinzip der Maximum Likelihood</strong> aus (nachdem wir <code>REML = F</code> in <code>lmer()</code> angegeben haben), d.h. das Ziel des Mixed Models ist es, die Regressionskoeffizienten zu finden, die am wahrscheinlichsten (<em>likely</em>) für die gegebenen Daten sind.</p>
 <p><img src="img/information_criteria.png" /></p>
 <p>Im Ergebnis eines Mixed Models mit <code>lmer()</code> finden wir unter anderem die drei Werte AIC, BIC und log Likelihood. Letztere ist die logarithmierte maximierte Likelihood; dieser Wert ist immer negativ; je näher er jedoch an Null ist, desto besser ist das Modell. Der Likelihood Ratio Test vergleicht die log Likelihoods zweier Mixed Models und findet heraus, ob das gewählte Modell die Daten signifikant besser beschreibt als ein Modell, bei dem eine Variable weggelassen wird. Hier vergleichen wir unser Modell <code>df.lmer</code> mit verschiedenen anderen Modellen; zuerst mit einem Modell, bei dem die Variable <code>gender</code> weggelassen wurde.</p>
-<div class="sourceCode" id="cb329"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb329-1"><a href="gemischte-lineare-regression.html#cb329-1" tabindex="-1"></a>df.gender <span class="ot">&lt;-</span> <span class="fu">lmer</span>(db <span class="sc">~</span> vowel <span class="sc">+</span> (<span class="dv">1</span> <span class="sc">+</span> vowel <span class="sc">|</span> subject) <span class="sc">+</span> (<span class="dv">1</span> <span class="sc">|</span> word), <span class="at">data =</span> df, <span class="at">REML =</span> F)</span></code></pre></div>
-<p>Die Funktion <code>anova()</code> testet den Vergleich der Modelle auf Signifikanz mithilfe eines <span class="math inline">\(\chi^2\)</span>-Tests (sprich: Chi-Square oder Chi-Quadrat). “Anova” steht eigentlich für <em>analysis of variance</em>; der <em>default</em> der <code>anova()</code>-Funktion ist allerdings der <span class="math inline">\(\chi^2\)</span>-Test durch das Argument <code>test = "Chisq"</code>. Ansonsten bekommt diese Funktion nur die Namen der beiden Modelle übergeben. Der <span class="math inline">\(\chi^2\)</span>-Test prüft, ob sich die logarithmierte Likelihood der beiden Modelle signifikant voneinander unterscheidet.</p>
-<div class="sourceCode" id="cb330"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb330-1"><a href="gemischte-lineare-regression.html#cb330-1" tabindex="-1"></a><span class="fu">anova</span>(df.lmer, df.gender)</span></code></pre></div>
+<div class="sourceCode" id="cb327"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb327-1"><a href="gemischte-lineare-regression.html#cb327-1" tabindex="-1"></a>df.gender <span class="ot">&lt;-</span> <span class="fu">lmer</span>(db <span class="sc">~</span> vowel <span class="sc">+</span> (<span class="dv">1</span> <span class="sc">+</span> vowel <span class="sc">|</span> subject) <span class="sc">+</span> (<span class="dv">1</span> <span class="sc">|</span> word), <span class="at">data =</span> df, <span class="at">REML =</span> F)</span></code></pre></div>
+<p>Die Funktion <code>anova()</code> testet den Vergleich der Modelle auf Signifikanz mithilfe eines <span class="math inline">\(\chi^2\)</span>-Tests (sprich: chi /kai/ squared, oder Chi-Quadrat). “Anova” steht eigentlich für <em>analysis of variance</em>; der <em>default</em> der <code>anova()</code>-Funktion ist allerdings der <span class="math inline">\(\chi^2\)</span>-Test durch das Argument <code>test = "Chisq"</code>. Ansonsten bekommt diese Funktion nur die Namen der beiden Modelle übergeben. Der <span class="math inline">\(\chi^2\)</span>-Test prüft, ob sich die logarithmierte Likelihood der beiden Modelle signifikant voneinander unterscheidet.</p>
+<div class="sourceCode" id="cb328"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb328-1"><a href="gemischte-lineare-regression.html#cb328-1" tabindex="-1"></a><span class="fu">anova</span>(df.lmer, df.gender)</span></code></pre></div>
 <pre><code>## Data: df
 ## Models:
 ## df.gender: db ~ vowel + (1 + vowel | subject) + (1 | word)
@@ -721,18 +722,18 @@ LR &amp;= -2ln \cdot \left( \frac{L_{m_1}}{L_{m_2}} \right) \\
 &amp;= 2 \cdot (log(L_{m_2}) - log(L_{m_1}))
 \end{aligned}
 \]</span></p>
-<p><span class="math inline">\(LR\)</span> steht hier für <em>likelihood ratio</em>, deshalb enthält die Formel auch eine Division, nämlich die der Likelihood <span class="math inline">\(L\)</span> für das restriktive Modell <span class="math inline">\(m_1\)</span> geteilt durch die Likelihood für unser volles berechnetes Modell <span class="math inline">\(m_2\)</span>. <span class="math inline">\(ln\)</span> steht für den natürlichen Logarithmus. Diese Formel lässt sich jedoch so umformen, dass wir anstatt den uns unbekannten Likelihoods unsere log Likelihoods aus dem Ergebnis von <code>lmer</code> verwenden können. Für den Likelihood Ratio Test oben kann man den <span class="math inline">\(\chi^2\)</span>-Wert also manuell wie folgt berechnen:</p>
-<div class="sourceCode" id="cb332"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb332-1"><a href="gemischte-lineare-regression.html#cb332-1" tabindex="-1"></a><span class="dv">2</span> <span class="sc">*</span> (<span class="sc">-</span><span class="fl">416.36</span> <span class="sc">-</span> (<span class="sc">-</span><span class="fl">421.65</span>))</span></code></pre></div>
+<p><span class="math inline">\(LR\)</span> steht hier für <em>likelihood ratio</em>, deshalb enthält die Formel auch eine Division, nämlich die der Likelihood <span class="math inline">\(L\)</span> für das restriktive Modell <span class="math inline">\(m_1\)</span> geteilt durch die Likelihood für unser volles berechnetes Modell <span class="math inline">\(m_2\)</span>. <span class="math inline">\(ln\)</span> steht für den natürlichen Logarithmus. Diese Formel lässt sich jedoch so umformen, dass wir anstatt den uns unbekannten Likelihoods unsere log Likelihoods aus dem Ergebnis von <code>lmer()</code> verwenden können. Für den Likelihood Ratio Test oben kann man den <span class="math inline">\(\chi^2\)</span>-Wert also manuell wie folgt berechnen:</p>
+<div class="sourceCode" id="cb330"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb330-1"><a href="gemischte-lineare-regression.html#cb330-1" tabindex="-1"></a><span class="dv">2</span> <span class="sc">*</span> (<span class="sc">-</span><span class="fl">416.36</span> <span class="sc">-</span> (<span class="sc">-</span><span class="fl">421.65</span>))</span></code></pre></div>
 <pre><code>## [1] 10.58</code></pre>
 <div class="gray">
 <p><strong>Weiterführende Infos: <span class="math inline">\(\chi^2\)</span>-Verteilung</strong></p>
 <p>Genau wie Sie das schon für die Normal-, <span class="math inline">\(t\)</span>- und <span class="math inline">\(F\)</span>-Verteilung kennengelernt haben, geben Ihnen die Funktionen <code>dchisq()</code>, <code>pchisq()</code> und <code>qchisq()</code> die Möglichkeit, selbst mit der <span class="math inline">\(\chi^2\)</span>-Verteilung zu arbeiten. Sie können sich also selber, wenn gewünscht, eine <span class="math inline">\(\chi^2\)</span>-Verteilung mit den gewünschten Freiheitsgraden zeichnen oder den <span class="math inline">\(p\)</span>-Wert für einen bestimmten <span class="math inline">\(\chi^2\)</span>-Wert berechnen. Siehe auch:</p>
-<div class="sourceCode" id="cb334"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb334-1"><a href="gemischte-lineare-regression.html#cb334-1" tabindex="-1"></a>?dchisq</span></code></pre></div>
+<div class="sourceCode" id="cb332"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb332-1"><a href="gemischte-lineare-regression.html#cb332-1" tabindex="-1"></a>?dchisq</span></code></pre></div>
 </div>
 <p>Zuletzt berichten wir das Ergebnis des Likelihood Ratio Tests: <strong>Ein Likelihood Ratio Test ergab, dass das gewählte Modell bessere Schätzungen für die Modellparameter abgab als ein vergleichbares Mixed Model ohne die Variable <code>gender</code> (<span class="math inline">\(\chi^2\)</span>[2] = 10.6, <span class="math inline">\(p\)</span> &lt; 0.01)…</strong></p>
 <p>Nun können wir dasselbe für einige weitere Vergleiche machen:</p>
-<div class="sourceCode" id="cb335"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb335-1"><a href="gemischte-lineare-regression.html#cb335-1" tabindex="-1"></a>df.vowel <span class="ot">&lt;-</span> <span class="fu">lmer</span>(db <span class="sc">~</span> gender <span class="sc">+</span> (<span class="dv">1</span> <span class="sc">|</span> subject) <span class="sc">+</span> (<span class="dv">1</span> <span class="sc">|</span> word), <span class="at">data =</span> df, <span class="at">REML =</span> F)</span>
-<span id="cb335-2"><a href="gemischte-lineare-regression.html#cb335-2" tabindex="-1"></a><span class="fu">anova</span>(df.lmer, df.vowel)</span></code></pre></div>
+<div class="sourceCode" id="cb333"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb333-1"><a href="gemischte-lineare-regression.html#cb333-1" tabindex="-1"></a>df.vowel <span class="ot">&lt;-</span> <span class="fu">lmer</span>(db <span class="sc">~</span> gender <span class="sc">+</span> (<span class="dv">1</span> <span class="sc">|</span> subject) <span class="sc">+</span> (<span class="dv">1</span> <span class="sc">|</span> word), <span class="at">data =</span> df, <span class="at">REML =</span> F)</span>
+<span id="cb333-2"><a href="gemischte-lineare-regression.html#cb333-2" tabindex="-1"></a><span class="fu">anova</span>(df.lmer, df.vowel)</span></code></pre></div>
 <pre><code>## Data: df
 ## Models:
 ## df.vowel: db ~ gender + (1 | subject) + (1 | word)
@@ -747,8 +748,8 @@ LR &amp;= -2ln \cdot \left( \frac{L_{m_1}}{L_{m_2}} \right) \\
 ## Signif. codes:  
 ## 0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
 <p><strong>…und als ein vergleichbares Mixed Model ohne die Variable <code>vowel</code> (<span class="math inline">\(\chi^2\)</span>[4] = 96.7, <span class="math inline">\(p\)</span> &lt; 0.001)…</strong></p>
-<div class="sourceCode" id="cb337"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb337-1"><a href="gemischte-lineare-regression.html#cb337-1" tabindex="-1"></a>df.subject <span class="ot">&lt;-</span> <span class="fu">lmer</span>(db <span class="sc">~</span> gender <span class="sc">*</span> vowel <span class="sc">+</span> (<span class="dv">1</span> <span class="sc">|</span> word), <span class="at">data =</span> df, <span class="at">REML =</span> F)</span>
-<span id="cb337-2"><a href="gemischte-lineare-regression.html#cb337-2" tabindex="-1"></a><span class="fu">anova</span>(df.lmer, df.subject)</span></code></pre></div>
+<div class="sourceCode" id="cb335"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb335-1"><a href="gemischte-lineare-regression.html#cb335-1" tabindex="-1"></a>df.subject <span class="ot">&lt;-</span> <span class="fu">lmer</span>(db <span class="sc">~</span> gender <span class="sc">*</span> vowel <span class="sc">+</span> (<span class="dv">1</span> <span class="sc">|</span> word), <span class="at">data =</span> df, <span class="at">REML =</span> F)</span>
+<span id="cb335-2"><a href="gemischte-lineare-regression.html#cb335-2" tabindex="-1"></a><span class="fu">anova</span>(df.lmer, df.subject)</span></code></pre></div>
 <pre><code>## Data: df
 ## Models:
 ## df.subject: db ~ gender * vowel + (1 | word)
@@ -763,8 +764,8 @@ LR &amp;= -2ln \cdot \left( \frac{L_{m_1}}{L_{m_2}} \right) \\
 ## Signif. codes:  
 ## 0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
 <p><strong>… und als ein vergleichbares Mixed Model ohne die Variable <code>subject</code> (<span class="math inline">\(\chi^2\)</span>[3] = 173.6, <span class="math inline">\(p\)</span> &lt; 0.001)…</strong></p>
-<div class="sourceCode" id="cb339"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb339-1"><a href="gemischte-lineare-regression.html#cb339-1" tabindex="-1"></a>df.word <span class="ot">&lt;-</span> <span class="fu">lmer</span>(db <span class="sc">~</span> gender <span class="sc">*</span> vowel <span class="sc">+</span> (<span class="dv">1</span> <span class="sc">+</span> vowel <span class="sc">|</span> subject), <span class="at">data =</span> df, <span class="at">REML =</span> F)</span>
-<span id="cb339-2"><a href="gemischte-lineare-regression.html#cb339-2" tabindex="-1"></a><span class="fu">anova</span>(df.lmer, df.word)</span></code></pre></div>
+<div class="sourceCode" id="cb337"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb337-1"><a href="gemischte-lineare-regression.html#cb337-1" tabindex="-1"></a>df.word <span class="ot">&lt;-</span> <span class="fu">lmer</span>(db <span class="sc">~</span> gender <span class="sc">*</span> vowel <span class="sc">+</span> (<span class="dv">1</span> <span class="sc">+</span> vowel <span class="sc">|</span> subject), <span class="at">data =</span> df, <span class="at">REML =</span> F)</span>
+<span id="cb337-2"><a href="gemischte-lineare-regression.html#cb337-2" tabindex="-1"></a><span class="fu">anova</span>(df.lmer, df.word)</span></code></pre></div>
 <pre><code>## Data: df
 ## Models:
 ## df.word: db ~ gender * vowel + (1 + vowel | subject)

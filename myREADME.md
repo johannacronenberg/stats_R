@@ -25,21 +25,17 @@ Dies ist das GitHub Repo stats_R, das auf meiner Webseite verlinkt ist!
   cp -r deutsch/_book/* .
   rm -rf deutsch/_book
   git checkout main -- english/_book
-  cp -r english/_book/data-frames.html .
-  cp -r english/_book/first-calculations-in-r.html .
-  cp -r english/_book/introduction-to-the-tidyverse.html .
-  cp -r english/_book/joining-with-dplyr.html .
-  cp -r english/_book/manipulating-data-with-dplyr-continuation.html .
-  cp -r english/_book/plotting-data-with-ggplot2.html .
-  cp -r english/_book/pretty-plots.html .
+  cp -r english/_book/introduction-to-inferential-statistics.html .
+  cp -r english/_book/logistic-regression.html .
+  cp -r english/_book/mixed-linear-regression.html .
+  cp -r english/_book/multiple-linear-regression.html .
   cp -r english/_book/setup.html .
-  cp -r english/_book/summary-statistics.html .
-  cp -r english/_book/tidying-data-with-tidyr.html .
+  cp -r english/_book/simple-linear-regression.html .
   rm -rf english/_book
   git add .
   git commit -m "added german book as basis plus english htmls"
   git push origin gh-pages
 - im GitHub repo basic_R sollte unter Settings > Pages der gh-pages branch als Basis angegeben sein,
-  dann kann nämlich https://johannacronenberg.github.io/basic_R/ als Link zu der deutschen Version genutzt werden
+  dann kann nämlich https://johannacronenberg.github.io/stats_R/ als Link zu der deutschen Version genutzt werden
 
 

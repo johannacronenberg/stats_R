@@ -92,8 +92,8 @@
 <text x='161.89' y='340.09' text-anchor='middle' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arimo";' textLength='14.67px' lengthAdjust='spacingAndGlyphs'>220</text>
 <text x='318.63' y='340.09' text-anchor='middle' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arimo";' textLength='14.67px' lengthAdjust='spacingAndGlyphs'>240</text>
 <text x='475.37' y='340.09' text-anchor='middle' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arimo";' textLength='14.67px' lengthAdjust='spacingAndGlyphs'>260</text>
-<text x='267.12' y='352.23' text-anchor='middle' style='font-size: 11.00px; font-family: "Arimo";' textLength='98.30px' lengthAdjust='spacingAndGlyphs'>geschätzte f0-Werte</text>
-<text transform='translate(13.05,167.29) rotate(-90)' text-anchor='middle' style='font-size: 11.00px; font-family: "Arimo";' textLength='48.31px' lengthAdjust='spacingAndGlyphs'>Residuals</text>
+<text x='267.12' y='352.23' text-anchor='middle' style='font-size: 11.00px; font-family: "Arimo";' textLength='94.84px' lengthAdjust='spacingAndGlyphs'>estimated f0 values</text>
+<text transform='translate(13.05,167.29) rotate(-90)' text-anchor='middle' style='font-size: 11.00px; font-family: "Arimo";' textLength='44.03px' lengthAdjust='spacingAndGlyphs'>residuals</text>
 </g>
 </g>
 </svg>

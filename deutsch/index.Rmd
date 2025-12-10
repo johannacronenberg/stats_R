@@ -48,7 +48,7 @@ lapply(names(githubs), function(pkg) {
 
 ## Installation und Kursverzeichnis
 
-- Laden Sie die [Statistik-Software R](https://ftp.fau.de/cran/) herunter und installieren Sie sie. Die neueste Version ist derzeit `4.5.x` (Stand: September 2025).
+- Laden Sie die [Statistik-Software R](https://ftp.fau.de/cran/) herunter und installieren Sie sie. Die neueste Version ist derzeit `4.5.x` (Stand: Dezember 2025).
 
 - Laden Sie außerdem [RStudio](https://rstudio.com/products/rstudio/download/#download) herunter und installieren Sie es.
 
@@ -58,22 +58,22 @@ lapply(names(githubs), function(pkg) {
 
 ## R Projekte
 
-Für diesen Kurs werden wir ein *R project* anlegen, da Ihnen dies die Arbeit mit R auf lange Sicht erleichtern wird.
+Für dieses Tutorial werden wir ein *R project* anlegen, da Ihnen dies die Arbeit mit R auf lange Sicht erleichtern wird.
 
 - Öffnen Sie RStudio und klicken Sie oben rechts auf die Schaltfläche `Project: (None)`.
 
-- Klicken Sie dann auf `New Project` und im Folgenden auf `Existing Directory` und wählen Sie mit `Browse` das Kursverzeichnis aus, das Sie eben angelegt haben. 
+- Klicken Sie dann auf `New Project` und im Folgenden auf `Existing Directory` und wählen Sie mit `Browse` das Verzeichnis aus, das Sie eben angelegt haben. 
 
 - Schließen Sie den Vorgang ab, indem Sie auf `Create Project` klicken. 
 
-RStudio öffnet nun automatisch das Projekt, das genauso benannt ist wie Ihr Kursverzeichnis (siehe Schaltfläche oben rechts). Sie können das Projekt über diese Schaltfläche schließen und anschließend auch wieder öffnen. Das Projekt lässt sich außerdem öffnen, indem Sie in Ihrem Kursverzeichnis auf die neu angelegte Datei mit der Endung `.Rproj` klicken.
+RStudio öffnet nun automatisch das Projekt, das genauso benannt ist wie Ihr Verzeichnis (siehe Schaltfläche oben rechts). Sie können das Projekt über diese Schaltfläche schließen und anschließend auch wieder öffnen. Das Projekt lässt sich außerdem öffnen, indem Sie in Ihrem Verzeichnis auf die neu angelegte Datei mit der Endung `.Rproj` klicken.
 
 Sollten Sie Probleme beim Erstellen des Projekts haben, empfehlen wir Ihnen diese [Video-Kurzanleitung](https://www.youtube.com/watch?v=hKoSJGWnFFA).
 
 <div class="gray">
 **Weiterführende Infos: R Projekte**
 
-R Projekte haben viele Vorteile, insbesondere wenn Sie in mehreren Kursen mit R arbeiten und für jeden ein eigenes R Projekt haben. Das Projekt merkt sich, welche Dateien Sie geöffnet haben, und stellt diese beim nächsten Öffnen des Projekts wieder her, sodass Sie da weiterarbeiten können, wo Sie aufgehört haben. Außerdem ist das *working directory* des Projekts Ihr Kursverzeichnis, das heißt alle Dateien, die Sie im Verlauf des Kurses dort ablegen, können Sie ganz einfach über das Panel unten links (Tab `Files`) oder über relative Pfade öffnen. Ihr Arbeitsverzeichnis können Sie übrigens überprüfen, indem Sie in der Konsole `getwd()` eingeben und Enter drücken.
+R Projekte haben viele Vorteile, insbesondere wenn Sie in mehreren Projekten/Kursen mit R arbeiten und für jeden ein eigenes R Projekt haben. Das Projekt merkt sich, welche Dateien Sie geöffnet haben, und stellt diese beim nächsten Öffnen des Projekts wieder her, sodass Sie da weiterarbeiten können, wo Sie aufgehört haben. Außerdem ist das *working directory* des Projekts Ihr Verzeichnis, das heißt alle Dateien, die Sie im Verlauf des Tutorials/Kurses dort ablegen, können Sie ganz einfach über das Panel unten links (Tab `Files`) oder über relative Pfade öffnen. Ihr Arbeitsverzeichnis können Sie übrigens überprüfen, indem Sie in der Konsole `getwd()` eingeben und Enter drücken.
 </div>
 
 ## Packages und R Version
@@ -116,9 +116,9 @@ R muss ebenfalls aktuell gehalten werden. Sie können Ihre R Version überprüfe
 
 Eine Session beginnt, wenn man R bzw. RStudio startet bzw. wenn man ein Projekt öffnet. Man beendet eine Session entweder mit `Session > Quit Session` in der Werkzeugleiste oder mit `Strg+Q` bzw. `Ctrl+Q` oder mit der Konsoleneingabe `q()`. Die Session endet außerdem automatisch, wenn Sie RStudio schließen. 
 
-Sie werden dann gefragt, ob Sie das *workspace image* speichern wollen. Wenn Sie die Variablen, die Sie in der Session angelegt haben, im Environment behalten und in der nächsten Session wieder verwenden wollen, klicken Sie auf `Save`. Der *workspace* wird dann in Ihrem Kursverzeichnis in einer Datei mit der Endung `.RData` abgelegt. Wenn Sie den *workspace* nicht speichern möchten, klicken Sie auf `Don't save`. Falls Sie die Session doch nicht beenden wollen, klicken Sie auf `Cancel`. 
+Sie werden dann gefragt, ob Sie das *workspace image* speichern wollen. Wenn Sie die Variablen, die Sie in der Session angelegt haben, im Environment behalten und in der nächsten Session wieder verwenden wollen, klicken Sie auf `Save`. Der *workspace* wird dann in Ihrem Verzeichnis in einer Datei mit der Endung `.RData` abgelegt. Wenn Sie den *workspace* nicht speichern möchten, klicken Sie auf `Don't save`. Falls Sie die Session doch nicht beenden wollen, klicken Sie auf `Cancel`. 
 
-**Für diesen Kurs bitte ich Sie, den *workspace* nicht zu speichern (`Don't save`).**
+**Für dieses Tutorial bitte ich Sie, den *workspace* nicht zu speichern (`Don't save`).**
 
 ## Dokumentarten
 
@@ -135,7 +135,7 @@ library(rmarkdown)
 render("document.Rmd")
 ```
 
-Wir benutzen R Markdown auch, um z.B. die HTML herzustellen, die Sie gerade lesen. 
+Ich benutze R Markdown auch, um z.B. die HTML herzustellen, die Sie gerade lesen. 
 
 Im Markdown Dokument werden für Textmarkierungen besondere Zeichen verwendet, die dann beim *knitten* interpretiert und umgesetzt werden:
 
@@ -152,6 +152,10 @@ Im Markdown Dokument werden für Textmarkierungen besondere Zeichen verwendet, d
 Noch mehr Informationen dazu finden Sie im [Cheatsheet zu R Markdown](https://www.rstudio.org/links/r_markdown_cheat_sheet) (insb. Seite 2, linke Spalte).
 
 ## Hilfe zur Selbsthilfe
+
+### Einführung in Programmieren mit R
+
+Wenn Sie mit R noch nicht vertraut sind, lege ich Ihnen nahe, zuerst mein Tutorial [Programmieren in R: eine Einführung für PhonetikerInnen](https://johannacronenberg.github.io/basic_R/) durchzugehen!
 
 ### Fehler erkennen
 

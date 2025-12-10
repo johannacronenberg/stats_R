@@ -48,7 +48,7 @@ lapply(names(githubs), function(pkg) {
 
 ## Installation
 
-- Download and install the [Software R](https://ftp.fau.de/cran/). The latest version is currently `4.5.x` (September 2025).
+- Download and install the [Software R](https://ftp.fau.de/cran/). The latest version is currently `4.5.x` (December 2025).
 
 - Also download and install [RStudio](https://RStudio.com/products/RStudio/download/#download).
 
@@ -159,7 +159,11 @@ More information is available in the [cheatsheet for R Markdown](https://www.RSt
 
 ## Help
 
-### Recognising Errors
+### Introduction to Programming in R
+
+If you're not familiar with programming in R, I suggest you work through my tutorial [Programming in R: An Introduction for Phoneticians](https://johannacronenberg.github.io/basic_R/setup.html)!
+
+### Recognizing Errors
 
 - Warnings: if you make a syntax error (e.g. by forgetting a bracket), you will see a red warning sign at the beginning of the line of code that contains the error. Don't ignore this because it shows that a mistake has been made. The warning sign disappears once the error is corrected.
 

@@ -70,8 +70,8 @@
 <text x='266.88' y='340.09' text-anchor='middle' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arimo";' textLength='4.89px' lengthAdjust='spacingAndGlyphs'>5</text>
 <text x='372.17' y='340.09' text-anchor='middle' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arimo";' textLength='4.89px' lengthAdjust='spacingAndGlyphs'>6</text>
 <text x='477.46' y='340.09' text-anchor='middle' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arimo";' textLength='4.89px' lengthAdjust='spacingAndGlyphs'>7</text>
-<text x='266.88' y='352.23' text-anchor='middle' style='font-size: 11.00px; font-family: "Arimo";' textLength='28.16px' lengthAdjust='spacingAndGlyphs'>dauer</text>
-<text transform='translate(13.05,167.29) rotate(-90)' text-anchor='middle' style='font-size: 11.00px; font-family: "Arimo";' textLength='34.88px' lengthAdjust='spacingAndGlyphs'>density</text>
+<text x='266.88' y='352.23' text-anchor='middle' style='font-size: 11.00px; font-family: "Arimo";' textLength='54.47px' lengthAdjust='spacingAndGlyphs'>Log. Dauer</text>
+<text transform='translate(13.05,167.29) rotate(-90)' text-anchor='middle' style='font-size: 11.00px; font-family: "Arimo";' textLength='126.17px' lengthAdjust='spacingAndGlyphs'>Wahrscheinlichkeitsdichte</text>
 </g>
 </g>
 </svg>

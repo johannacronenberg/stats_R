@@ -44,6 +44,6 @@ for language in ["deutsch", "english"]:
 		path = language + "/_book"
 		for file in os.listdir(path):
 			if file.endswith(".html"):
-				replacement(os.path.join(path, file), '<a href="./">Statistics in R: An Introduction</a>', '<a href="./index.html">Statistics in R: An Introduction</a>')
+				replacement(os.path.join(path, file), '<a href="./">Statistics in R: An Introduction</a>', '<a href="https://johannacronenberg.github.io/stats_R/setup">Statistics in R: An Introduction</a>')
 				link = '<div class="book-header" role="navigation">\n\t\t\t<a class="btn pull-right js-toolbar-action" href="' + list(chapters.keys())[list(chapters.values()).index(os.path.splitext(file)[0])] + '.html"><i class="fa fa-language"></i></a>'
 				replacement(os.path.join(path, file), '<div class="book-header" role="navigation">', link)

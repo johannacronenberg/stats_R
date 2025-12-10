@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>2 Introduction to Inferential Statistics | Statistics in R: An Introduction for Phoneticians</title>
   <meta name="description" content="An introduction to statistics in R focussing on linear regressions. This introduction was written as study material for the students of the Institute of Phonetics and Speech Processing at the University of Munich." />
-  <meta name="generator" content="bookdown 0.44 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.46 and GitBook 2.6.7" />
 
   <meta property="og:title" content="2 Introduction to Inferential Statistics | Statistics in R: An Introduction for Phoneticians" />
   <meta property="og:type" content="book" />
@@ -23,7 +23,7 @@
 <meta name="author" content="Johanna Cronenberg" />
 
 
-<meta name="date" content="2025-09-28" />
+<meta name="date" content="2025-12-10" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -154,18 +154,111 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="1.6" data-path="setup.html"><a href="setup.html#help"><i class="fa fa-check"></i><b>1.6</b> Help</a>
 <ul>
-<li class="chapter" data-level="1.6.1" data-path="setup.html"><a href="setup.html#recognising-errors"><i class="fa fa-check"></i><b>1.6.1</b> Recognising Errors</a></li>
-<li class="chapter" data-level="1.6.2" data-path="setup.html"><a href="setup.html#ask-the-community"><i class="fa fa-check"></i><b>1.6.2</b> Ask the Community</a></li>
-<li class="chapter" data-level="1.6.3" data-path="setup.html"><a href="setup.html#help-with-ggplot2"><i class="fa fa-check"></i><b>1.6.3</b> Help with <code>ggplot2</code></a></li>
-<li class="chapter" data-level="1.6.4" data-path="setup.html"><a href="setup.html#statistics-in-r-literature"><i class="fa fa-check"></i><b>1.6.4</b> Statistics in R: Literature</a></li>
+<li class="chapter" data-level="1.6.1" data-path="setup.html"><a href="setup.html#introduction-to-programming-in-r"><i class="fa fa-check"></i><b>1.6.1</b> Introduction to Programming in R</a></li>
+<li class="chapter" data-level="1.6.2" data-path="setup.html"><a href="setup.html#recognizing-errors"><i class="fa fa-check"></i><b>1.6.2</b> Recognizing Errors</a></li>
+<li class="chapter" data-level="1.6.3" data-path="setup.html"><a href="setup.html#ask-the-community"><i class="fa fa-check"></i><b>1.6.3</b> Ask the Community</a></li>
+<li class="chapter" data-level="1.6.4" data-path="setup.html"><a href="setup.html#help-with-ggplot2"><i class="fa fa-check"></i><b>1.6.4</b> Help with <code>ggplot2</code></a></li>
+<li class="chapter" data-level="1.6.5" data-path="setup.html"><a href="setup.html#statistics-in-r-literature"><i class="fa fa-check"></i><b>1.6.5</b> Statistics in R: Literature</a></li>
 </ul></li>
 <li class="chapter" data-level="1.7" data-path="setup.html"><a href="setup.html#acknowledgements"><i class="fa fa-check"></i><b>1.7</b> Acknowledgements</a></li>
 </ul></li>
-<li class="chapter" data-level="2" data-path="introduction-to-inferential-statistics.html"><a href="introduction-to-inferential-statistics.html"><i class="fa fa-check"></i><b>2</b> Introduction to Inferential Statistics</a></li>
-<li class="chapter" data-level="3" data-path="simple-linear-regression.html"><a href="simple-linear-regression.html"><i class="fa fa-check"></i><b>3</b> Simple linear Regression</a></li>
-<li class="chapter" data-level="4" data-path="multiple-linear-regression.html"><a href="multiple-linear-regression.html"><i class="fa fa-check"></i><b>4</b> Multiple Linear Regression</a></li>
-<li class="chapter" data-level="5" data-path="mixed-linear-regression.html"><a href="mixed-linear-regression.html"><i class="fa fa-check"></i><b>5</b> Mixed Linear Regression</a></li>
-<li class="chapter" data-level="6" data-path="logistic-regression.html"><a href="logistic-regression.html"><i class="fa fa-check"></i><b>6</b> Logistic Regression</a></li>
+<li class="chapter" data-level="2" data-path="introduction-to-inferential-statistics.html"><a href="introduction-to-inferential-statistics.html"><i class="fa fa-check"></i><b>2</b> Introduction to Inferential Statistics</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="introduction-to-inferential-statistics.html"><a href="introduction-to-inferential-statistics.html#load-packages-and-data"><i class="fa fa-check"></i><b>2.1</b> Load Packages and Data</a></li>
+<li class="chapter" data-level="2.2" data-path="introduction-to-inferential-statistics.html"><a href="introduction-to-inferential-statistics.html#basic-terminology"><i class="fa fa-check"></i><b>2.2</b> Basic Terminology</a></li>
+<li class="chapter" data-level="2.3" data-path="introduction-to-inferential-statistics.html"><a href="introduction-to-inferential-statistics.html#normal-distribution"><i class="fa fa-check"></i><b>2.3</b> Normal Distribution</a>
+<ul>
+<li class="chapter" data-level="2.3.1" data-path="introduction-to-inferential-statistics.html"><a href="introduction-to-inferential-statistics.html#testing-for-normal-distribution"><i class="fa fa-check"></i><b>2.3.1</b> Testing for Normal Distribution</a></li>
+<li class="chapter" data-level="2.3.2" data-path="introduction-to-inferential-statistics.html"><a href="introduction-to-inferential-statistics.html#rule-confidence-intervals"><i class="fa fa-check"></i><b>2.3.2</b> 68–95–99.7 Rule &amp; Confidence Intervals</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="simple-linear-regression.html"><a href="simple-linear-regression.html"><i class="fa fa-check"></i><b>3</b> Simple Linear Regression</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="simple-linear-regression.html"><a href="simple-linear-regression.html#load-packages-and-data-1"><i class="fa fa-check"></i><b>3.1</b> Load Packages and Data</a></li>
+<li class="chapter" data-level="3.2" data-path="simple-linear-regression.html"><a href="simple-linear-regression.html#introduction"><i class="fa fa-check"></i><b>3.2</b> Introduction</a></li>
+<li class="chapter" data-level="3.3" data-path="simple-linear-regression.html"><a href="simple-linear-regression.html#correlation"><i class="fa fa-check"></i><b>3.3</b> Correlation</a></li>
+<li class="chapter" data-level="3.4" data-path="simple-linear-regression.html"><a href="simple-linear-regression.html#the-regression-line"><i class="fa fa-check"></i><b>3.4</b> The Regression Line</a>
+<ul>
+<li class="chapter" data-level="3.4.1" data-path="simple-linear-regression.html"><a href="simple-linear-regression.html#theoretical-information"><i class="fa fa-check"></i><b>3.4.1</b> Theoretical Information</a></li>
+<li class="chapter" data-level="3.4.2" data-path="simple-linear-regression.html"><a href="simple-linear-regression.html#regression-lines-with-ggplot2"><i class="fa fa-check"></i><b>3.4.2</b> Regression Lines with <code>ggplot2</code></a></li>
+</ul></li>
+<li class="chapter" data-level="3.5" data-path="simple-linear-regression.html"><a href="simple-linear-regression.html#linear-regression-with-lm"><i class="fa fa-check"></i><b>3.5</b> Linear Regression with <code>lm()</code></a></li>
+<li class="chapter" data-level="3.6" data-path="simple-linear-regression.html"><a href="simple-linear-regression.html#residuals"><i class="fa fa-check"></i><b>3.6</b> Residuals</a></li>
+<li class="chapter" data-level="3.7" data-path="simple-linear-regression.html"><a href="simple-linear-regression.html#testing-assumptions"><i class="fa fa-check"></i><b>3.7</b> Testing Assumptions</a>
+<ul>
+<li class="chapter" data-level="3.7.1" data-path="simple-linear-regression.html"><a href="simple-linear-regression.html#normal-distribution-of-residuals"><i class="fa fa-check"></i><b>3.7.1</b> Normal Distribution of Residuals</a></li>
+<li class="chapter" data-level="3.7.2" data-path="simple-linear-regression.html"><a href="simple-linear-regression.html#constant-variance-of-the-residuals"><i class="fa fa-check"></i><b>3.7.2</b> Constant Variance of the Residuals</a></li>
+</ul></li>
+<li class="chapter" data-level="3.8" data-path="simple-linear-regression.html"><a href="simple-linear-regression.html#understanding-all-results-of-lm"><i class="fa fa-check"></i><b>3.8</b> Understanding all Results of <code>lm()</code></a>
+<ul>
+<li class="chapter" data-level="3.8.1" data-path="simple-linear-regression.html"><a href="simple-linear-regression.html#estimated-y-values-and-residuals"><i class="fa fa-check"></i><b>3.8.1</b> Estimated <span class="math inline">\(y\)</span>-Values and Residuals</a></li>
+<li class="chapter" data-level="3.8.2" data-path="simple-linear-regression.html"><a href="simple-linear-regression.html#regression-coefficients-and-t-statistic"><i class="fa fa-check"></i><b>3.8.2</b> Regression Coefficients and <span class="math inline">\(t\)</span>-Statistic</a></li>
+<li class="chapter" data-level="3.8.3" data-path="simple-linear-regression.html"><a href="simple-linear-regression.html#quality-criteria-for-the-model-and-f-statistic"><i class="fa fa-check"></i><b>3.8.3</b> Quality Criteria for the Model and <span class="math inline">\(F\)</span>-Statistic</a></li>
+</ul></li>
+<li class="chapter" data-level="3.9" data-path="simple-linear-regression.html"><a href="simple-linear-regression.html#reporting-the-result"><i class="fa fa-check"></i><b>3.9</b> Reporting the Result</a></li>
+<li class="chapter" data-level="3.10" data-path="simple-linear-regression.html"><a href="simple-linear-regression.html#summary"><i class="fa fa-check"></i><b>3.10</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="multiple-linear-regression.html"><a href="multiple-linear-regression.html"><i class="fa fa-check"></i><b>4</b> Multiple Linear Regression</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="multiple-linear-regression.html"><a href="multiple-linear-regression.html#load-packages-and-data-2"><i class="fa fa-check"></i><b>4.1</b> Load Packages and Data</a></li>
+<li class="chapter" data-level="4.2" data-path="multiple-linear-regression.html"><a href="multiple-linear-regression.html#introduction-1"><i class="fa fa-check"></i><b>4.2</b> Introduction</a></li>
+<li class="chapter" data-level="4.3" data-path="multiple-linear-regression.html"><a href="multiple-linear-regression.html#continuous-independent-variables"><i class="fa fa-check"></i><b>4.3</b> Continuous Independent Variables</a>
+<ul>
+<li class="chapter" data-level="4.3.1" data-path="multiple-linear-regression.html"><a href="multiple-linear-regression.html#without-interaction"><i class="fa fa-check"></i><b>4.3.1</b> Without Interaction</a></li>
+<li class="chapter" data-level="4.3.2" data-path="multiple-linear-regression.html"><a href="multiple-linear-regression.html#with-interaction"><i class="fa fa-check"></i><b>4.3.2</b> With Interaction</a></li>
+</ul></li>
+<li class="chapter" data-level="4.4" data-path="multiple-linear-regression.html"><a href="multiple-linear-regression.html#categorical-independent-variables"><i class="fa fa-check"></i><b>4.4</b> Categorical Independent Variables</a>
+<ul>
+<li class="chapter" data-level="4.4.1" data-path="multiple-linear-regression.html"><a href="multiple-linear-regression.html#without-interaction-1"><i class="fa fa-check"></i><b>4.4.1</b> Without Interaction</a></li>
+<li class="chapter" data-level="4.4.2" data-path="multiple-linear-regression.html"><a href="multiple-linear-regression.html#with-interaction-1"><i class="fa fa-check"></i><b>4.4.2</b> With Interaction</a></li>
+</ul></li>
+<li class="chapter" data-level="4.5" data-path="multiple-linear-regression.html"><a href="multiple-linear-regression.html#mix-of-continuous-and-categorical-variables"><i class="fa fa-check"></i><b>4.5</b> Mix of Continuous and Categorical Variables</a>
+<ul>
+<li class="chapter" data-level="4.5.1" data-path="multiple-linear-regression.html"><a href="multiple-linear-regression.html#without-interaction-2"><i class="fa fa-check"></i><b>4.5.1</b> Without Interaction</a></li>
+<li class="chapter" data-level="4.5.2" data-path="multiple-linear-regression.html"><a href="multiple-linear-regression.html#with-interaction-2"><i class="fa fa-check"></i><b>4.5.2</b> With Interaction</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="mixed-linear-regression.html"><a href="mixed-linear-regression.html"><i class="fa fa-check"></i><b>5</b> Mixed Linear Regression</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="mixed-linear-regression.html"><a href="mixed-linear-regression.html#load-packages-and-data-3"><i class="fa fa-check"></i><b>5.1</b> Load Packages and Data</a></li>
+<li class="chapter" data-level="5.2" data-path="mixed-linear-regression.html"><a href="mixed-linear-regression.html#mixed-models-lmers-introduction"><i class="fa fa-check"></i><b>5.2</b> Mixed Models (LMERs): Introduction</a></li>
+<li class="chapter" data-level="5.3" data-path="mixed-linear-regression.html"><a href="mixed-linear-regression.html#random-intercepts-vs.-random-slopes"><i class="fa fa-check"></i><b>5.3</b> Random Intercepts vs. Random Slopes</a>
+<ul>
+<li class="chapter" data-level="5.3.1" data-path="mixed-linear-regression.html"><a href="mixed-linear-regression.html#random-intercepts"><i class="fa fa-check"></i><b>5.3.1</b> Random Intercepts</a></li>
+<li class="chapter" data-level="5.3.2" data-path="mixed-linear-regression.html"><a href="mixed-linear-regression.html#random-slopes"><i class="fa fa-check"></i><b>5.3.2</b> Random Slopes</a></li>
+<li class="chapter" data-level="5.3.3" data-path="mixed-linear-regression.html"><a href="mixed-linear-regression.html#determining-the-random-effects-structure-for-word"><i class="fa fa-check"></i><b>5.3.3</b> Determining the Random Effects Structure for <code>word</code></a></li>
+</ul></li>
+<li class="chapter" data-level="5.4" data-path="mixed-linear-regression.html"><a href="mixed-linear-regression.html#lmer-in-r"><i class="fa fa-check"></i><b>5.4</b> LMER in R</a>
+<ul>
+<li class="chapter" data-level="5.4.1" data-path="mixed-linear-regression.html"><a href="mixed-linear-regression.html#fixed-effects"><i class="fa fa-check"></i><b>5.4.1</b> Fixed Effects</a></li>
+<li class="chapter" data-level="5.4.2" data-path="mixed-linear-regression.html"><a href="mixed-linear-regression.html#random-effects"><i class="fa fa-check"></i><b>5.4.2</b> Random Effects</a></li>
+</ul></li>
+<li class="chapter" data-level="5.5" data-path="mixed-linear-regression.html"><a href="mixed-linear-regression.html#convergence-problems-and-simplifying-the-model"><i class="fa fa-check"></i><b>5.5</b> Convergence Problems and Simplifying the Model</a></li>
+<li class="chapter" data-level="5.6" data-path="mixed-linear-regression.html"><a href="mixed-linear-regression.html#reporting-results"><i class="fa fa-check"></i><b>5.6</b> Reporting Results</a></li>
+<li class="chapter" data-level="5.7" data-path="mixed-linear-regression.html"><a href="mixed-linear-regression.html#quality-criteria-for-mixed-models"><i class="fa fa-check"></i><b>5.7</b> Quality Criteria for Mixed Models</a>
+<ul>
+<li class="chapter" data-level="5.7.1" data-path="mixed-linear-regression.html"><a href="mixed-linear-regression.html#marginal-and-conditional-r2"><i class="fa fa-check"></i><b>5.7.1</b> Marginal and Conditional <span class="math inline">\(R^2\)</span></a></li>
+<li class="chapter" data-level="5.7.2" data-path="mixed-linear-regression.html"><a href="mixed-linear-regression.html#likelihood-ratio-tests"><i class="fa fa-check"></i><b>5.7.2</b> Likelihood Ratio Tests</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="logistic-regression.html"><a href="logistic-regression.html"><i class="fa fa-check"></i><b>6</b> Logistic Regression</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="logistic-regression.html"><a href="logistic-regression.html#load-packages-and-data-4"><i class="fa fa-check"></i><b>6.1</b> Load Packages and Data</a></li>
+<li class="chapter" data-level="6.2" data-path="logistic-regression.html"><a href="logistic-regression.html#from-linear-to-logistic-regression"><i class="fa fa-check"></i><b>6.2</b> From Linear to Logistic Regression</a>
+<ul>
+<li class="chapter" data-level="6.2.1" data-path="logistic-regression.html"><a href="logistic-regression.html#an-example-for-p-q-and-logit"><i class="fa fa-check"></i><b>6.2.1</b> An Example for <span class="math inline">\(P\)</span>, <span class="math inline">\(Q\)</span>, and Logit</a></li>
+<li class="chapter" data-level="6.2.2" data-path="logistic-regression.html"><a href="logistic-regression.html#the-logistic-regression-line"><i class="fa fa-check"></i><b>6.2.2</b> The Logistic Regression Line</a></li>
+<li class="chapter" data-level="6.2.3" data-path="logistic-regression.html"><a href="logistic-regression.html#regression-with-glm"><i class="fa fa-check"></i><b>6.2.3</b> Regression with <code>glm()</code></a></li>
+<li class="chapter" data-level="6.2.4" data-path="logistic-regression.html"><a href="logistic-regression.html#the-chi2-test-reporting-results"><i class="fa fa-check"></i><b>6.2.4</b> The <span class="math inline">\(\chi^2\)</span>-Test &amp; Reporting Results</a></li>
+</ul></li>
+<li class="chapter" data-level="6.3" data-path="logistic-regression.html"><a href="logistic-regression.html#the-sigmoid-function-and-tipping-point"><i class="fa fa-check"></i><b>6.3</b> The Sigmoid Function and Tipping Point</a>
+<ul>
+<li class="chapter" data-level="6.3.1" data-path="logistic-regression.html"><a href="logistic-regression.html#the-tipping-point"><i class="fa fa-check"></i><b>6.3.1</b> The Tipping Point</a></li>
+<li class="chapter" data-level="6.3.2" data-path="logistic-regression.html"><a href="logistic-regression.html#plotting-proportions"><i class="fa fa-check"></i><b>6.3.2</b> Plotting Proportions</a></li>
+</ul></li>
+<li class="chapter" data-level="6.4" data-path="logistic-regression.html"><a href="logistic-regression.html#tipping-points-in-perceptual-studies"><i class="fa fa-check"></i><b>6.4</b> Tipping Points in Perceptual Studies</a></li>
+<li class="chapter" data-level="6.5" data-path="logistic-regression.html"><a href="logistic-regression.html#categorical-independent-factor"><i class="fa fa-check"></i><b>6.5</b> Categorical Independent Factor</a></li>
+</ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 
@@ -189,8 +282,222 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             <section class="normal" id="section-">
 <div id="introduction-to-inferential-statistics" class="section level1 hasAnchor" number="2">
 <h1><span class="header-section-number">2</span> Introduction to Inferential Statistics<a href="introduction-to-inferential-statistics.html#introduction-to-inferential-statistics" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>Under construction…</p>
+<div id="load-packages-and-data" class="section level2 hasAnchor" number="2.1">
+<h2><span class="header-section-number">2.1</span> Load Packages and Data<a href="introduction-to-inferential-statistics.html#load-packages-and-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Open the R project which you created for this tutorial. To that end, open RStudio and use the button on the top right or navigate to your course directory and double click on the <code>.Rproj</code> file.</p>
+<p>Then load the <em>tidyverse</em> and the following data frame:</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="introduction-to-inferential-statistics.html#cb7-1" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code></pre></div>
+<pre><code>## ── Attaching core tidyverse packages ──────────────────
+## ✔ dplyr     1.1.4     ✔ readr     2.1.6
+## ✔ forcats   1.0.1     ✔ stringr   1.6.0
+## ✔ ggplot2   4.0.1     ✔ tibble    3.3.0
+## ✔ lubridate 1.9.4     ✔ tidyr     1.3.1
+## ✔ purrr     1.2.0     
+## ── Conflicts ───────────────── tidyverse_conflicts() ──
+## ✖ dplyr::filter() masks stats::filter()
+## ✖ dplyr::lag()    masks stats::lag()
+## ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors</code></pre>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="introduction-to-inferential-statistics.html#cb9-1" tabindex="-1"></a>url <span class="ot">&lt;-</span> <span class="st">&quot;http://www.phonetik.uni-muenchen.de/~jmh/lehre/Rdf&quot;</span></span>
+<span id="cb9-2"><a href="introduction-to-inferential-statistics.html#cb9-2" tabindex="-1"></a>df <span class="ot">&lt;-</span> <span class="fu">read.table</span>(<span class="fu">file.path</span>(url, <span class="st">&quot;vdata.txt&quot;</span>)) <span class="sc">%&gt;%</span> <span class="fu">as_tibble</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb9-3"><a href="introduction-to-inferential-statistics.html#cb9-3" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">vowel =</span> V, <span class="at">tension =</span> Tense, <span class="at">consonant =</span> Cons, <span class="at">rate =</span> Rate, <span class="at">subject =</span> Subj) <span class="sc">%&gt;%</span> </span>
+<span id="cb9-4"><a href="introduction-to-inferential-statistics.html#cb9-4" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">duration =</span> <span class="fu">log</span>(dur)) <span class="sc">%&gt;%</span> </span>
+<span id="cb9-5"><a href="introduction-to-inferential-statistics.html#cb9-5" tabindex="-1"></a>  <span class="fu">select</span>(<span class="sc">-</span><span class="fu">c</span>(X, Y))</span></code></pre></div>
+</div>
+<div id="basic-terminology" class="section level2 hasAnchor" number="2.2">
+<h2><span class="header-section-number">2.2</span> Basic Terminology<a href="introduction-to-inferential-statistics.html#basic-terminology" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><em>Statistical analysis […] is a strikingly subjective process</em> – Bodo Winter</p>
+<p>In statistics, a <strong>population</strong> is the set of all units (i.e., people, words, etc.) that meet certain identification criteria (e.g., gender, origin, grammatical function, etc.). For example, imagine you want to determine the average fundamental frequency (f0) of all women in Germany. Then your population is the set of all women in Germany, which is approximately 40 million people. In this example, you could only determine the population mean <span class="math inline">\(\mu\)</span> (pronounced as /myː/, often written mu) by traveling to every woman in Germany and measuring her fundamental frequency, which is, of course, impossible for many reasons.</p>
+<p>Instead, in science, one usually collects <strong>samples</strong>, e.g. a subset of the female population, and assumes that the resulting sample mean <span class="math inline">\(m\)</span> is not too far from the true population mean <span class="math inline">\(\mu\)</span>. The larger the sample, the closer its mean <span class="math inline">\(m\)</span> and standard deviation <span class="math inline">\(s\)</span> will approximate the true population mean <span class="math inline">\(\mu\)</span> and the population standard deviation <span class="math inline">\(\sigma\)</span> (sigma). Greek symbols are typically used for the characteristics of a population, while Roman letters are used for the characteristics of an empirically collected distribution (i.e., a sample).</p>
+<p>The methods of <strong>inferential statistics</strong> allow us to draw conclusions about the population from the sample. More precisely, inferential statistics helps us to <em>estimate</em> the parameters of the population. There are also measures, such as the standard error, that describe how good or bad the estimate is. Before a statistical test is conducted, it must be clear what is being tested: the so-called null hypothesis (H0). We operate according to the principle of falsification, i.e., we try to refute H0 with a statistical test. In addition, the alternative hypothesis (H1) is often mentioned, which is the exact opposite of the null hypothesis. Here is an example:</p>
+<p>We have conducted an experiment because we want to investigate whether the duration of a vowel is influenced by the vowel’s tension. The collected data is stored in the data frame <code>df</code>. We then formulate the following hypotheses:</p>
+<ul>
+<li>H0: <em>The vowel duration is not influenced by tension.</em></li>
+<li>H1: <em>The vowel duration is influenced by tension.</em></li>
+</ul>
+<p>We then perform a statistical test to falsify H0. But be careful: If we have falsified H0, that does <em>not</em> mean that we have verified H1!</p>
+<p>In addition, <em>before</em> conducting our statistical test, we must define the so-called <strong>significance level</strong>, also known as the <strong><span class="math inline">\(\alpha\)</span>-level</strong> (alpha level). This is the probability value at which we reject our null hypothesis or consider it falsified. In science, there are three (arbitrarily defined!) <span class="math inline">\(\alpha\)</span>-levels: <strong>0.05, 0.01, and 0.001</strong>. If the result of our statistical test falls <em>below</em> the defined significance level, we consider H0 refuted and describe the result as “significant”. In the case of the statistical tests presented here, the <strong><span class="math inline">\(p\)</span>-value</strong> is calculated, which provides information about the significance level. With a <span class="math inline">\(p\)</span>-value of <span class="math inline">\(p\)</span> &lt; 0.05, the test result is statistically significant.</p>
+</div>
+<div id="normal-distribution" class="section level2 hasAnchor" number="2.3">
+<h2><span class="header-section-number">2.3</span> Normal Distribution<a href="introduction-to-inferential-statistics.html#normal-distribution" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Above, we pointed out the difference between a population and a sample. Similarly, a distinction is also made between theoretical and empirical distributions. <strong>Theoretical distributions</strong> often have established names (normal distribution, Poisson distribution, Student’s <span class="math inline">\(t\)</span>-distribution, etc.), and it is assumed that measurements taken for an entire population follow a specific theoretical distribution. However, as we have noted, we can almost never measure an entire population and instead use a sample. The measurements from a sample represent an <strong>empirical distribution</strong> because they were collected empirically. We will frequently need to test which theoretical distribution the observed empirical distribution most closely resembles.</p>
+<p>In many empirical experiments, the data follows a normal distribution (also called a Gaussian distribution). This distribution can be completely described by two parameters: its mean and standard deviation. Here you see three different normal distributions:</p>
+<ul>
+<li>black: mean <span class="math inline">\(\mu = 0\)</span> and standard deviation <span class="math inline">\(\sigma = 1\)</span></li>
+<li>blue: mean <span class="math inline">\(\mu = 3\)</span> and standard deviation <span class="math inline">\(\sigma = 2\)</span></li>
+<li>green: mean <span class="math inline">\(\mu = -2\)</span> and standard deviation <span class="math inline">\(\sigma = 1.5\)</span></li>
+</ul>
+<p><img src="img/normalverteilung.png" /></p>
+<p>As you can see, the mean shifts the normal distribution along the x-axis, while the standard deviation leads to changes in the width of the distribution: the larger the standard deviation, the wider the normal distribution. Furthermore, the plot shows that the distribution is <em>continuous</em>, meaning it covers the range of values from minus to plus infinity.</p>
+<div id="testing-for-normal-distribution" class="section level3 hasAnchor" number="2.3.1">
+<h3><span class="header-section-number">2.3.1</span> Testing for Normal Distribution<a href="introduction-to-inferential-statistics.html#testing-for-normal-distribution" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The duration of vowels was recorded in the data frame <code>df</code>. We want to test whether the empirical distribution of the duration corresponds to the normal distribution. First, here is the empirically measured duration in a probability density distribution:</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="introduction-to-inferential-statistics.html#cb10-1" tabindex="-1"></a><span class="fu">ggplot</span>(df) <span class="sc">+</span> </span>
+<span id="cb10-2"><a href="introduction-to-inferential-statistics.html#cb10-2" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> duration) <span class="sc">+</span> </span>
+<span id="cb10-3"><a href="introduction-to-inferential-statistics.html#cb10-3" tabindex="-1"></a>  <span class="fu">geom_density</span>() <span class="sc">+</span></span>
+<span id="cb10-4"><a href="introduction-to-inferential-statistics.html#cb10-4" tabindex="-1"></a>  <span class="fu">xlab</span>(<span class="st">&quot;Log. Duration&quot;</span>) <span class="sc">+</span> <span class="fu">ylab</span>(<span class="st">&quot;Probability Density&quot;</span>) <span class="sc">+</span></span>
+<span id="cb10-5"><a href="introduction-to-inferential-statistics.html#cb10-5" tabindex="-1"></a>  <span class="fu">xlim</span>(<span class="fl">3.0</span>, <span class="fl">7.0</span>)</span></code></pre></div>
+<p><img src="statistik_r_files/figure-html/unnamed-chunk-8-1.svg" width="672" /></p>
+<div class="gray">
+<p><strong>Further information: Taking the logarithm</strong></p>
+<p>In the figure, you see the vowel duration not in milliseconds, but in logarithmic form, i.e., we have applied the natural logarithm to the data (see code snippet where <code>df</code> was loaded). For certain measurements, it can be useful to logarithmically transform the data, namely when the empirical distribution is skewed. With reaction times, for example, it is not possible to have values below zero; very low values (below 100ms) are also very unlikely, but very long reaction times do occur. The same goes for duration values. The actual duration values in milliseconds look like this:</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="introduction-to-inferential-statistics.html#cb11-1" tabindex="-1"></a><span class="fu">ggplot</span>(df) <span class="sc">+</span> </span>
+<span id="cb11-2"><a href="introduction-to-inferential-statistics.html#cb11-2" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> dur) <span class="sc">+</span> </span>
+<span id="cb11-3"><a href="introduction-to-inferential-statistics.html#cb11-3" tabindex="-1"></a>  <span class="fu">geom_density</span>() <span class="sc">+</span> </span>
+<span id="cb11-4"><a href="introduction-to-inferential-statistics.html#cb11-4" tabindex="-1"></a>  <span class="fu">xlab</span>(<span class="st">&quot;Duration (ms)&quot;</span>) <span class="sc">+</span> <span class="fu">ylab</span>(<span class="st">&quot;Probability Density&quot;</span>)</span></code></pre></div>
+<p><img src="statistik_r_files/figure-html/unnamed-chunk-9-1.svg" width="672" /></p>
+<p>This distribution has a strong right-hand side skew, precisely because long durations occur while very short durations are rare.</p>
+</div>
+<div id="superimposing-the-normal-distribution" class="section level4 hasAnchor" number="2.3.1.1">
+<h4><span class="header-section-number">2.3.1.1</span> Superimposing the Normal Distribution<a href="introduction-to-inferential-statistics.html#superimposing-the-normal-distribution" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>In order to test whether data is normally distributed, visual methods are more popular amongst statisticians than statistical tests. The first method is to superimpose a normal distribution with the same mean and standard deviation as the empirical distribution onto the latter. We can use the function <code>dnorm()</code> for this, which receives the arguments <code>mean</code> and <code>sd</code>. In <code>ggplot2</code>, we cannot simply add “foreign” functions such as <code>dnorm()</code> to our <code>ggplot()</code> code. Instead, we use the function <code>stat_function()</code> from the <code>ggplot2</code> package. This function takes the following arguments:</p>
+<ul>
+<li><p><code>fun</code>: the function with which a new curve shall be created (here: the curve of a normal distribution).</p></li>
+<li><p><code>args</code>: a list of arguments belonging to the function given to the argument <code>fun</code>. In our case, the function <code>dnorm()</code> needs the arguments <code>mean</code> and <code>sd</code>.</p></li>
+</ul>
+<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="introduction-to-inferential-statistics.html#cb12-1" tabindex="-1"></a><span class="fu">ggplot</span>(df) <span class="sc">+</span> </span>
+<span id="cb12-2"><a href="introduction-to-inferential-statistics.html#cb12-2" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> duration) <span class="sc">+</span> </span>
+<span id="cb12-3"><a href="introduction-to-inferential-statistics.html#cb12-3" tabindex="-1"></a>  <span class="fu">geom_density</span>() <span class="sc">+</span> </span>
+<span id="cb12-4"><a href="introduction-to-inferential-statistics.html#cb12-4" tabindex="-1"></a>  <span class="fu">xlim</span>(<span class="fl">3.0</span>, <span class="fl">7.0</span>) <span class="sc">+</span> </span>
+<span id="cb12-5"><a href="introduction-to-inferential-statistics.html#cb12-5" tabindex="-1"></a>  <span class="fu">xlab</span>(<span class="st">&quot;Log. Duration&quot;</span>) <span class="sc">+</span> <span class="fu">ylab</span>(<span class="st">&quot;Probability Density&quot;</span>) <span class="sc">+</span></span>
+<span id="cb12-6"><a href="introduction-to-inferential-statistics.html#cb12-6" tabindex="-1"></a>  <span class="fu">stat_function</span>(<span class="at">fun =</span> dnorm, </span>
+<span id="cb12-7"><a href="introduction-to-inferential-statistics.html#cb12-7" tabindex="-1"></a>                <span class="at">args =</span> <span class="fu">list</span>(<span class="at">mean =</span> <span class="fu">mean</span>(df<span class="sc">$</span>duration), <span class="at">sd =</span> <span class="fu">sd</span>(df<span class="sc">$</span>duration)),</span>
+<span id="cb12-8"><a href="introduction-to-inferential-statistics.html#cb12-8" tabindex="-1"></a>                <span class="at">color =</span> <span class="st">&quot;blue&quot;</span>)</span></code></pre></div>
+<p><img src="statistik_r_files/figure-html/unnamed-chunk-10-1.svg" width="672" /></p>
+<p>There are small differences between the blue normal distribution and the black empirical one. Our data may not be perfectly normally distributed, but at least approximately so.</p>
+</div>
+<div id="q-q-plot" class="section level4 hasAnchor" number="2.3.1.2">
+<h4><span class="header-section-number">2.3.1.2</span> Q-Q Plot<a href="introduction-to-inferential-statistics.html#q-q-plot" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>In addition to superimposing a normal distribution onto the empirical distribution, so-called <strong>Q-Q plots</strong> are frequently used, where Q stands for <strong>quantile</strong>. Watch the following <a href="https://www.youtube.com/watch?v=X9_ISJ0YpGw">YouTube video</a> to understand how this plot is computed. And don’t get confused: Although the video shows “<em>sample quantiles</em>” on the y-axis, these are simply the data points ordered in ascending order!</p>
+<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="introduction-to-inferential-statistics.html#cb13-1" tabindex="-1"></a><span class="fu">ggplot</span>(df) <span class="sc">+</span> </span>
+<span id="cb13-2"><a href="introduction-to-inferential-statistics.html#cb13-2" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">sample =</span> duration) <span class="sc">+</span> </span>
+<span id="cb13-3"><a href="introduction-to-inferential-statistics.html#cb13-3" tabindex="-1"></a>  <span class="fu">stat_qq</span>() <span class="sc">+</span> </span>
+<span id="cb13-4"><a href="introduction-to-inferential-statistics.html#cb13-4" tabindex="-1"></a>  <span class="fu">stat_qq_line</span>() <span class="sc">+</span> </span>
+<span id="cb13-5"><a href="introduction-to-inferential-statistics.html#cb13-5" tabindex="-1"></a>  <span class="fu">ylab</span>(<span class="st">&quot;samples&quot;</span>) <span class="sc">+</span> </span>
+<span id="cb13-6"><a href="introduction-to-inferential-statistics.html#cb13-6" tabindex="-1"></a>  <span class="fu">xlab</span>(<span class="st">&quot;theoretical quantiles&quot;</span>)</span></code></pre></div>
+<p><img src="statistik_r_files/figure-html/unnamed-chunk-11-1.svg" width="672" /></p>
+<p>In <code>ggplot2</code>, this plot can be created using <code>stat_qq()</code>. Additionally, we use <code>stat_qq_line()</code> to plot a straight line that serves as a reference. If the points deviate from the line, the data are not normally distributed (although slight deviations at the upper and lower ends of the line are quite common). In this case, a slight deviation from the normal distribution is also visible.</p>
+</div>
+<div id="practice-your-interpretation" class="section level4 hasAnchor" number="2.3.1.3">
+<h4><span class="header-section-number">2.3.1.3</span> Practice Your Interpretation<a href="introduction-to-inferential-statistics.html#practice-your-interpretation" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Initially, it can be difficult to determine from one or two plots whether the plotted data are normally distributed. Therefore, we show four examples of clearly non-normally distributed data so that you can hone your ability to recognize what Q-Q plots and overlaid probability distributions <em>should not</em> look like if your data are normally distributed.</p>
+<p>Below, you will see four probability distributions: for bimodal data (there are two peaks), for left- and right-skewed data, and for uniformly distributed data (where each value theoretically occurs with equal frequency).</p>
+<p><img src="img/dists.png" /></p>
+<p>Here are the same probability distributions with the respective parametrically fitted normal distribution (i.e., for each normal distribution, the mean and standard deviation corresponding to the depicted distribution were used):</p>
+<p><img src="img/dists_norm.png" /></p>
+<p>Finally, we also create Q-Q plots for all four distributions, which deviate significantly from the straight line:</p>
+<p><img src="img/dists_qq.png" /></p>
+</div>
+<div id="shapiro-wilk-test" class="section level4 hasAnchor" number="2.3.1.4">
+<h4><span class="header-section-number">2.3.1.4</span> Shapiro-Wilk Test<a href="introduction-to-inferential-statistics.html#shapiro-wilk-test" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Finally, we take a look at the <strong>Shapiro-Wilk test</strong> because it is the most frequently used test for normal distributions. In R, the function <code>shapiro.test()</code> conducts that test and takes the data as a vector as its only argument:</p>
+<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="introduction-to-inferential-statistics.html#cb14-1" tabindex="-1"></a><span class="fu">shapiro.test</span>(df<span class="sc">$</span>duration)</span></code></pre></div>
+<pre><code>## 
+##  Shapiro-Wilk normality test
+## 
+## data:  df$duration
+## W = 0.99, p-value = 2e-11</code></pre>
+<p>The null hypothesis of this test is that the data are indeed normally distributed. If the <span class="math inline">\(p\)</span>-value is below the generally accepted significance level of <span class="math inline">\(\alpha = 0.05\)</span>, we must reject this hypothesis and therefore assume that the data are not normally distributed. According to this test, our log-transformed duration values are therefore not normally distributed. For the Shapiro-Wilk test, your dataset should consist of fewer than 5000 observations and should not contain too many outliers or identical values, as this can strongly influence the validity of the result. Despite this test result, based on the plots created earlier, I would assume that our data are approximately normally distributed.</p>
+<div class="gray">
+<p><strong>Further information: Scientific notation of numbers</strong></p>
+<p>Very large and very small numbers in R are often represented using scientific notation, e.g., 1e+02 instead of 100. “e” here stands for base 10, and the numbers that follow are the exponent:</p>
+<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="introduction-to-inferential-statistics.html#cb16-1" tabindex="-1"></a><span class="fl">1e+02</span> <span class="sc">==</span> <span class="dv">1</span> <span class="sc">*</span> <span class="dv">10</span><span class="sc">^</span><span class="dv">2</span></span></code></pre></div>
+<pre><code>## [1] TRUE</code></pre>
+<div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb18-1"><a href="introduction-to-inferential-statistics.html#cb18-1" tabindex="-1"></a><span class="fl">1e-02</span> <span class="sc">==</span> <span class="dv">1</span> <span class="sc">*</span> <span class="dv">10</span><span class="sc">^-</span><span class="dv">2</span></span></code></pre></div>
+<pre><code>## [1] TRUE</code></pre>
+<p>With numbers like 100 or 0.01, you can still easily convert scientific notation in your head. But of course, R can do this for you, using the <code>format()</code> function, which takes the argument <code>scientific = FALSE</code>:</p>
+<div class="sourceCode" id="cb20"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb20-1"><a href="introduction-to-inferential-statistics.html#cb20-1" tabindex="-1"></a><span class="fu">format</span>(<span class="fl">1e+02</span>, <span class="at">scientific =</span> F)</span></code></pre></div>
+<pre><code>## [1] &quot;100&quot;</code></pre>
+<div class="sourceCode" id="cb22"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb22-1"><a href="introduction-to-inferential-statistics.html#cb22-1" tabindex="-1"></a><span class="fu">format</span>(<span class="fl">1e-02</span>, <span class="at">scientific =</span> F)</span></code></pre></div>
+<pre><code>## [1] &quot;0.01&quot;</code></pre>
+<div class="sourceCode" id="cb24"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb24-1"><a href="introduction-to-inferential-statistics.html#cb24-1" tabindex="-1"></a><span class="co"># and for the p-value from our Shapiro-Wilk test above:</span></span>
+<span id="cb24-2"><a href="introduction-to-inferential-statistics.html#cb24-2" tabindex="-1"></a><span class="fu">format</span>(<span class="fl">2.062e-11</span>, <span class="at">scientific =</span> F)</span></code></pre></div>
+<pre><code>## [1] &quot;0.00000000002062&quot;</code></pre>
+<p>Attention! This function returns character objects, so if you want to work with the converted number you must use <code>as.numeric()</code> to convert the result of <code>format()</code> back into a number:</p>
+<div class="sourceCode" id="cb26"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb26-1"><a href="introduction-to-inferential-statistics.html#cb26-1" tabindex="-1"></a><span class="fu">class</span>(<span class="fu">format</span>(<span class="fl">1e+02</span>, <span class="at">scientific =</span> F))</span></code></pre></div>
+<pre><code>## [1] &quot;character&quot;</code></pre>
+<div class="sourceCode" id="cb28"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb28-1"><a href="introduction-to-inferential-statistics.html#cb28-1" tabindex="-1"></a><span class="fu">as.numeric</span>(<span class="fu">format</span>(<span class="fl">1e+02</span>, <span class="at">scientific =</span> F))</span></code></pre></div>
+<pre><code>## [1] 100</code></pre>
+</div>
+</div>
+</div>
+<div id="rule-confidence-intervals" class="section level3 hasAnchor" number="2.3.2">
+<h3><span class="header-section-number">2.3.2</span> 68–95–99.7 Rule &amp; Confidence Intervals<a href="introduction-to-inferential-statistics.html#rule-confidence-intervals" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="theoretical" class="section level4 hasAnchor" number="2.3.2.1">
+<h4><span class="header-section-number">2.3.2.1</span> Theoretical<a href="introduction-to-inferential-statistics.html#theoretical" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>For normal distributions (and, approximately, also for quasi-normally distributed data), the so-called <strong>68–95–99.7 rule</strong> applies. We illustrate this with a normal distribution with mean <span class="math inline">\(\mu = 0\)</span> and standard deviation <span class="math inline">\(\sigma = 1\)</span>:</p>
+<p><img src="img/area_norm.png" /></p>
+<p>The total area under the normal distribution is 1, meaning we can use the area to determine the probability that data points fall within a given range of values. With a normal distribution, 68% of the data falls within the blue area, 95% within the blue + red area, and 99.7% within the entire shaded area. As you can see from the x-axis of this figure, this corresponds to <span class="math inline">\(\mu\pm1\sigma\)</span> (blue), <span class="math inline">\(\mu\pm2\sigma\)</span> (blue + red), and <span class="math inline">\(\mu\pm3\sigma\)</span> (blue + red + yellow). The 68–95–99.7 rule is therefore a mnemonic to help remember that with (approximately) normally distributed data, 68% of the data points lie within a range of <span class="math inline">\(\mu\pm1\sigma\)</span>, and so on.</p>
+<p>We can calculate the area under the normal distribution using <strong><code>pnorm()</code></strong>. This function takes an x-value and the mean and standard deviation that describe the normal distribution (the default is zero and one, so I’m omitting these two arguments here). Then, <code>pnorm()</code> calculates the area from negative infinity up to the specified x-value. If we enter a very high x-value, it should become clear that the area under the normal distribution is indeed 1:</p>
+<div class="sourceCode" id="cb30"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb30-1"><a href="introduction-to-inferential-statistics.html#cb30-1" tabindex="-1"></a><span class="fu">pnorm</span>(<span class="dv">100</span>)</span></code></pre></div>
+<pre><code>## [1] 1</code></pre>
+<p>For <code>x = 0</code> (i.e. our mean), the area should be 0.5:</p>
+<div class="sourceCode" id="cb32"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb32-1"><a href="introduction-to-inferential-statistics.html#cb32-1" tabindex="-1"></a><span class="fu">pnorm</span>(<span class="dv">0</span>)</span></code></pre></div>
+<pre><code>## [1] 0.5</code></pre>
+<p>This means that 50% of all data points fall within the range from negative infinity to zero. Now we can also calculate the areas highlighted above:</p>
+<div class="sourceCode" id="cb34"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb34-1"><a href="introduction-to-inferential-statistics.html#cb34-1" tabindex="-1"></a><span class="co"># blue areas:</span></span>
+<span id="cb34-2"><a href="introduction-to-inferential-statistics.html#cb34-2" tabindex="-1"></a><span class="fu">pnorm</span>(<span class="dv">0</span>) <span class="sc">-</span> <span class="fu">pnorm</span>(<span class="sc">-</span><span class="dv">1</span>)</span></code></pre></div>
+<pre><code>## [1] 0.3413</code></pre>
+<div class="sourceCode" id="cb36"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb36-1"><a href="introduction-to-inferential-statistics.html#cb36-1" tabindex="-1"></a><span class="fu">pnorm</span>(<span class="dv">1</span>) <span class="sc">-</span> <span class="fu">pnorm</span>(<span class="dv">0</span>)</span></code></pre></div>
+<pre><code>## [1] 0.3413</code></pre>
+<div class="sourceCode" id="cb38"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb38-1"><a href="introduction-to-inferential-statistics.html#cb38-1" tabindex="-1"></a><span class="co"># read areas:</span></span>
+<span id="cb38-2"><a href="introduction-to-inferential-statistics.html#cb38-2" tabindex="-1"></a><span class="fu">pnorm</span>(<span class="sc">-</span><span class="dv">1</span>) <span class="sc">-</span> <span class="fu">pnorm</span>(<span class="sc">-</span><span class="dv">2</span>)</span></code></pre></div>
+<pre><code>## [1] 0.1359</code></pre>
+<div class="sourceCode" id="cb40"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb40-1"><a href="introduction-to-inferential-statistics.html#cb40-1" tabindex="-1"></a><span class="fu">pnorm</span>(<span class="dv">2</span>) <span class="sc">-</span> <span class="fu">pnorm</span>(<span class="dv">1</span>)</span></code></pre></div>
+<pre><code>## [1] 0.1359</code></pre>
+<div class="sourceCode" id="cb42"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb42-1"><a href="introduction-to-inferential-statistics.html#cb42-1" tabindex="-1"></a><span class="co"># yellow areas:</span></span>
+<span id="cb42-2"><a href="introduction-to-inferential-statistics.html#cb42-2" tabindex="-1"></a><span class="fu">pnorm</span>(<span class="sc">-</span><span class="dv">2</span>) <span class="sc">-</span> <span class="fu">pnorm</span>(<span class="sc">-</span><span class="dv">3</span>)</span></code></pre></div>
+<pre><code>## [1] 0.0214</code></pre>
+<div class="sourceCode" id="cb44"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb44-1"><a href="introduction-to-inferential-statistics.html#cb44-1" tabindex="-1"></a><span class="fu">pnorm</span>(<span class="dv">3</span>) <span class="sc">-</span> <span class="fu">pnorm</span>(<span class="dv">2</span>)</span></code></pre></div>
+<pre><code>## [1] 0.0214</code></pre>
+<p>In statistics, we are often interested in whether data falls within a <strong>confidence interval</strong>, usually referred to as the 95% confidence interval. This means that for normally distributed data, we check whether a data point falls within the range <span class="math inline">\(\mu \pm 2\sigma\)</span>. To determine the precise range of values, we use the <strong><code>qnorm()</code></strong> function, which again takes the mean and standard deviation as arguments, and additionally the desired area under the distribution. If we want a total area of 0.95 symmetrically around the mean, the area at the left and right edges of the distribution is <span class="math inline">\((1 - 0.95) / 2 = 0.025\)</span>. For our normal distribution above, we can then calculate:</p>
+<div class="sourceCode" id="cb46"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb46-1"><a href="introduction-to-inferential-statistics.html#cb46-1" tabindex="-1"></a><span class="fu">qnorm</span>(<span class="fl">0.025</span>)</span></code></pre></div>
+<pre><code>## [1] -1.96</code></pre>
+<div class="sourceCode" id="cb48"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb48-1"><a href="introduction-to-inferential-statistics.html#cb48-1" tabindex="-1"></a><span class="fu">qnorm</span>(<span class="dv">1</span><span class="fl">-0.025</span>)</span></code></pre></div>
+<pre><code>## [1] 1.96</code></pre>
+<p>This means that for a normal distribution with mean <span class="math inline">\(\mu = 0\)</span> and standard deviation <span class="math inline">\(\sigma = 1\)</span>, an area of 0.95 (i.e., 95% of the data points) lies between -1.96 and 1.96. Above, we stated that the area of 0.95 corresponds to <span class="math inline">\(\mu \pm2\sigma\)</span> – more precisely, we should have written <span class="math inline">\(\mu \pm 1.96\sigma\)</span>.</p>
+</div>
+<div id="empirical" class="section level4 hasAnchor" number="2.3.2.2">
+<h4><span class="header-section-number">2.3.2.2</span> Empirical<a href="introduction-to-inferential-statistics.html#empirical" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Let’s assume we’ve determined that the duration values in <code>df</code> are normally distributed. Using our knowledge of the 68–95–99.7 rule and confidence intervals, we can, for example, find out the probability that a new measurement point from the same experiment falls within a certain range of values. The following figures show the normal distribution with mean <code>mean(df$duration)</code> and standard deviation <code>sd(df$duration)</code>, and not the empirical data distribution.</p>
+<div class="sourceCode" id="cb50"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb50-1"><a href="introduction-to-inferential-statistics.html#cb50-1" tabindex="-1"></a>mean_dur <span class="ot">&lt;-</span> <span class="fu">mean</span>(df<span class="sc">$</span>duration)</span>
+<span id="cb50-2"><a href="introduction-to-inferential-statistics.html#cb50-2" tabindex="-1"></a>sd_dur <span class="ot">&lt;-</span> <span class="fu">sd</span>(df<span class="sc">$</span>duration)</span></code></pre></div>
+<p>So, if we repeat the same experiment from which <code>df</code> was derived, what is the probability that a new data point would lie in a range of values below 4.5 (logarithmic duration)?</p>
+<p><img src="img/norm_area1.png" /></p>
+<p>This is equivalent to asking how large the blue area is, because the total area under the normal distribution is always equal to 1. For this, we use the function <code>pnorm()</code>:</p>
+<div class="sourceCode" id="cb51"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb51-1"><a href="introduction-to-inferential-statistics.html#cb51-1" tabindex="-1"></a><span class="fu">pnorm</span>(<span class="fl">4.5</span>, <span class="at">mean =</span> mean_dur, <span class="at">sd =</span> sd_dur)</span></code></pre></div>
+<pre><code>## [1] 0.07422</code></pre>
+<p>The probability that a new data point falls within a value range from negative infinity to 4.5 is therefore 7.4%.</p>
+<p>Now the same for the following blue area:</p>
+<p><img src="img/norm_area2.png" /></p>
+<p>So we ask ourselves how large this area is, or rather, with what probability a new data point falls into the range above 5.1. However, we must consider two things when calculating this: First, <code>pnorm()</code> always calculates the area between negative infinity and a value; second, the area under the normal distribution is equal to 1. Therefore:</p>
+<div class="sourceCode" id="cb53"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb53-1"><a href="introduction-to-inferential-statistics.html#cb53-1" tabindex="-1"></a><span class="dv">1</span> <span class="sc">-</span> <span class="fu">pnorm</span>(<span class="fl">5.1</span>, <span class="at">mean =</span> mean_dur, <span class="at">sd =</span> sd_dur)</span></code></pre></div>
+<pre><code>## [1] 0.2536</code></pre>
+<p>The area is therefore 0.254, i.e. the probability is 25.4%.</p>
+<p>If we are now interested in the probability that the values in the experiment fall within the range of 4.9 to 5.5, we need to manipulate <code>pnorm()</code> as follows:</p>
+<p><img src="img/norm_area3.png" /></p>
+<div class="sourceCode" id="cb55"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb55-1"><a href="introduction-to-inferential-statistics.html#cb55-1" tabindex="-1"></a><span class="fu">pnorm</span>(<span class="fl">5.5</span>, <span class="at">mean =</span> mean_dur, <span class="at">sd =</span> sd_dur) <span class="sc">-</span> <span class="fu">pnorm</span>(<span class="fl">4.9</span>, <span class="at">mean =</span> mean_dur, <span class="at">sd =</span> sd_dur)</span></code></pre></div>
+<pre><code>## [1] 0.4965</code></pre>
+<p>So the probability that a new data point falls within the queried range of values is 49.7%.</p>
+<p>Now, we want to determine the 95% confidence interval for our distribution of duration values, i.e., the range of values in which 95% of the data lie. This simply means that we are trying to calculate the range of values for which the area under the normal distribution is 0.95. Since the area should be symmetrically distributed around the mean, the boundary region on each side must be calculated for which the area is <span class="math inline">\((1 - 0.95) / 2 = 0.025\)</span>.</p>
+<p><img src="img/norm_area4.png" /></p>
+<p>To this end, we once again use <code>qnorm()</code>:</p>
+<div class="sourceCode" id="cb57"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb57-1"><a href="introduction-to-inferential-statistics.html#cb57-1" tabindex="-1"></a><span class="fu">qnorm</span>(<span class="fl">0.025</span>, <span class="at">mean =</span> mean_dur, <span class="at">sd =</span> sd_dur)</span></code></pre></div>
+<pre><code>## [1] 4.353</code></pre>
+<div class="sourceCode" id="cb59"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb59-1"><a href="introduction-to-inferential-statistics.html#cb59-1" tabindex="-1"></a><span class="fu">qnorm</span>(<span class="fl">0.975</span>, <span class="at">mean =</span> mean_dur, <span class="at">sd =</span> sd_dur)</span></code></pre></div>
+<pre><code>## [1] 5.469</code></pre>
+<p>This means that a new value from the experiment will fall within the range of 4.35 to 5.47 with a probability of 95%, or that 95% of the data from the current experiment lie within this range (assuming that the data are normally distributed).</p>
+<div class="sourceCode" id="cb61"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb61-1"><a href="introduction-to-inferential-statistics.html#cb61-1" tabindex="-1"></a>count <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span> </span>
+<span id="cb61-2"><a href="introduction-to-inferential-statistics.html#cb61-2" tabindex="-1"></a>  <span class="fu">filter</span>(duration <span class="sc">&gt;</span> <span class="fl">4.35</span> <span class="sc">&amp;</span> duration <span class="sc">&lt;</span> <span class="fl">5.47</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb61-3"><a href="introduction-to-inferential-statistics.html#cb61-3" tabindex="-1"></a>  <span class="fu">nrow</span>()</span>
+<span id="cb61-4"><a href="introduction-to-inferential-statistics.html#cb61-4" tabindex="-1"></a>count</span></code></pre></div>
+<pre><code>## [1] 2877</code></pre>
+<div class="sourceCode" id="cb63"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb63-1"><a href="introduction-to-inferential-statistics.html#cb63-1" tabindex="-1"></a>count <span class="sc">/</span> <span class="fu">nrow</span>(df)</span></code></pre></div>
+<pre><code>## [1] 0.9648</code></pre>
+<p>In fact, 96.5% of the data lies within the calculated range. This again illustrates the difference between theoretical and empirical distribution: We verified that our empirical data is approximately normally distributed and then created a normal distribution using the mean and standard deviation of the data. It is a <em>theoretical</em> calculation that 95% of the data lies within the range of 4.35 to 5.47 (and that 7.4% of the data lies below 4.5, etc.), because this is based on the theoretical normal distribution. If we look at the actual proportions of the values within the ranges and the confidence interval, they may differ from the theoretically calculated proportions.</p>
 
+</div>
+</div>
+</div>
 </div>
             </section>
 
@@ -244,6 +551,20 @@ gitbook.start({
 });
 </script>
 
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
 </body>
 
 </html>

@@ -7,6 +7,7 @@ dokumentarten
 r-skripte
 r-markdown
 hilfe-zur-selbsthilfe
+einführung-in-programmieren-mit-r
 fehler-erkennen
 community-nutzen
 hilfe-zu-ggplot2
@@ -71,16 +72,16 @@ gütekriterien-für-mixed-models
 marginal-und-conditional-r2
 likelihood-ratio-tests
 logistische-regression
-setup-und-pakete-laden
+pakete-und-daten-laden
 von-der-linearen-zur-logistischen-regression
 ein-beispiel-für-p-q-und-logit
 die-logistische-regressionslinie
 regression-mit-glm
-deviance-residuals
 coefficients
 deviances-und-aic
 fisher-scoring-iterations
-der-chi-square-test-ergebnisse-berichten
+deviance-residuals
+der-chi2-test-ergebnisse-berichten
 die-sigmoidal-funktion-und-der-umkipppunkt
 der-umkipppunkt
 proportionen-abbilden

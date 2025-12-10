@@ -14,11 +14,11 @@ faux <- read.table(file.path(url, "faux.txt"), stringsAsFactors = T, header = T)
   as_tibble()
 int <- read.table(file.path(url, "dbwort.df.txt"), stringsAsFactors = T) %>% 
   as_tibble() %>% 
-  rename(vowel = V, gender = G)
+  rename(vowel = V, gender = G, subject = Vpn, word = Wort)
 vlax <- read.table(file.path(url, "vlax.txt"), stringsAsFactors = T) %>%
   as_tibble() %>%
   filter(V %in% c("O", "I") & f0 != 0) %>%
-  rename(vowel = V)
+  rename(vowel = V, subject = Vpn, word = Wort, duration = Dauer)
 ```
 
 ## Einführung
@@ -27,7 +27,7 @@ Bislang haben wir mit der einfachen linearen Regression gearbeitet, bei der eine
 
 $y = k + b_1x_1 + b_2x_2 + ...$
 
-Auch hier steht $k$ wieder für den y-Achsenabschnitt, $b_1$, $b_2$ usw. sind Slopes. Im Folgenden zeigen wir drei Beispiele für multiple lineare Regressionen, je nach der Art der unabhängigen Variablen (kategorial oder kontinuierlich). Aus Gründen der Übersichtlichkeit enthalten alle Beispiele nur zwei unabhängige Variablen; es können aber natürlich generell auch mehr als zwei Prädiktoren in der Regression vorkommen.
+Auch hier steht $k$ wieder für den y-Achsenabschnitt, $b_1$, $b_2$ usw. sind Slopes. Im Folgenden zeige ich Ihnen drei Beispiele für multiple lineare Regressionen, je nach der Art der unabhängigen Variablen (kategorial oder kontinuierlich). Aus Gründen der Übersichtlichkeit enthalten alle Beispiele nur zwei unabhängige Variablen; es können aber natürlich generell auch mehr als zwei Prädiktoren in der Regression vorkommen.
 
 ## Kontinuierliche unabhängige Variablen
 
@@ -71,7 +71,7 @@ lm1 %>%
   select(term, estimate)
 ```
 
-Hier versuchen wir zu verstehen, was genau die Schätzungen in der Spalte `estimate` bedeuten. Die Schätzung für das Intercept ist auch in der multiplen Regression das geschätzte arithmetische Mittel der abhängigen Variable für $x_1 = 0$ und $x_2 = 0$ (und alle möglichen weiteren $x$, wenn es noch mehr unabhängige Variablen gibt). Das heißt, wenn die Lautstärke 0 dB beträgt und die Dauer ebenfalls 0 ms ist, sollte die Grundfrequenz bei 168.6 Hz liegen. Die Slopes messen nun nicht mehr den Effekt jeder einzelnen unabhängigen Variable, sondern den Effekt einer unabhängigen Variable, während alle anderen Variablen konstant bei Null gehalten werden. Jede Erhöhung der Lautstärke um ein Dezibel (bei konstanter Dauer) führt zu einer Erhöhung der Grundfrequenz um 2.9 Hz, jede Erhöhung der Dauer um eine Millisekunde (bei konstanter Lautstärke) führt zu einer Reduktion der Grundfrequenz um 0.4 Hz. Das heißt hier finden wir die erwarteten Zusammenhänge wieder: Lautstärke beeinflusst die Grundfrequenz positiv, Dauer negativ.
+Versuchen wir zu verstehen, was genau die Schätzungen in der Spalte `estimate` bedeuten. Die Schätzung für das Intercept ist auch in der multiplen Regression das geschätzte arithmetische Mittel der abhängigen Variable für $x_1 = 0$ und $x_2 = 0$ (und alle möglichen weiteren $x$, wenn es noch mehr unabhängige Variablen gibt). Das heißt, wenn die Lautstärke 0 dB beträgt und die Dauer ebenfalls 0 ms ist, sollte die Grundfrequenz bei 168.6 Hz liegen. Die Slopes messen nun nicht mehr den Effekt jeder einzelnen unabhängigen Variable, sondern den Effekt einer unabhängigen Variable, während alle anderen Variablen konstant bei Null gehalten werden. Jede Erhöhung der Lautstärke um ein Dezibel (bei konstanter Dauer) führt zu einer Erhöhung der Grundfrequenz um 2.9 Hz, jede Erhöhung der Dauer um eine Millisekunde (bei konstanter Lautstärke) führt zu einer Reduktion der Grundfrequenz um 0.4 Hz. Das heißt hier finden wir die erwarteten Zusammenhänge wieder: Lautstärke beeinflusst die Grundfrequenz positiv, Dauer negativ.
 
 Rufen wir uns nochmal die Formel für die Regressionslinie bei zwei unabhängigen Variablen in Erinnerung:
 
@@ -88,7 +88,7 @@ b_2 <- lm1 %>% tidy() %>% filter(term == "dur") %>% pull(estimate)
 b_2
 ```
 
-Nun können wir uns nach Belieben Werte für $x_1$ (Lautstärke in Dezibel) und $x_2$ (Dauer in Millisekunden) ausdenken, zusammen mit den Regressionskoeffizienten in die Formel einsetzen, und so y-Werte schätzen. Wenn wir beide $x$-Werte auf Null setzen, kommt genau das Intercept $k$ als geschätzter y-Wert heraus:
+Nun können wir uns nach Belieben Werte für $x_1$ (Lautstärke in Dezibel) und $x_2$ (Dauer in Millisekunden) ausdenken, zusammen mit den Regressionskoeffizienten in die Formel einsetzen, und so $y$-Werte schätzen. Wenn wir beide $x$-Werte auf Null setzen, kommt genau das Intercept $k$ als geschätzter $y$-Wert heraus:
 
 $$
 \begin{aligned}
@@ -98,7 +98,7 @@ $$
 \end{aligned}
 $$
 
-Wenn Sie diese Werte nicht manuell berechnen möchten, steht Ihnen natürlich die Funktion `predict()` zur Verfügung. Bei der multiplen linearen Regression muss der Funktion ein Data Frame übergeben werden, der so viele Spalten hat wie es unabhängige Variablen in der Regression gab; die Spalten müssen auch genau wie die unabhängigen Variablen benannt sein. Zu Demonstrationszwecken zeigen wir hier, dass die Grundfrequenz `f0` laut dem berechneten linearen Modell wirklich bei ca. 168 Hz liegt, wenn die Lautstärke bei 0 dB und die Dauer bei 0 ms liegt. Wir zeigen außerdem den geschätzten f0-Wert für `db = 1` und `dur = 0` (der 2.9 Hz höher ist als das Intercept) und für `db = 0` und `dur = 1` (der 0.4 Hz niedriger ist als das Intercept). Zuletzt schätzen wir mittels `predict()` den f0-Wert für die durchschnittliche Lautstärke und Dauer.
+Wenn Sie diese Werte nicht manuell berechnen möchten, steht Ihnen natürlich die Funktion `predict()` zur Verfügung. Bei der multiplen linearen Regression muss der Funktion ein Data Frame übergeben werden, der so viele Spalten hat wie es unabhängige Variablen in der Regression gab; die Spalten müssen auch genau wie die unabhängigen Variablen benannt sein. Zu Demonstrationszwecken zeige ich hier, dass die Grundfrequenz `f0` laut dem berechneten linearen Modell wirklich bei ca. 168 Hz liegt, wenn die Lautstärke bei 0 dB und die Dauer bei 0 ms liegt. Außerdem zeige ich den geschätzten f0-Wert für `db = 1` und `dur = 0` (der 2.9 Hz höher ist als das Intercept) und für `db = 0` und `dur = 1` (der 0.4 Hz niedriger ist als das Intercept). Zuletzt schätzen wir mittels `predict()` den f0-Wert für die durchschnittliche Lautstärke und Dauer.
 
 ```{r}
 d1 <- data.frame(dB  = c(0, 1, 0, mean(faux$dB)), 
@@ -143,8 +143,8 @@ ggplot(faux) +
   geom_point() + 
   xlim(0, 95) +
   ylim(0, 500) +
-  geom_abline(slope = slope, intercept = intercept_high_dur, color = "#56B1F7", size = 1.2) +
-  geom_abline(slope = slope, intercept = intercept_low_dur, color = "#132B43", size = 1.2) +
+  geom_abline(slope = slope, intercept = intercept_high_dur, color = "#56B1F7", linewidth = 1.2) +
+  geom_abline(slope = slope, intercept = intercept_low_dur, color = "#132B43", linewidth = 1.2) +
   geom_vline(xintercept = 0, lty = "dashed")
 ```
 
@@ -162,8 +162,8 @@ ggplot(faux) +
   geom_point() + 
   xlim(0, 600) +
   ylim(0, 500) +
-  geom_abline(slope = slope, intercept = intercept_high_dB, color = "#56B1F7", size = 1.2) +
-  geom_abline(slope = slope, intercept = intercept_low_dB, color = "#132B43", size = 1.2) +
+  geom_abline(slope = slope, intercept = intercept_high_dB, color = "#56B1F7", linewidth = 1.2) +
+  geom_abline(slope = slope, intercept = intercept_low_dB, color = "#132B43", linewidth = 1.2) +
   geom_vline(xintercept = 0, lty = "dashed")
 ```
 
@@ -304,11 +304,10 @@ ggplot(faux) +
   geom_point() + 
   xlim(0, 95) +
   ylim(0, 500) +
-  geom_abline(slope = slope_low_dur, intercept = intercept_low_dur, color = "#132B43", size = 1.2) +
-  geom_abline(slope = slope_high_dur, intercept = intercept_high_dur, color = "#56B1F7", size = 1.2) +
+  geom_abline(slope = slope_low_dur, intercept = intercept_low_dur, color = "#132B43", linewidth = 1.2) +
+  geom_abline(slope = slope_high_dur, intercept = intercept_high_dur, color = "#56B1F7", linewidth = 1.2) +
   geom_vline(xintercept = 0, lty = "dashed")
 ```
-
 
 Nachdem wir die Regressionskoeffizienten verstanden haben, schauen wir uns die $t$-Statistik an und stellen fest, dass sowohl die Steigung für `dB` ($t$ = 22.6, $p$ < 0.001) als auch die für `dur` ($t$ = 2.5, $p$ < 0.05) sich signifikant von Null unterscheiden. Zusätzlich unterscheidet sich auch die Steigung für die Interaktion signifikant von Null ($t$ = 7.8, $p$ < 0.001).
 
@@ -494,7 +493,7 @@ d4 %<>% mutate(estimated_mean_dB = predict(lm4, d4))
 d4
 ```
 
-Durch die Einbindung der Funktion in das Modell sind die Lautstärke-Schätzungen im Vergleich zum Modell vorher präziser geworden! Tatsächlich stimmen die Schätzungen perfekt mit den tatsächlichen Mittelwerten überein (das wird im "echten Leben" so gut wie niemals vorkommen):
+Durch die Einbindung der Interaktion in das Modell sind die Lautstärke-Schätzungen im Vergleich zum Modell vorher präziser geworden! Tatsächlich stimmen die Schätzungen perfekt mit den tatsächlichen Mittelwerten überein (das wird im "echten Leben" so gut wie niemals vorkommen):
 
 ```{r}
 int %>% 
@@ -508,7 +507,7 @@ Nun schauen wir uns die $t$-Statistik an, die zeigt, ob unsere Regressionskoeffi
 lm4 %>% tidy()
 ```
 
-Offensichtlich unterscheiden sich die Slope für Geschlecht ($t$ = 7.7, $p$ < 0.001) und (fast) die Slope für Vokal ($t$ = 1.9, $p$ = 0.06) (fast) signifikant von Null. Zusätzlich gab es eine signifikante Interaktion zwischen den Faktoren ($t$ = 2.8, $p$ < 0.01).
+Offensichtlich unterscheiden sich die Slope für Geschlecht ($t$ = 7.7, $p$ < 0.001) und die Slope für Vokal ($t$ = 1.9, $p$ = 0.06) (fast) signifikant von Null. Zusätzlich gab es eine signifikante Interaktion zwischen den Faktoren ($t$ = 2.8, $p$ < 0.01).
 
 Oben haben wir festgestellt, dass unser Modell mit Interaktion die Daten besser beschreibt als das vorherige Modell ohne Interaktion. Dies zeigt sich auch in der $F$-Statistik:
 
@@ -520,7 +519,7 @@ Nun werden ca. 46% der Varianz in den Daten durch die beiden Faktoren und ihre I
 
 *(Natürlich würden wir unter realistischen Bedingungen hier noch die Annahmen über die Residuals prüfen!)*
 
-#### post-hoc Tests mit emmeans
+#### Post-hoc Tests mit emmeans
 
 Wenn in einer multiplen Regression mit mindestens zwei kategorialen unabhängigen Variablen die Interaktion einen signifikanten Effekt auf die gemessene Variable hat, dann sollte man sogenannte **post-hoc Tests** ausführen. Dafür eignet sich das Paket [`emmeans`](https://cran.r-project.org/web/packages/emmeans/vignettes/basics.html) mit der gleichnamigen Funktion außerordentlich gut. Für dieses Paket gibt es mehrere ausführliche Vignetten. 
 
@@ -610,7 +609,7 @@ Trotzdem zeigt die $t$-Statistik, dass sich die Regressionskoeffizienten signifi
 lm5 %>% tidy()
 ```
 
-Wie immer werfen wir auch noch einen Blick auf die Gütekriterien für das Modell und stellen fest, dass durch die beiden unabhängigen Variablen Vokal und Lautstärke ca. 26.6% der Varianz in den Grundfrequenzwerten beschrieben werden kann. Der $F$-Test zeigt, dass unser Regressionsmodell die Daten erfolgreicher beschreibt als ein Modell ohne Prädiktoren ($R^2$ = 0.27, $F$[2, 175] = 33.0, $p$ < 0.001).  
+Wie immer werfen wir auch noch einen Blick auf die Gütekriterien für das Modell und stellen fest, dass durch die beiden unabhängigen Variablen Vokal und Lautstärke ca. 26.6% der Varianz in den Grundfrequenzwerten beschrieben werden kann. Der $F$-Test zeigt, dass unser Regressionsmodell die Daten erfolgreicher beschreibt als ein Modell ohne Prädiktoren ($R^2$ = 0.27, $F$[2, 175] = 33.0, $p$ < 0.001).
 
 ```{r}
 lm5 %>% glance() %>% pivot_longer(cols = c(r.squared:nobs))
@@ -682,7 +681,7 @@ lm6 %>% tidy()
 
 Die Slope für Laustärke ($t$ = 9.0, $p$ < 0.001) und die Slope für Vokal ($t$ = 3.2, $p$ < 0.01) unterscheiden sich signifikant von Null und eignen sich dementsprechend gut als Prädiktoren für die Grundfrequenz. Zusätzlich gab es eine signifikante Interaktion zwischen den Faktoren ($t$ = 3.3, $p$ < 0.001).
 
-Die $F$-Statistik zeigt, dass das Regressionsmodell mit den beiden Prädiktoren und ihrer Interaktion die Daten besser beschreibt als ein Mittelwertmodell ($R^2$ = 0.31, $F$[3, 174] = 27.0, $p$ < 0.001). Anhand des $R^2$-Werts sehen wir, dass das Modell nun auch mehr Varianz in den Grundfrequenzwerten beschreibt als im Modell ohne Interaktion, d.h. die Erklärungskraft des Modells ist durch die Hinzunahme der Interaktion gestiegen.
+Die $F$-Statistik zeigt, dass das Regressionsmodell mit den beiden Prädiktoren und ihrer Interaktion die Daten besser beschreibt als ein Mittelwertmodell ($R^2$ = 0.31, $F$[3, 174] = 27.0, $p$ < 0.001). Anhand des $R^2$-Werts sehen wir, dass das Modell nun auch mehr Varianz in den Grundfrequenzwerten beschreibt als im Modell ohne Interaktion, d.h. die Güte des Modells ist durch die Hinzunahme der Interaktion gestiegen.
 
 ```{r}
 lm6 %>% glance() %>% pivot_longer(cols = c(r.squared:nobs))

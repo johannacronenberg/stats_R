@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>4 Multiple Linear Regression | Statistics in R: An Introduction for Phoneticians</title>
   <meta name="description" content="An introduction to statistics in R focussing on linear regressions. This introduction was written as study material for the students of the Institute of Phonetics and Speech Processing at the University of Munich." />
-  <meta name="generator" content="bookdown 0.44 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.46 and GitBook 2.6.7" />
 
   <meta property="og:title" content="4 Multiple Linear Regression | Statistics in R: An Introduction for Phoneticians" />
   <meta property="og:type" content="book" />
@@ -23,7 +23,7 @@
 <meta name="author" content="Johanna Cronenberg" />
 
 
-<meta name="date" content="2025-09-28" />
+<meta name="date" content="2025-12-10" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -154,18 +154,111 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="1.6" data-path="setup.html"><a href="setup.html#help"><i class="fa fa-check"></i><b>1.6</b> Help</a>
 <ul>
-<li class="chapter" data-level="1.6.1" data-path="setup.html"><a href="setup.html#recognising-errors"><i class="fa fa-check"></i><b>1.6.1</b> Recognising Errors</a></li>
-<li class="chapter" data-level="1.6.2" data-path="setup.html"><a href="setup.html#ask-the-community"><i class="fa fa-check"></i><b>1.6.2</b> Ask the Community</a></li>
-<li class="chapter" data-level="1.6.3" data-path="setup.html"><a href="setup.html#help-with-ggplot2"><i class="fa fa-check"></i><b>1.6.3</b> Help with <code>ggplot2</code></a></li>
-<li class="chapter" data-level="1.6.4" data-path="setup.html"><a href="setup.html#statistics-in-r-literature"><i class="fa fa-check"></i><b>1.6.4</b> Statistics in R: Literature</a></li>
+<li class="chapter" data-level="1.6.1" data-path="setup.html"><a href="setup.html#introduction-to-programming-in-r"><i class="fa fa-check"></i><b>1.6.1</b> Introduction to Programming in R</a></li>
+<li class="chapter" data-level="1.6.2" data-path="setup.html"><a href="setup.html#recognizing-errors"><i class="fa fa-check"></i><b>1.6.2</b> Recognizing Errors</a></li>
+<li class="chapter" data-level="1.6.3" data-path="setup.html"><a href="setup.html#ask-the-community"><i class="fa fa-check"></i><b>1.6.3</b> Ask the Community</a></li>
+<li class="chapter" data-level="1.6.4" data-path="setup.html"><a href="setup.html#help-with-ggplot2"><i class="fa fa-check"></i><b>1.6.4</b> Help with <code>ggplot2</code></a></li>
+<li class="chapter" data-level="1.6.5" data-path="setup.html"><a href="setup.html#statistics-in-r-literature"><i class="fa fa-check"></i><b>1.6.5</b> Statistics in R: Literature</a></li>
 </ul></li>
 <li class="chapter" data-level="1.7" data-path="setup.html"><a href="setup.html#acknowledgements"><i class="fa fa-check"></i><b>1.7</b> Acknowledgements</a></li>
 </ul></li>
-<li class="chapter" data-level="2" data-path="introduction-to-inferential-statistics.html"><a href="introduction-to-inferential-statistics.html"><i class="fa fa-check"></i><b>2</b> Introduction to Inferential Statistics</a></li>
-<li class="chapter" data-level="3" data-path="simple-linear-regression.html"><a href="simple-linear-regression.html"><i class="fa fa-check"></i><b>3</b> Simple linear Regression</a></li>
-<li class="chapter" data-level="4" data-path="multiple-linear-regression.html"><a href="multiple-linear-regression.html"><i class="fa fa-check"></i><b>4</b> Multiple Linear Regression</a></li>
-<li class="chapter" data-level="5" data-path="mixed-linear-regression.html"><a href="mixed-linear-regression.html"><i class="fa fa-check"></i><b>5</b> Mixed Linear Regression</a></li>
-<li class="chapter" data-level="6" data-path="logistic-regression.html"><a href="logistic-regression.html"><i class="fa fa-check"></i><b>6</b> Logistic Regression</a></li>
+<li class="chapter" data-level="2" data-path="introduction-to-inferential-statistics.html"><a href="introduction-to-inferential-statistics.html"><i class="fa fa-check"></i><b>2</b> Introduction to Inferential Statistics</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="introduction-to-inferential-statistics.html"><a href="introduction-to-inferential-statistics.html#load-packages-and-data"><i class="fa fa-check"></i><b>2.1</b> Load Packages and Data</a></li>
+<li class="chapter" data-level="2.2" data-path="introduction-to-inferential-statistics.html"><a href="introduction-to-inferential-statistics.html#basic-terminology"><i class="fa fa-check"></i><b>2.2</b> Basic Terminology</a></li>
+<li class="chapter" data-level="2.3" data-path="introduction-to-inferential-statistics.html"><a href="introduction-to-inferential-statistics.html#normal-distribution"><i class="fa fa-check"></i><b>2.3</b> Normal Distribution</a>
+<ul>
+<li class="chapter" data-level="2.3.1" data-path="introduction-to-inferential-statistics.html"><a href="introduction-to-inferential-statistics.html#testing-for-normal-distribution"><i class="fa fa-check"></i><b>2.3.1</b> Testing for Normal Distribution</a></li>
+<li class="chapter" data-level="2.3.2" data-path="introduction-to-inferential-statistics.html"><a href="introduction-to-inferential-statistics.html#rule-confidence-intervals"><i class="fa fa-check"></i><b>2.3.2</b> 68–95–99.7 Rule &amp; Confidence Intervals</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="simple-linear-regression.html"><a href="simple-linear-regression.html"><i class="fa fa-check"></i><b>3</b> Simple Linear Regression</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="simple-linear-regression.html"><a href="simple-linear-regression.html#load-packages-and-data-1"><i class="fa fa-check"></i><b>3.1</b> Load Packages and Data</a></li>
+<li class="chapter" data-level="3.2" data-path="simple-linear-regression.html"><a href="simple-linear-regression.html#introduction"><i class="fa fa-check"></i><b>3.2</b> Introduction</a></li>
+<li class="chapter" data-level="3.3" data-path="simple-linear-regression.html"><a href="simple-linear-regression.html#correlation"><i class="fa fa-check"></i><b>3.3</b> Correlation</a></li>
+<li class="chapter" data-level="3.4" data-path="simple-linear-regression.html"><a href="simple-linear-regression.html#the-regression-line"><i class="fa fa-check"></i><b>3.4</b> The Regression Line</a>
+<ul>
+<li class="chapter" data-level="3.4.1" data-path="simple-linear-regression.html"><a href="simple-linear-regression.html#theoretical-information"><i class="fa fa-check"></i><b>3.4.1</b> Theoretical Information</a></li>
+<li class="chapter" data-level="3.4.2" data-path="simple-linear-regression.html"><a href="simple-linear-regression.html#regression-lines-with-ggplot2"><i class="fa fa-check"></i><b>3.4.2</b> Regression Lines with <code>ggplot2</code></a></li>
+</ul></li>
+<li class="chapter" data-level="3.5" data-path="simple-linear-regression.html"><a href="simple-linear-regression.html#linear-regression-with-lm"><i class="fa fa-check"></i><b>3.5</b> Linear Regression with <code>lm()</code></a></li>
+<li class="chapter" data-level="3.6" data-path="simple-linear-regression.html"><a href="simple-linear-regression.html#residuals"><i class="fa fa-check"></i><b>3.6</b> Residuals</a></li>
+<li class="chapter" data-level="3.7" data-path="simple-linear-regression.html"><a href="simple-linear-regression.html#testing-assumptions"><i class="fa fa-check"></i><b>3.7</b> Testing Assumptions</a>
+<ul>
+<li class="chapter" data-level="3.7.1" data-path="simple-linear-regression.html"><a href="simple-linear-regression.html#normal-distribution-of-residuals"><i class="fa fa-check"></i><b>3.7.1</b> Normal Distribution of Residuals</a></li>
+<li class="chapter" data-level="3.7.2" data-path="simple-linear-regression.html"><a href="simple-linear-regression.html#constant-variance-of-the-residuals"><i class="fa fa-check"></i><b>3.7.2</b> Constant Variance of the Residuals</a></li>
+</ul></li>
+<li class="chapter" data-level="3.8" data-path="simple-linear-regression.html"><a href="simple-linear-regression.html#understanding-all-results-of-lm"><i class="fa fa-check"></i><b>3.8</b> Understanding all Results of <code>lm()</code></a>
+<ul>
+<li class="chapter" data-level="3.8.1" data-path="simple-linear-regression.html"><a href="simple-linear-regression.html#estimated-y-values-and-residuals"><i class="fa fa-check"></i><b>3.8.1</b> Estimated <span class="math inline">\(y\)</span>-Values and Residuals</a></li>
+<li class="chapter" data-level="3.8.2" data-path="simple-linear-regression.html"><a href="simple-linear-regression.html#regression-coefficients-and-t-statistic"><i class="fa fa-check"></i><b>3.8.2</b> Regression Coefficients and <span class="math inline">\(t\)</span>-Statistic</a></li>
+<li class="chapter" data-level="3.8.3" data-path="simple-linear-regression.html"><a href="simple-linear-regression.html#quality-criteria-for-the-model-and-f-statistic"><i class="fa fa-check"></i><b>3.8.3</b> Quality Criteria for the Model and <span class="math inline">\(F\)</span>-Statistic</a></li>
+</ul></li>
+<li class="chapter" data-level="3.9" data-path="simple-linear-regression.html"><a href="simple-linear-regression.html#reporting-the-result"><i class="fa fa-check"></i><b>3.9</b> Reporting the Result</a></li>
+<li class="chapter" data-level="3.10" data-path="simple-linear-regression.html"><a href="simple-linear-regression.html#summary"><i class="fa fa-check"></i><b>3.10</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="multiple-linear-regression.html"><a href="multiple-linear-regression.html"><i class="fa fa-check"></i><b>4</b> Multiple Linear Regression</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="multiple-linear-regression.html"><a href="multiple-linear-regression.html#load-packages-and-data-2"><i class="fa fa-check"></i><b>4.1</b> Load Packages and Data</a></li>
+<li class="chapter" data-level="4.2" data-path="multiple-linear-regression.html"><a href="multiple-linear-regression.html#introduction-1"><i class="fa fa-check"></i><b>4.2</b> Introduction</a></li>
+<li class="chapter" data-level="4.3" data-path="multiple-linear-regression.html"><a href="multiple-linear-regression.html#continuous-independent-variables"><i class="fa fa-check"></i><b>4.3</b> Continuous Independent Variables</a>
+<ul>
+<li class="chapter" data-level="4.3.1" data-path="multiple-linear-regression.html"><a href="multiple-linear-regression.html#without-interaction"><i class="fa fa-check"></i><b>4.3.1</b> Without Interaction</a></li>
+<li class="chapter" data-level="4.3.2" data-path="multiple-linear-regression.html"><a href="multiple-linear-regression.html#with-interaction"><i class="fa fa-check"></i><b>4.3.2</b> With Interaction</a></li>
+</ul></li>
+<li class="chapter" data-level="4.4" data-path="multiple-linear-regression.html"><a href="multiple-linear-regression.html#categorical-independent-variables"><i class="fa fa-check"></i><b>4.4</b> Categorical Independent Variables</a>
+<ul>
+<li class="chapter" data-level="4.4.1" data-path="multiple-linear-regression.html"><a href="multiple-linear-regression.html#without-interaction-1"><i class="fa fa-check"></i><b>4.4.1</b> Without Interaction</a></li>
+<li class="chapter" data-level="4.4.2" data-path="multiple-linear-regression.html"><a href="multiple-linear-regression.html#with-interaction-1"><i class="fa fa-check"></i><b>4.4.2</b> With Interaction</a></li>
+</ul></li>
+<li class="chapter" data-level="4.5" data-path="multiple-linear-regression.html"><a href="multiple-linear-regression.html#mix-of-continuous-and-categorical-variables"><i class="fa fa-check"></i><b>4.5</b> Mix of Continuous and Categorical Variables</a>
+<ul>
+<li class="chapter" data-level="4.5.1" data-path="multiple-linear-regression.html"><a href="multiple-linear-regression.html#without-interaction-2"><i class="fa fa-check"></i><b>4.5.1</b> Without Interaction</a></li>
+<li class="chapter" data-level="4.5.2" data-path="multiple-linear-regression.html"><a href="multiple-linear-regression.html#with-interaction-2"><i class="fa fa-check"></i><b>4.5.2</b> With Interaction</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="mixed-linear-regression.html"><a href="mixed-linear-regression.html"><i class="fa fa-check"></i><b>5</b> Mixed Linear Regression</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="mixed-linear-regression.html"><a href="mixed-linear-regression.html#load-packages-and-data-3"><i class="fa fa-check"></i><b>5.1</b> Load Packages and Data</a></li>
+<li class="chapter" data-level="5.2" data-path="mixed-linear-regression.html"><a href="mixed-linear-regression.html#mixed-models-lmers-introduction"><i class="fa fa-check"></i><b>5.2</b> Mixed Models (LMERs): Introduction</a></li>
+<li class="chapter" data-level="5.3" data-path="mixed-linear-regression.html"><a href="mixed-linear-regression.html#random-intercepts-vs.-random-slopes"><i class="fa fa-check"></i><b>5.3</b> Random Intercepts vs. Random Slopes</a>
+<ul>
+<li class="chapter" data-level="5.3.1" data-path="mixed-linear-regression.html"><a href="mixed-linear-regression.html#random-intercepts"><i class="fa fa-check"></i><b>5.3.1</b> Random Intercepts</a></li>
+<li class="chapter" data-level="5.3.2" data-path="mixed-linear-regression.html"><a href="mixed-linear-regression.html#random-slopes"><i class="fa fa-check"></i><b>5.3.2</b> Random Slopes</a></li>
+<li class="chapter" data-level="5.3.3" data-path="mixed-linear-regression.html"><a href="mixed-linear-regression.html#determining-the-random-effects-structure-for-word"><i class="fa fa-check"></i><b>5.3.3</b> Determining the Random Effects Structure for <code>word</code></a></li>
+</ul></li>
+<li class="chapter" data-level="5.4" data-path="mixed-linear-regression.html"><a href="mixed-linear-regression.html#lmer-in-r"><i class="fa fa-check"></i><b>5.4</b> LMER in R</a>
+<ul>
+<li class="chapter" data-level="5.4.1" data-path="mixed-linear-regression.html"><a href="mixed-linear-regression.html#fixed-effects"><i class="fa fa-check"></i><b>5.4.1</b> Fixed Effects</a></li>
+<li class="chapter" data-level="5.4.2" data-path="mixed-linear-regression.html"><a href="mixed-linear-regression.html#random-effects"><i class="fa fa-check"></i><b>5.4.2</b> Random Effects</a></li>
+</ul></li>
+<li class="chapter" data-level="5.5" data-path="mixed-linear-regression.html"><a href="mixed-linear-regression.html#convergence-problems-and-simplifying-the-model"><i class="fa fa-check"></i><b>5.5</b> Convergence Problems and Simplifying the Model</a></li>
+<li class="chapter" data-level="5.6" data-path="mixed-linear-regression.html"><a href="mixed-linear-regression.html#reporting-results"><i class="fa fa-check"></i><b>5.6</b> Reporting Results</a></li>
+<li class="chapter" data-level="5.7" data-path="mixed-linear-regression.html"><a href="mixed-linear-regression.html#quality-criteria-for-mixed-models"><i class="fa fa-check"></i><b>5.7</b> Quality Criteria for Mixed Models</a>
+<ul>
+<li class="chapter" data-level="5.7.1" data-path="mixed-linear-regression.html"><a href="mixed-linear-regression.html#marginal-and-conditional-r2"><i class="fa fa-check"></i><b>5.7.1</b> Marginal and Conditional <span class="math inline">\(R^2\)</span></a></li>
+<li class="chapter" data-level="5.7.2" data-path="mixed-linear-regression.html"><a href="mixed-linear-regression.html#likelihood-ratio-tests"><i class="fa fa-check"></i><b>5.7.2</b> Likelihood Ratio Tests</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="logistic-regression.html"><a href="logistic-regression.html"><i class="fa fa-check"></i><b>6</b> Logistic Regression</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="logistic-regression.html"><a href="logistic-regression.html#load-packages-and-data-4"><i class="fa fa-check"></i><b>6.1</b> Load Packages and Data</a></li>
+<li class="chapter" data-level="6.2" data-path="logistic-regression.html"><a href="logistic-regression.html#from-linear-to-logistic-regression"><i class="fa fa-check"></i><b>6.2</b> From Linear to Logistic Regression</a>
+<ul>
+<li class="chapter" data-level="6.2.1" data-path="logistic-regression.html"><a href="logistic-regression.html#an-example-for-p-q-and-logit"><i class="fa fa-check"></i><b>6.2.1</b> An Example for <span class="math inline">\(P\)</span>, <span class="math inline">\(Q\)</span>, and Logit</a></li>
+<li class="chapter" data-level="6.2.2" data-path="logistic-regression.html"><a href="logistic-regression.html#the-logistic-regression-line"><i class="fa fa-check"></i><b>6.2.2</b> The Logistic Regression Line</a></li>
+<li class="chapter" data-level="6.2.3" data-path="logistic-regression.html"><a href="logistic-regression.html#regression-with-glm"><i class="fa fa-check"></i><b>6.2.3</b> Regression with <code>glm()</code></a></li>
+<li class="chapter" data-level="6.2.4" data-path="logistic-regression.html"><a href="logistic-regression.html#the-chi2-test-reporting-results"><i class="fa fa-check"></i><b>6.2.4</b> The <span class="math inline">\(\chi^2\)</span>-Test &amp; Reporting Results</a></li>
+</ul></li>
+<li class="chapter" data-level="6.3" data-path="logistic-regression.html"><a href="logistic-regression.html#the-sigmoid-function-and-tipping-point"><i class="fa fa-check"></i><b>6.3</b> The Sigmoid Function and Tipping Point</a>
+<ul>
+<li class="chapter" data-level="6.3.1" data-path="logistic-regression.html"><a href="logistic-regression.html#the-tipping-point"><i class="fa fa-check"></i><b>6.3.1</b> The Tipping Point</a></li>
+<li class="chapter" data-level="6.3.2" data-path="logistic-regression.html"><a href="logistic-regression.html#plotting-proportions"><i class="fa fa-check"></i><b>6.3.2</b> Plotting Proportions</a></li>
+</ul></li>
+<li class="chapter" data-level="6.4" data-path="logistic-regression.html"><a href="logistic-regression.html#tipping-points-in-perceptual-studies"><i class="fa fa-check"></i><b>6.4</b> Tipping Points in Perceptual Studies</a></li>
+<li class="chapter" data-level="6.5" data-path="logistic-regression.html"><a href="logistic-regression.html#categorical-independent-factor"><i class="fa fa-check"></i><b>6.5</b> Categorical Independent Factor</a></li>
+</ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 
@@ -189,8 +282,782 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             <section class="normal" id="section-">
 <div id="multiple-linear-regression" class="section level1 hasAnchor" number="4">
 <h1><span class="header-section-number">4</span> Multiple Linear Regression<a href="multiple-linear-regression.html#multiple-linear-regression" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>Under construction…</p>
+<div id="load-packages-and-data-2" class="section level2 hasAnchor" number="4.1">
+<h2><span class="header-section-number">4.1</span> Load Packages and Data<a href="multiple-linear-regression.html#load-packages-and-data-2" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Please load the following packages and datasets:</p>
+<div class="sourceCode" id="cb141"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb141-1"><a href="multiple-linear-regression.html#cb141-1" tabindex="-1"></a><span class="fu">library</span>(broom)</span>
+<span id="cb141-2"><a href="multiple-linear-regression.html#cb141-2" tabindex="-1"></a><span class="fu">library</span>(emmeans)</span></code></pre></div>
+<pre><code>## Welcome to emmeans.
+## Caution: You lose important information if you filter this package&#39;s results.
+## See &#39;? untidy&#39;</code></pre>
+<div class="sourceCode" id="cb143"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb143-1"><a href="multiple-linear-regression.html#cb143-1" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb143-2"><a href="multiple-linear-regression.html#cb143-2" tabindex="-1"></a><span class="fu">library</span>(magrittr)</span></code></pre></div>
+<pre><code>## 
+## Attaching package: &#39;magrittr&#39;</code></pre>
+<pre><code>## The following object is masked from &#39;package:purrr&#39;:
+## 
+##     set_names</code></pre>
+<pre><code>## The following object is masked from &#39;package:tidyr&#39;:
+## 
+##     extract</code></pre>
+<div class="sourceCode" id="cb147"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb147-1"><a href="multiple-linear-regression.html#cb147-1" tabindex="-1"></a>url <span class="ot">&lt;-</span> <span class="st">&quot;http://www.phonetik.uni-muenchen.de/~jmh/lehre/Rdf&quot;</span></span>
+<span id="cb147-2"><a href="multiple-linear-regression.html#cb147-2" tabindex="-1"></a>faux <span class="ot">&lt;-</span> <span class="fu">read.table</span>(<span class="fu">file.path</span>(url, <span class="st">&quot;faux.txt&quot;</span>), <span class="at">stringsAsFactors =</span> T, <span class="at">header =</span> T) <span class="sc">%&gt;%</span> </span>
+<span id="cb147-3"><a href="multiple-linear-regression.html#cb147-3" tabindex="-1"></a>  <span class="fu">as_tibble</span>()</span>
+<span id="cb147-4"><a href="multiple-linear-regression.html#cb147-4" tabindex="-1"></a>int <span class="ot">&lt;-</span> <span class="fu">read.table</span>(<span class="fu">file.path</span>(url, <span class="st">&quot;dbwort.df.txt&quot;</span>), <span class="at">stringsAsFactors =</span> T) <span class="sc">%&gt;%</span> </span>
+<span id="cb147-5"><a href="multiple-linear-regression.html#cb147-5" tabindex="-1"></a>  <span class="fu">as_tibble</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb147-6"><a href="multiple-linear-regression.html#cb147-6" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">vowel =</span> V, <span class="at">gender =</span> G, <span class="at">subject =</span> Vpn, <span class="at">word =</span> Wort)</span>
+<span id="cb147-7"><a href="multiple-linear-regression.html#cb147-7" tabindex="-1"></a>vlax <span class="ot">&lt;-</span> <span class="fu">read.table</span>(<span class="fu">file.path</span>(url, <span class="st">&quot;vlax.txt&quot;</span>), <span class="at">stringsAsFactors =</span> T) <span class="sc">%&gt;%</span></span>
+<span id="cb147-8"><a href="multiple-linear-regression.html#cb147-8" tabindex="-1"></a>  <span class="fu">as_tibble</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb147-9"><a href="multiple-linear-regression.html#cb147-9" tabindex="-1"></a>  <span class="fu">filter</span>(V <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">&quot;O&quot;</span>, <span class="st">&quot;I&quot;</span>) <span class="sc">&amp;</span> f0 <span class="sc">!=</span> <span class="dv">0</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb147-10"><a href="multiple-linear-regression.html#cb147-10" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">vowel =</span> V, <span class="at">subject =</span> Vpn, <span class="at">word =</span> Wort, <span class="at">duration =</span> Dauer)</span></code></pre></div>
+</div>
+<div id="introduction-1" class="section level2 hasAnchor" number="4.2">
+<h2><span class="header-section-number">4.2</span> Introduction<a href="multiple-linear-regression.html#introduction-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Up to now, we have worked with simple linear regression, where one variable (e.g., fundamental frequency) was predicted by another variable (e.g., age in years). However, we more often have multiple variables that we suspect influence our measurements. For this, we need multiple linear regression. The formula for linear regression is adapted so that there is a separate slope for each independent variable <span class="math inline">\(x_1\)</span>, <span class="math inline">\(x_2\)</span>, etc.:</p>
+<p><span class="math inline">\(y = k + b_1x_1 + b_2x_2 + ...\)</span></p>
+<p>Here again, <span class="math inline">\(k\)</span> represents the y-intercept, and <span class="math inline">\(b_1\)</span>, <span class="math inline">\(b_2\)</span>, etc., are slopes. Below, we show three examples of multiple linear regressions, depending on the type of independent variables (categorical or continuous). For clarity, all examples contain only two independent variables; however, regressions can, of course, generally include more than two predictors.</p>
+</div>
+<div id="continuous-independent-variables" class="section level2 hasAnchor" number="4.3">
+<h2><span class="header-section-number">4.3</span> Continuous Independent Variables<a href="multiple-linear-regression.html#continuous-independent-variables" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>First, we want to find out if the fundamental frequency <code>f0</code> in the (artificially created) data frame <code>faux</code> depends on the two continuous variables <code>dB</code> (volume) and <code>dur</code> (word duration). To do this, we create a plot of the data:</p>
+<div class="sourceCode" id="cb148"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb148-1"><a href="multiple-linear-regression.html#cb148-1" tabindex="-1"></a><span class="fu">ggplot</span>(faux) <span class="sc">+</span></span>
+<span id="cb148-2"><a href="multiple-linear-regression.html#cb148-2" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> dB, <span class="at">y =</span> f0, <span class="at">col =</span> dur) <span class="sc">+</span></span>
+<span id="cb148-3"><a href="multiple-linear-regression.html#cb148-3" tabindex="-1"></a>  <span class="fu">geom_point</span>()</span></code></pre></div>
+<p><img src="statistik_r_files/figure-html/unnamed-chunk-66-1.svg" width="672" /></p>
+<p>Interpreting this plot isn’t entirely straightforward. If we initially focus solely on the relationship between fundamental frequency and volume, we see a clear positive correlation; that is, the louder the participants spoke, the higher their fundamental frequency became. Since duration is also a continuous variable, we can only use a color continuum to visualize it (<code>ggplot()</code> does this automatically with the <code>col</code> argument). It appears that the darker points (= low duration values) are associated with relatively high f0 values, and the lighter data points (= high duration values) with relatively low f0 values. Therefore, there could be a negative correlation between f0 and duration. We can verify this impression using <code>cor()</code>:</p>
+<div class="sourceCode" id="cb149"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb149-1"><a href="multiple-linear-regression.html#cb149-1" tabindex="-1"></a><span class="fu">cor</span>(faux<span class="sc">$</span>f0, faux<span class="sc">$</span>dB)</span></code></pre></div>
+<pre><code>## [1] 0.3107</code></pre>
+<div class="sourceCode" id="cb151"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb151-1"><a href="multiple-linear-regression.html#cb151-1" tabindex="-1"></a><span class="fu">cor</span>(faux<span class="sc">$</span>f0, faux<span class="sc">$</span>dur)</span></code></pre></div>
+<pre><code>## [1] -0.53</code></pre>
+<p>Since we are dealing with two independent variables, we must also consider whether there might be an <strong>interaction</strong> between them. An interaction exists when the effect of one independent variable on the dependent variable differs for different (extreme) values of the second independent variable. In our example, the effect of volume on f0 is generally positive, meaning the louder the speech, the higher f0. However, this effect is (visually) more pronounced for low than for high duration values. Imagine placing two regression lines through the figure above: a dark blue one for an example of a low duration value (e.g., 150 ms) and a light blue one for an example of a high duration (e.g., 450 ms). If there is no interaction between the variables, the two example regression lines will be parallel to each other; otherwise, they will not. For the data in the <code>faux</code> data frame, I have drawn the two example regression lines: in the left plot under the assumption that there is no interaction, in the right plot under the assumption that there is an interaction:</p>
+<p><img src="img/interaction.png" /></p>
+<p>The regression lines in the right-hand plot appear to describe the data better than the data in the left-hand plot; that is, we assume there is an interaction between volume and duration in the dataset. We will see later exactly how the regression lines for the two plots were calculated.</p>
+<div class="gray">
+<p><strong>Further Information: Regression lines for two continuous predictors</strong></p>
+<p>Drawing regression lines for two continuous variables requires some computation. However, if you want to avoid this work at some point, you can install the libraries <code>ggiraph</code> and <code>ggiraphExtra</code>. This <a href="https://cran.r-project.org/web/packages/ggiraphExtra/vignettes/ggPredict.html">vignette</a> provides information about the <code>ggPredict()</code> function from <code>ggiraphExtra</code>, which can draw regression lines for multiple predictors.</p>
+</div>
+<p>In the following sections, we will first calculate a multiple regression without and then with interaction for many research questions, so that you can familiarize yourself with interactions. If you are faced with the decision of whether there might be an interaction between independent variables in your dataset, visualize your data and consider carefully how an interaction would be interpreted – <em>before</em> you run the regression.</p>
+<div id="without-interaction" class="section level3 hasAnchor" number="4.3.1">
+<h3><span class="header-section-number">4.3.1</span> Without Interaction<a href="multiple-linear-regression.html#without-interaction" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>If there are no interactions in a model, the independent variables in the <code>lm()</code> formula are connected with a plus sign.</p>
+<div class="sourceCode" id="cb153"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb153-1"><a href="multiple-linear-regression.html#cb153-1" tabindex="-1"></a>lm1 <span class="ot">&lt;-</span> <span class="fu">lm</span>(f0 <span class="sc">~</span> dB <span class="sc">+</span> dur, <span class="at">data =</span> faux)</span>
+<span id="cb153-2"><a href="multiple-linear-regression.html#cb153-2" tabindex="-1"></a>lm1 <span class="sc">%&gt;%</span> </span>
+<span id="cb153-3"><a href="multiple-linear-regression.html#cb153-3" tabindex="-1"></a>  <span class="fu">tidy</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb153-4"><a href="multiple-linear-regression.html#cb153-4" tabindex="-1"></a>  <span class="fu">select</span>(term, estimate)</span></code></pre></div>
+<pre><code>## # A tibble: 3 × 2
+##   term        estimate
+##   &lt;chr&gt;          &lt;dbl&gt;
+## 1 (Intercept)  169.   
+## 2 dB             2.89 
+## 3 dur           -0.372</code></pre>
+<p>Here we try to understand exactly what the estimates in the <code>estimate</code> column mean. The estimate for the intercept, as in the simple linear regression, is the estimated arithmetic mean of the dependent variable for <span class="math inline">\(x_1 = 0\)</span> and <span class="math inline">\(x_2 = 0\)</span> (and all possible additional <span class="math inline">\(x\)</span> values if there are more independent variables). That is, if the volume is 0 dB and the duration is also 0 ms, the fundamental frequency should be 168.6 Hz. The slopes no longer measure the effect of each individual independent variable, but rather the effect of one independent variable, while all other variables are held constant at zero. Every increase in volume by one decibel (at constant duration) leads to an increase in the fundamental frequency of 2.9 Hz, and every increase in duration by one millisecond (at constant volume) leads to a reduction in the fundamental frequency of 0.4 Hz. This means we find the expected relationships: volume positively influences the fundamental frequency, duration negatively.</p>
+<p>Let’s recall the formula for the regression line with two independent variables:</p>
+<p><span class="math inline">\(y = k + b_1x_1 + b_2x_2\)</span></p>
+<p>We can retrieve the values for the y-intercept <span class="math inline">\(k\)</span> and the two slopes <span class="math inline">\(b_1\)</span> and <span class="math inline">\(b_2\)</span> from the data frame returned by <code>tidy()</code>:</p>
+<div class="sourceCode" id="cb155"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb155-1"><a href="multiple-linear-regression.html#cb155-1" tabindex="-1"></a>k <span class="ot">&lt;-</span> lm1 <span class="sc">%&gt;%</span> <span class="fu">tidy</span>() <span class="sc">%&gt;%</span> <span class="fu">filter</span>(term <span class="sc">==</span> <span class="st">&quot;(Intercept)&quot;</span>) <span class="sc">%&gt;%</span> <span class="fu">pull</span>(estimate)</span>
+<span id="cb155-2"><a href="multiple-linear-regression.html#cb155-2" tabindex="-1"></a>k</span></code></pre></div>
+<pre><code>## [1] 168.6</code></pre>
+<div class="sourceCode" id="cb157"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb157-1"><a href="multiple-linear-regression.html#cb157-1" tabindex="-1"></a>b_1 <span class="ot">&lt;-</span> lm1 <span class="sc">%&gt;%</span> <span class="fu">tidy</span>() <span class="sc">%&gt;%</span> <span class="fu">filter</span>(term <span class="sc">==</span> <span class="st">&quot;dB&quot;</span>) <span class="sc">%&gt;%</span> <span class="fu">pull</span>(estimate)</span>
+<span id="cb157-2"><a href="multiple-linear-regression.html#cb157-2" tabindex="-1"></a>b_1</span></code></pre></div>
+<pre><code>## [1] 2.892</code></pre>
+<div class="sourceCode" id="cb159"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb159-1"><a href="multiple-linear-regression.html#cb159-1" tabindex="-1"></a>b_2 <span class="ot">&lt;-</span> lm1 <span class="sc">%&gt;%</span> <span class="fu">tidy</span>() <span class="sc">%&gt;%</span> <span class="fu">filter</span>(term <span class="sc">==</span> <span class="st">&quot;dur&quot;</span>) <span class="sc">%&gt;%</span> <span class="fu">pull</span>(estimate)</span>
+<span id="cb159-2"><a href="multiple-linear-regression.html#cb159-2" tabindex="-1"></a>b_2</span></code></pre></div>
+<pre><code>## [1] -0.3721</code></pre>
+<p>Now we can choose any values for <span class="math inline">\(x_1\)</span> (volume in decibels) and <span class="math inline">\(x_2\)</span> (duration in milliseconds), insert them into the formula along with the regression coefficients, and thus estimate y-values. If we set both <span class="math inline">\(x\)</span> values to zero, the estimated <span class="math inline">\(y\)</span> value is exactly the intercept <span class="math inline">\(k\)</span>:</p>
+<p><span class="math display">\[
+\begin{aligned}
+y &amp;= k + b_1 \cdot dB + b_2 \cdot dur \\
+&amp;= 168.64 + 2.89 \cdot 0 + (-0.37 \cdot 0) \\
+&amp;= 168.64
+\end{aligned}
+\]</span></p>
+<p>If you don’t want to calculate these values manually, the <code>predict()</code> function can do it for you. For multiple linear regression, the function requires a data frame with as many columns as there were independent variables in the regression; the columns must also be named exactly like the independent variables. For demonstration purposes, we show that the fundamental frequency <code>f0</code>, according to the calculated linear model, is indeed approximately 168 Hz when the loudness is 0 dB and the duration is 0 ms. We also show the estimated f0 value for <code>db = 1</code> and <code>dur = 0</code> (which is 2.9 Hz higher than the intercept) and for <code>db = 0</code> and <code>dur = 1</code> (which is 0.4 Hz lower than the intercept). Finally, we use <code>predict()</code> to estimate the f0 value for the average loudness and duration.</p>
+<div class="sourceCode" id="cb161"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb161-1"><a href="multiple-linear-regression.html#cb161-1" tabindex="-1"></a>d1 <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">dB  =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">0</span>, <span class="fu">mean</span>(faux<span class="sc">$</span>dB)), </span>
+<span id="cb161-2"><a href="multiple-linear-regression.html#cb161-2" tabindex="-1"></a>                 <span class="at">dur =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">1</span>, <span class="fu">mean</span>(faux<span class="sc">$</span>dur)))</span>
+<span id="cb161-3"><a href="multiple-linear-regression.html#cb161-3" tabindex="-1"></a>d1 <span class="sc">%&lt;&gt;%</span> <span class="fu">mutate</span>(<span class="at">estimated_f0 =</span> <span class="fu">predict</span>(lm1, d1))</span>
+<span id="cb161-4"><a href="multiple-linear-regression.html#cb161-4" tabindex="-1"></a>d1</span></code></pre></div>
+<pre><code>##     dB   dur estimated_f0
+## 1  0.0   0.0        168.6
+## 2  1.0   0.0        171.5
+## 3  0.0   1.0        168.3
+## 4 60.1 298.9        231.3</code></pre>
+<p>Now we can also understand how the two example regression lines in the left plot above were calculated. We choose 450 ms as an example of a high duration and 150 ms as an example of a low duration (in the literature, the mean plus/minus 1.5 standard deviations of an independent variable is often used as an “extreme value”). We then insert these values, along with the regression coefficients, into our formula for the regression line (here first for a duration of 450 ms):</p>
+<p><span class="math display">\[
+\begin{aligned}
+y &amp;= k + b_1 \cdot dB + b_2 \cdot dur \\
+&amp;= 168.64 + 2.89 \cdot dB + (-0.37 \cdot 450) \\
+&amp;= 168.64 + 2.89 \cdot dB + (-167.43) \\
+&amp;= 1.21 + 2.89 \cdot dB
+\end{aligned}
+\]</span></p>
+<p>The result is that, for a duration of 450 ms, the intercept of a regression line should be 1.21 and the slope should be 2.89.</p>
+<p><span class="math display">\[
+\begin{aligned}
+y &amp;= k + b_1 \cdot dB + b_2 \cdot dur \\
+&amp;= 168.64 + 2.89 \cdot dB + (-0.37 \cdot 150) \\
+&amp;= 168.64 + 2.89 \cdot dB + (-55.81) \\
+&amp;= 112.83 + 2.89 \cdot dB
+\end{aligned}
+\]</span></p>
+<p>For the regression line with a duration of 150 ms, the intercept is at 112.83 and the slope is at 2.89. Therefore, the slope is the same for both regression lines, meaning these lines are parallel to each other. The two calculated intercepts and the slope can now be used for <code>geom_abline()</code>:</p>
+<div class="sourceCode" id="cb163"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb163-1"><a href="multiple-linear-regression.html#cb163-1" tabindex="-1"></a>high_dur <span class="ot">&lt;-</span> <span class="dv">450</span></span>
+<span id="cb163-2"><a href="multiple-linear-regression.html#cb163-2" tabindex="-1"></a>low_dur <span class="ot">&lt;-</span> <span class="dv">150</span></span>
+<span id="cb163-3"><a href="multiple-linear-regression.html#cb163-3" tabindex="-1"></a>slope <span class="ot">&lt;-</span> b_1</span>
+<span id="cb163-4"><a href="multiple-linear-regression.html#cb163-4" tabindex="-1"></a>intercept_high_dur <span class="ot">&lt;-</span> k <span class="sc">+</span> b_1 <span class="sc">*</span> <span class="dv">0</span> <span class="sc">+</span> b_2 <span class="sc">*</span> high_dur</span>
+<span id="cb163-5"><a href="multiple-linear-regression.html#cb163-5" tabindex="-1"></a>intercept_low_dur <span class="ot">&lt;-</span> k <span class="sc">+</span> b_1 <span class="sc">*</span> <span class="dv">0</span> <span class="sc">+</span> b_2 <span class="sc">*</span> low_dur</span>
+<span id="cb163-6"><a href="multiple-linear-regression.html#cb163-6" tabindex="-1"></a></span>
+<span id="cb163-7"><a href="multiple-linear-regression.html#cb163-7" tabindex="-1"></a><span class="fu">ggplot</span>(faux) <span class="sc">+</span> </span>
+<span id="cb163-8"><a href="multiple-linear-regression.html#cb163-8" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> dB, <span class="at">y =</span> f0, <span class="at">col =</span> dur) <span class="sc">+</span> </span>
+<span id="cb163-9"><a href="multiple-linear-regression.html#cb163-9" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span> </span>
+<span id="cb163-10"><a href="multiple-linear-regression.html#cb163-10" tabindex="-1"></a>  <span class="fu">xlim</span>(<span class="dv">0</span>, <span class="dv">95</span>) <span class="sc">+</span></span>
+<span id="cb163-11"><a href="multiple-linear-regression.html#cb163-11" tabindex="-1"></a>  <span class="fu">ylim</span>(<span class="dv">0</span>, <span class="dv">500</span>) <span class="sc">+</span></span>
+<span id="cb163-12"><a href="multiple-linear-regression.html#cb163-12" tabindex="-1"></a>  <span class="fu">geom_abline</span>(<span class="at">slope =</span> slope, <span class="at">intercept =</span> intercept_high_dur, <span class="at">color =</span> <span class="st">&quot;#56B1F7&quot;</span>, <span class="at">linewidth =</span> <span class="fl">1.2</span>) <span class="sc">+</span></span>
+<span id="cb163-13"><a href="multiple-linear-regression.html#cb163-13" tabindex="-1"></a>  <span class="fu">geom_abline</span>(<span class="at">slope =</span> slope, <span class="at">intercept =</span> intercept_low_dur, <span class="at">color =</span> <span class="st">&quot;#132B43&quot;</span>, <span class="at">linewidth =</span> <span class="fl">1.2</span>) <span class="sc">+</span></span>
+<span id="cb163-14"><a href="multiple-linear-regression.html#cb163-14" tabindex="-1"></a>  <span class="fu">geom_vline</span>(<span class="at">xintercept =</span> <span class="dv">0</span>, <span class="at">lty =</span> <span class="st">&quot;dashed&quot;</span>)</span></code></pre></div>
+<p><img src="statistik_r_files/figure-html/unnamed-chunk-71-1.svg" width="672" /></p>
+<p>We could, of course, have placed <code>dur</code> on the x-axis and represented <code>dB</code> using a color continuum. Then we would have to choose two extreme example <em>volume</em> values, insert all the values (intercept, slopes, chosen example values for <code>dB</code>) into the formula, and we would arrive at the following result:</p>
+<div class="sourceCode" id="cb164"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb164-1"><a href="multiple-linear-regression.html#cb164-1" tabindex="-1"></a>high_dB <span class="ot">&lt;-</span> <span class="dv">75</span></span>
+<span id="cb164-2"><a href="multiple-linear-regression.html#cb164-2" tabindex="-1"></a>low_dB <span class="ot">&lt;-</span> <span class="dv">45</span></span>
+<span id="cb164-3"><a href="multiple-linear-regression.html#cb164-3" tabindex="-1"></a>intercept_high_dB <span class="ot">&lt;-</span> k <span class="sc">+</span> b_1 <span class="sc">*</span> high_dB <span class="sc">+</span> b_2 <span class="sc">*</span> <span class="dv">0</span></span>
+<span id="cb164-4"><a href="multiple-linear-regression.html#cb164-4" tabindex="-1"></a>intercept_low_dB <span class="ot">&lt;-</span> k <span class="sc">+</span> b_1 <span class="sc">*</span> low_dB <span class="sc">+</span> b_2 <span class="sc">*</span> <span class="dv">0</span></span>
+<span id="cb164-5"><a href="multiple-linear-regression.html#cb164-5" tabindex="-1"></a>slope <span class="ot">&lt;-</span> b_2</span>
+<span id="cb164-6"><a href="multiple-linear-regression.html#cb164-6" tabindex="-1"></a></span>
+<span id="cb164-7"><a href="multiple-linear-regression.html#cb164-7" tabindex="-1"></a><span class="fu">ggplot</span>(faux) <span class="sc">+</span> </span>
+<span id="cb164-8"><a href="multiple-linear-regression.html#cb164-8" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> dur, <span class="at">y =</span> f0, <span class="at">col =</span> dB) <span class="sc">+</span> </span>
+<span id="cb164-9"><a href="multiple-linear-regression.html#cb164-9" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span> </span>
+<span id="cb164-10"><a href="multiple-linear-regression.html#cb164-10" tabindex="-1"></a>  <span class="fu">xlim</span>(<span class="dv">0</span>, <span class="dv">600</span>) <span class="sc">+</span></span>
+<span id="cb164-11"><a href="multiple-linear-regression.html#cb164-11" tabindex="-1"></a>  <span class="fu">ylim</span>(<span class="dv">0</span>, <span class="dv">500</span>) <span class="sc">+</span></span>
+<span id="cb164-12"><a href="multiple-linear-regression.html#cb164-12" tabindex="-1"></a>  <span class="fu">geom_abline</span>(<span class="at">slope =</span> slope, <span class="at">intercept =</span> intercept_high_dB, <span class="at">color =</span> <span class="st">&quot;#56B1F7&quot;</span>, <span class="at">linewidth =</span> <span class="fl">1.2</span>) <span class="sc">+</span></span>
+<span id="cb164-13"><a href="multiple-linear-regression.html#cb164-13" tabindex="-1"></a>  <span class="fu">geom_abline</span>(<span class="at">slope =</span> slope, <span class="at">intercept =</span> intercept_low_dB, <span class="at">color =</span> <span class="st">&quot;#132B43&quot;</span>, <span class="at">linewidth =</span> <span class="fl">1.2</span>) <span class="sc">+</span></span>
+<span id="cb164-14"><a href="multiple-linear-regression.html#cb164-14" tabindex="-1"></a>  <span class="fu">geom_vline</span>(<span class="at">xintercept =</span> <span class="dv">0</span>, <span class="at">lty =</span> <span class="st">&quot;dashed&quot;</span>)</span></code></pre></div>
+<p><img src="statistik_r_files/figure-html/unnamed-chunk-72-1.svg" width="672" /></p>
+<p>If you have taken sufficient time to understand and interpret the regression coefficients, we can now turn to the statistics and goodness-of-fit criteria of the model. Using <code>tidy()</code>, we examine the <span class="math inline">\(t\)</span>-statistic along with the <span class="math inline">\(p\)</span>-value, which indicates whether the regression coefficients differ significantly from zero:</p>
+<div class="sourceCode" id="cb165"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb165-1"><a href="multiple-linear-regression.html#cb165-1" tabindex="-1"></a>lm1 <span class="sc">%&gt;%</span> <span class="fu">tidy</span>()</span></code></pre></div>
+<pre><code>## # A tibble: 3 × 5
+##   term        estimate std.error statistic   p.value
+##   &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;
+## 1 (Intercept)  169.      3.45         48.8 0        
+## 2 dB             2.89    0.0633       45.7 1.91e-306
+## 3 dur           -0.372   0.00668     -55.7 0</code></pre>
+<p>According to the tests, the two regression coefficients for the independent variables differ significantly from zero, meaning that both the volume and the duration appear to be good predictors of the fundamental frequency. The goodness-of-fit criteria are again the <span class="math inline">\(F\)</span>-statistic and <span class="math inline">\(R^2\)</span>:</p>
+<div class="sourceCode" id="cb167"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb167-1"><a href="multiple-linear-regression.html#cb167-1" tabindex="-1"></a>lm1 <span class="sc">%&gt;%</span> <span class="fu">glance</span>() <span class="sc">%&gt;%</span> <span class="fu">pivot_longer</span>(<span class="at">cols =</span> <span class="fu">c</span>(r.squared<span class="sc">:</span>nobs))</span></code></pre></div>
+<pre><code>## # A tibble: 12 × 2
+##    name                value
+##    &lt;chr&gt;               &lt;dbl&gt;
+##  1 r.squared           0.661
+##  2 adj.r.squared       0.660
+##  3 sigma              24.0  
+##  4 statistic        1815.   
+##  5 p.value             0    
+##  6 df                  2    
+##  7 logLik          -8589.   
+##  8 AIC             17186.   
+##  9 BIC             17208.   
+## 10 deviance      1073556.   
+## 11 df.residual      1866    
+## 12 nobs             1869</code></pre>
+<p>The two independent variables describe 66% of the variance in the fundamental frequency values. Generally speaking, this is a relatively high value. However, this value becomes even more impressive when compared to the <span class="math inline">\(R^2\)</span> values from the two simple linear regressions that we can perform using the independent variables:</p>
+<div class="sourceCode" id="cb169"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb169-1"><a href="multiple-linear-regression.html#cb169-1" tabindex="-1"></a><span class="fu">lm</span>(f0 <span class="sc">~</span> dB, <span class="at">data =</span> faux) <span class="sc">%&gt;%</span> <span class="fu">glance</span>() <span class="sc">%&gt;%</span> <span class="fu">pull</span>(r.squared)</span></code></pre></div>
+<pre><code>## [1] 0.09651</code></pre>
+<div class="sourceCode" id="cb171"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb171-1"><a href="multiple-linear-regression.html#cb171-1" tabindex="-1"></a><span class="fu">lm</span>(f0 <span class="sc">~</span> dur, <span class="at">data =</span> faux) <span class="sc">%&gt;%</span> <span class="fu">glance</span>() <span class="sc">%&gt;%</span> <span class="fu">pull</span>(r.squared)</span></code></pre></div>
+<pre><code>## [1] 0.2809</code></pre>
+<p>This means that a model with volume as the only independent variable describes just under 10% of the variance in the fundamental frequency values, while a model with duration describes approximately 28% of this variance. However, when both predictors are combined in a single model (without interaction), this proportion increases to 66%.</p>
+<p>Finally, we should not forget to report the results of the regression: <strong>A multiple linear regression with volume and duration as independent variables showed a significant effect of volume (<span class="math inline">\(t\)</span> = 45.7, <span class="math inline">\(p\)</span> &lt; 0.001) and duration (<span class="math inline">\(t\)</span> = 55.7, <span class="math inline">\(p\)</span> &lt; 0.001) on the fundamental frequency. The chosen model describes the data better than a model without predictors (<span class="math inline">\(R^2\)</span> = 0.66, <span class="math inline">\(F\)</span>[2, 1866] = 1815, <span class="math inline">\(p\)</span> &lt; 0.001).</strong> In a scientific publication, you should, of course, dedicate a few lines to describing the direction of the significant effects (i.e., whether they positively or negatively, strongly or weakly, influence the dependent variable) and whether this corresponds to the expectations (hypotheses) that you ideally formulated before data collection.</p>
+<p><em>(Of course, under realistic conditions, we would also check the assumptions about the residuals here!)</em></p>
+</div>
+<div id="with-interaction" class="section level3 hasAnchor" number="4.3.2">
+<h3><span class="header-section-number">4.3.2</span> With Interaction<a href="multiple-linear-regression.html#with-interaction" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Since we determined in our first plot of the data in <code>faux</code> that there might be an interaction between volume and duration, we now want to calculate the model <em>with</em> this interaction. Interactions in a linear model can be written in two ways: either with an asterisk <code>dB * dur</code> or in the more explicit form <code>dB + dur + dB:dur</code>. With three independent variables <code>A</code>, <code>B</code>, and <code>C</code>, interactions can occur between any two factors as well as between all three, i.e., <code>A * B * C</code> or <code>A + B + C + A:B + A:C + B:C + A:B:C</code>. It can also be useful to calculate an interaction between only two of the three factors, e.g., <code>A * B + C</code> or <code>A + B + C + A:B</code>.</p>
+<p>Here, we choose the shorthand notation and first look again at the estimates of the regression coefficients:</p>
+<div class="sourceCode" id="cb173"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb173-1"><a href="multiple-linear-regression.html#cb173-1" tabindex="-1"></a>lm2 <span class="ot">&lt;-</span> <span class="fu">lm</span>(f0 <span class="sc">~</span> dB <span class="sc">*</span> dur, <span class="at">data =</span> faux)</span>
+<span id="cb173-2"><a href="multiple-linear-regression.html#cb173-2" tabindex="-1"></a>lm2 <span class="sc">%&gt;%</span> </span>
+<span id="cb173-3"><a href="multiple-linear-regression.html#cb173-3" tabindex="-1"></a>  <span class="fu">tidy</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb173-4"><a href="multiple-linear-regression.html#cb173-4" tabindex="-1"></a>  <span class="fu">select</span>(term, estimate)</span></code></pre></div>
+<pre><code>## # A tibble: 4 × 2
+##   term        estimate
+##   &lt;chr&gt;          &lt;dbl&gt;
+## 1 (Intercept) 86.0    
+## 2 dB           4.30   
+## 3 dur         -0.0921 
+## 4 dB:dur      -0.00466</code></pre>
+<p>The y-intercept for <code>dB = 0</code> and <code>dur = 0</code> is now at 86 Hz. The slopes describe the influence of an independent variable when all other independent variables are held constant at zero. The loudness <code>dB</code> also has a positive influence on the fundamental frequency in this model, with a slope of 4.3 Hz, meaning the fundamental frequency increases with loudness (when the duration is held constant at zero). The slope for <code>dur</code>, however, is negative at -0.09 Hz, meaning the fundamental frequency decreases for higher duration values (when the volume is held constant at zero).</p>
+<p>Now, there is another slope, namely for the interaction <code>dB:dur</code>. This slope is also found in the formula for the regression line adapted for interactions:</p>
+<p><span class="math inline">\(y = k + b_1x_1 + b_2x_2 + b_3(x_1 \cdot x_2)\)</span></p>
+<p>The slope <span class="math inline">\(b_3(x_1 \cdot x_2)\)</span> already indicates that the interaction is only important for the regression line if both <span class="math inline">\(x_1\)</span> and <span class="math inline">\(x_2\)</span> are non-zero: because if either of them is zero, the multiplication <span class="math inline">\(x_1 \cdot x_2\)</span> results in zero, meaning the slope <span class="math inline">\(b_3\)</span> must be multiplied by zero and thus disappears from the formula.</p>
+<p>In our model, the slope for the interaction of the two predictors is negative. This can be interpreted as the fundamental frequency decreasing when both the volume and the duration increase. To understand these relationships precisely, we retrieve the intercept <span class="math inline">\(k\)</span>, the two slopes <span class="math inline">\(b_1\)</span> (for volume) and <span class="math inline">\(b_2\)</span> (for duration), and the interaction <span class="math inline">\(b_3\)</span> from the data frame above:</p>
+<div class="sourceCode" id="cb175"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb175-1"><a href="multiple-linear-regression.html#cb175-1" tabindex="-1"></a>k <span class="ot">&lt;-</span> lm2 <span class="sc">%&gt;%</span> <span class="fu">tidy</span>() <span class="sc">%&gt;%</span> <span class="fu">filter</span>(term <span class="sc">==</span> <span class="st">&quot;(Intercept)&quot;</span>) <span class="sc">%&gt;%</span> <span class="fu">pull</span>(estimate)</span>
+<span id="cb175-2"><a href="multiple-linear-regression.html#cb175-2" tabindex="-1"></a>k</span></code></pre></div>
+<pre><code>## [1] 86.02</code></pre>
+<div class="sourceCode" id="cb177"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb177-1"><a href="multiple-linear-regression.html#cb177-1" tabindex="-1"></a>b_1 <span class="ot">&lt;-</span> lm2 <span class="sc">%&gt;%</span> <span class="fu">tidy</span>() <span class="sc">%&gt;%</span> <span class="fu">filter</span>(term <span class="sc">==</span> <span class="st">&quot;dB&quot;</span>) <span class="sc">%&gt;%</span> <span class="fu">pull</span>(estimate)</span>
+<span id="cb177-2"><a href="multiple-linear-regression.html#cb177-2" tabindex="-1"></a>b_1</span></code></pre></div>
+<pre><code>## [1] 4.298</code></pre>
+<div class="sourceCode" id="cb179"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb179-1"><a href="multiple-linear-regression.html#cb179-1" tabindex="-1"></a>b_2 <span class="ot">&lt;-</span> lm2 <span class="sc">%&gt;%</span> <span class="fu">tidy</span>() <span class="sc">%&gt;%</span> <span class="fu">filter</span>(term <span class="sc">==</span> <span class="st">&quot;dur&quot;</span>) <span class="sc">%&gt;%</span> <span class="fu">pull</span>(estimate)</span>
+<span id="cb179-2"><a href="multiple-linear-regression.html#cb179-2" tabindex="-1"></a>b_2</span></code></pre></div>
+<pre><code>## [1] -0.09212</code></pre>
+<div class="sourceCode" id="cb181"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb181-1"><a href="multiple-linear-regression.html#cb181-1" tabindex="-1"></a>b_3 <span class="ot">&lt;-</span> lm2 <span class="sc">%&gt;%</span> <span class="fu">tidy</span>() <span class="sc">%&gt;%</span> <span class="fu">filter</span>(term <span class="sc">==</span> <span class="st">&quot;dB:dur&quot;</span>) <span class="sc">%&gt;%</span> <span class="fu">pull</span>(estimate)</span>
+<span id="cb181-2"><a href="multiple-linear-regression.html#cb181-2" tabindex="-1"></a>b_3</span></code></pre></div>
+<pre><code>## [1] -0.004656</code></pre>
+<p>Now you can insert these values, along with freely chosen values for <span class="math inline">\(x_1\)</span> (volume) and <span class="math inline">\(x_2\)</span> (duration), into the formula above to find out what the fundamental frequency should be for the chosen values of the independent variables. Let’s assume <span class="math inline">\(x_1\)</span> and <span class="math inline">\(x_2\)</span> are both zero; then, again, the estimated y-value corresponds exactly to the intercept <span class="math inline">\(k\)</span>:</p>
+<p><span class="math display">\[
+\begin{aligned}
+y &amp;= k + b_1 \cdot dB + b_2 \cdot dur + b_3(dB \cdot dur) \\
+&amp;= 86.02 + 4.30 \cdot 0 + (-0.092 \cdot 0) + (-0.0047 \cdot 0 \cdot 0) \\
+&amp;= 86.02
+\end{aligned}
+\]</span></p>
+<p>Similarly, instead of the two zeros, you can use different values for <span class="math inline">\(x_1\)</span> and <span class="math inline">\(x_2\)</span>. As an example, we choose <span class="math inline">\(x_1 = 1\)</span> and <span class="math inline">\(x_2 = 1\)</span> to show that the slope then also comes into play for the interaction of the two variables:</p>
+<p><span class="math display">\[
+\begin{aligned}
+y &amp;= k + b_1 \cdot dB + b_2 \cdot dur + b_3(dB \cdot dur) \\
+&amp;= 86.02 + 4.30 \cdot 1 + (-0.092 \cdot 1) + (-0.0047 \cdot 1 \cdot 1) \\
+&amp;= 90.22
+\end{aligned}
+\]</span></p>
+<p>Or, by using the extracted regression coefficients:</p>
+<div class="sourceCode" id="cb183"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb183-1"><a href="multiple-linear-regression.html#cb183-1" tabindex="-1"></a>k <span class="sc">+</span> b_1 <span class="sc">+</span> b_2 <span class="sc">+</span> b_3</span></code></pre></div>
+<pre><code>## [1] 90.22</code></pre>
+<p>Here again we can use <code>predict()</code> to estimate the <code>f0</code> value for different combinations of <code>dB</code> and <code>dur</code> values:</p>
+<div class="sourceCode" id="cb185"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb185-1"><a href="multiple-linear-regression.html#cb185-1" tabindex="-1"></a>d2 <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">dB  =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">0</span>, <span class="dv">1</span>, <span class="fu">mean</span>(faux<span class="sc">$</span>dB)), </span>
+<span id="cb185-2"><a href="multiple-linear-regression.html#cb185-2" tabindex="-1"></a>                 <span class="at">dur =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">1</span>, <span class="fu">mean</span>(faux<span class="sc">$</span>dur)))</span>
+<span id="cb185-3"><a href="multiple-linear-regression.html#cb185-3" tabindex="-1"></a>d2 <span class="sc">%&lt;&gt;%</span> <span class="fu">mutate</span>(<span class="at">estimated_f0 =</span> <span class="fu">predict</span>(lm2, d2))</span>
+<span id="cb185-4"><a href="multiple-linear-regression.html#cb185-4" tabindex="-1"></a>d2</span></code></pre></div>
+<pre><code>##     dB   dur estimated_f0
+## 1  0.0   0.0        86.02
+## 2  1.0   0.0        90.32
+## 3  0.0   1.0        85.93
+## 4  1.0   1.0        90.22
+## 5 60.1 298.9       233.19</code></pre>
+<p>Now we can re-create the example regression lines that we saw in the right-hand plot above. We choose 450 ms and 150 ms as example duration values:</p>
+<p><span class="math display">\[
+\begin{aligned}
+y &amp;= k + b_1 \cdot dB + b_2 \cdot dur + b_3(dB \cdot dur) \\
+&amp;= 86.02 + 4.30 \cdot dB + (-0.092 \cdot 450) + (-0.0047 \cdot dB \cdot 450) \\
+&amp;= 86.02 + 4.30 \cdot dB + (-41.45) + (-2.10 \cdot dB) \\
+&amp;= 44.57 + 2.20 \cdot dB
+\end{aligned}
+\]</span></p>
+<p>And for 150ms:</p>
+<p><span class="math display">\[
+\begin{aligned}
+y &amp;= k + b_1 \cdot dB + b_2 \cdot dur + b_3(dB \cdot dur) \\
+&amp;= 86.02 + 4.30 \cdot dB + (-0.092 \cdot 150) + (-0.0047 \cdot dB \cdot 150) \\
+&amp;= 86.02 + 4.30 \cdot dB + (-13.82) + (-0.70 \cdot dB) \\
+&amp;= 72.20 + 3.60 \cdot dB
+\end{aligned}
+\]</span></p>
+<p>This time, the slopes for the two extreme chosen duration values differ precisely because the interaction was included. Now we define the calculated intercepts and slopes as variables and insert them again into <code>geom_abline()</code> to draw the regression lines:</p>
+<div class="sourceCode" id="cb187"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb187-1"><a href="multiple-linear-regression.html#cb187-1" tabindex="-1"></a>high_dur <span class="ot">&lt;-</span> <span class="dv">450</span></span>
+<span id="cb187-2"><a href="multiple-linear-regression.html#cb187-2" tabindex="-1"></a>low_dur <span class="ot">&lt;-</span> <span class="dv">150</span></span>
+<span id="cb187-3"><a href="multiple-linear-regression.html#cb187-3" tabindex="-1"></a></span>
+<span id="cb187-4"><a href="multiple-linear-regression.html#cb187-4" tabindex="-1"></a>intercept_low_dur <span class="ot">&lt;-</span> k <span class="sc">+</span> b_1 <span class="sc">*</span> <span class="dv">0</span> <span class="sc">+</span> b_2 <span class="sc">*</span> low_dur <span class="sc">+</span> b_3 <span class="sc">*</span> <span class="dv">0</span> <span class="sc">*</span> low_dur</span>
+<span id="cb187-5"><a href="multiple-linear-regression.html#cb187-5" tabindex="-1"></a>intercept_low_dur</span></code></pre></div>
+<pre><code>## [1] 72.2</code></pre>
+<div class="sourceCode" id="cb189"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb189-1"><a href="multiple-linear-regression.html#cb189-1" tabindex="-1"></a>intercept_high_dur <span class="ot">&lt;-</span> k <span class="sc">+</span> b_1 <span class="sc">*</span> <span class="dv">0</span> <span class="sc">+</span> b_2 <span class="sc">*</span> high_dur <span class="sc">+</span> b_3 <span class="sc">*</span> <span class="dv">0</span> <span class="sc">*</span> high_dur</span>
+<span id="cb189-2"><a href="multiple-linear-regression.html#cb189-2" tabindex="-1"></a>intercept_high_dur</span></code></pre></div>
+<pre><code>## [1] 44.57</code></pre>
+<div class="sourceCode" id="cb191"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb191-1"><a href="multiple-linear-regression.html#cb191-1" tabindex="-1"></a>slope_low_dur <span class="ot">&lt;-</span> b_1 <span class="sc">+</span> b_3 <span class="sc">*</span> low_dur</span>
+<span id="cb191-2"><a href="multiple-linear-regression.html#cb191-2" tabindex="-1"></a>slope_low_dur</span></code></pre></div>
+<pre><code>## [1] 3.6</code></pre>
+<div class="sourceCode" id="cb193"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb193-1"><a href="multiple-linear-regression.html#cb193-1" tabindex="-1"></a>slope_high_dur <span class="ot">&lt;-</span> b_1 <span class="sc">+</span> b_3 <span class="sc">*</span> high_dur</span>
+<span id="cb193-2"><a href="multiple-linear-regression.html#cb193-2" tabindex="-1"></a>slope_high_dur</span></code></pre></div>
+<pre><code>## [1] 2.203</code></pre>
+<div class="sourceCode" id="cb195"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb195-1"><a href="multiple-linear-regression.html#cb195-1" tabindex="-1"></a><span class="fu">ggplot</span>(faux) <span class="sc">+</span> </span>
+<span id="cb195-2"><a href="multiple-linear-regression.html#cb195-2" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> dB, <span class="at">y =</span> f0, <span class="at">col =</span> dur) <span class="sc">+</span> </span>
+<span id="cb195-3"><a href="multiple-linear-regression.html#cb195-3" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span> </span>
+<span id="cb195-4"><a href="multiple-linear-regression.html#cb195-4" tabindex="-1"></a>  <span class="fu">xlim</span>(<span class="dv">0</span>, <span class="dv">95</span>) <span class="sc">+</span></span>
+<span id="cb195-5"><a href="multiple-linear-regression.html#cb195-5" tabindex="-1"></a>  <span class="fu">ylim</span>(<span class="dv">0</span>, <span class="dv">500</span>) <span class="sc">+</span></span>
+<span id="cb195-6"><a href="multiple-linear-regression.html#cb195-6" tabindex="-1"></a>  <span class="fu">geom_abline</span>(<span class="at">slope =</span> slope_low_dur, <span class="at">intercept =</span> intercept_low_dur, <span class="at">color =</span> <span class="st">&quot;#132B43&quot;</span>, <span class="at">linewidth =</span> <span class="fl">1.2</span>) <span class="sc">+</span></span>
+<span id="cb195-7"><a href="multiple-linear-regression.html#cb195-7" tabindex="-1"></a>  <span class="fu">geom_abline</span>(<span class="at">slope =</span> slope_high_dur, <span class="at">intercept =</span> intercept_high_dur, <span class="at">color =</span> <span class="st">&quot;#56B1F7&quot;</span>, <span class="at">linewidth =</span> <span class="fl">1.2</span>) <span class="sc">+</span></span>
+<span id="cb195-8"><a href="multiple-linear-regression.html#cb195-8" tabindex="-1"></a>  <span class="fu">geom_vline</span>(<span class="at">xintercept =</span> <span class="dv">0</span>, <span class="at">lty =</span> <span class="st">&quot;dashed&quot;</span>)</span></code></pre></div>
+<p><img src="statistik_r_files/figure-html/unnamed-chunk-80-1.svg" width="672" /></p>
+<p>Having understood the regression coefficients, we take a look at the <span class="math inline">\(t\)</span>-statistic and find that both the slope for <code>dB</code> (<span class="math inline">\(t\)</span> = 22.6, <span class="math inline">\(p\)</span> &lt; 0.001) and that for <code>dur</code> (<span class="math inline">\(t\)</span> = 2.5, <span class="math inline">\(p\)</span> &lt; 0.05) are significantly different from zero. Additionally, the slope for the interaction is also significantly different from zero (<span class="math inline">\(t\)</span> = 7.8, <span class="math inline">\(p\)</span> &lt; 0.001).</p>
+<div class="sourceCode" id="cb196"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb196-1"><a href="multiple-linear-regression.html#cb196-1" tabindex="-1"></a>lm2 <span class="sc">%&gt;%</span> <span class="fu">tidy</span>()</span></code></pre></div>
+<pre><code>## # A tibble: 4 × 5
+##   term        estimate std.error statistic   p.value
+##   &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;
+## 1 (Intercept) 86.0     11.1           7.75 1.50e- 14
+## 2 dB           4.30     0.190        22.6  4.63e-100
+## 3 dur         -0.0921   0.0364       -2.53 1.15e-  2
+## 4 dB:dur      -0.00466  0.000595     -7.82 8.83e- 15</code></pre>
+<p>This means that the entire model is also likely to be better than a model without predictors. We’ll use <code>glance()</code> again to look at the <span class="math inline">\(F\)</span>-statistic and <span class="math inline">\(R^2\)</span>:</p>
+<div class="sourceCode" id="cb198"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb198-1"><a href="multiple-linear-regression.html#cb198-1" tabindex="-1"></a>lm2 <span class="sc">%&gt;%</span> <span class="fu">glance</span>() <span class="sc">%&gt;%</span> <span class="fu">pivot_longer</span>(<span class="at">cols =</span> <span class="fu">c</span>(r.squared<span class="sc">:</span>nobs))</span></code></pre></div>
+<pre><code>## # A tibble: 12 × 2
+##    name                value
+##    &lt;chr&gt;               &lt;dbl&gt;
+##  1 r.squared           0.671
+##  2 adj.r.squared       0.671
+##  3 sigma              23.6  
+##  4 statistic        1270.   
+##  5 p.value             0    
+##  6 df                  3    
+##  7 logLik          -8559.   
+##  8 AIC             17128.   
+##  9 BIC             17156.   
+## 10 deviance      1039480.   
+## 11 df.residual      1865    
+## 12 nobs             1869</code></pre>
+<p>Thus, we can report: <strong>A multiple linear regression with volume and duration as independent variables, including their interaction, showed a significant effect of volume (<span class="math inline">\(t\)</span> = 22.6, <span class="math inline">\(p\)</span> &lt; 0.001) and duration (<span class="math inline">\(t\)</span> = 2.5, <span class="math inline">\(p\)</span> &lt; 0.05) on the fundamental frequency. Additionally, the interaction was also significant (<span class="math inline">\(t\)</span> = 7.8, <span class="math inline">\(p\)</span> &lt; 0.001). The chosen model describes the data better than a model without predictors (<span class="math inline">\(R^2\)</span> = 0.67, <span class="math inline">\(F\)</span>[3, 1865] = 1269.6, <span class="math inline">\(p\)</span> &lt; 0.001).</strong></p>
+<p><em>(Of course, under realistic conditions, we would also test the assumptions about the residuals!)</em></p>
+</div>
+</div>
+<div id="categorical-independent-variables" class="section level2 hasAnchor" number="4.4">
+<h2><span class="header-section-number">4.4</span> Categorical Independent Variables<a href="multiple-linear-regression.html#categorical-independent-variables" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Now we want to use the data in <code>int</code> to find out if the volume in decibels <code>db</code> is influenced by the vowel type <code>vowel</code> and the gender of the test subject <code>gender</code>.</p>
+<div class="sourceCode" id="cb200"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb200-1"><a href="multiple-linear-regression.html#cb200-1" tabindex="-1"></a>int</span></code></pre></div>
+<pre><code>## # A tibble: 120 × 5
+##       db vowel gender subject word 
+##    &lt;dbl&gt; &lt;fct&gt; &lt;fct&gt;  &lt;fct&gt;   &lt;fct&gt;
+##  1   100 a     m      S1      w1   
+##  2    70 a     m      S2      w1   
+##  3    90 a     m      S3      w1   
+##  4    60 a     m      S4      w1   
+##  5    80 a     m      S5      w1   
+##  6    50 a     f      S6      w1   
+##  7    40 a     f      S7      w1   
+##  8    60 a     f      S8      w1   
+##  9    30 a     f      S9      w1   
+## 10    20 a     f      S10     w1   
+## # ℹ 110 more rows</code></pre>
+<p>First, we’ll look at a boxplot to see if there could be any dependency between the variables:</p>
+<div class="sourceCode" id="cb202"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb202-1"><a href="multiple-linear-regression.html#cb202-1" tabindex="-1"></a><span class="fu">ggplot</span>(int) <span class="sc">+</span> </span>
+<span id="cb202-2"><a href="multiple-linear-regression.html#cb202-2" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> vowel, <span class="at">y =</span> db, <span class="at">fill =</span> gender) <span class="sc">+</span> </span>
+<span id="cb202-3"><a href="multiple-linear-regression.html#cb202-3" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>()</span></code></pre></div>
+<p><img src="statistik_r_files/figure-html/unnamed-chunk-84-1.svg" width="672" /></p>
+<p>The plot shows, generally speaking, that women speak more quietly than men. However, this effect differs for the two vowels: For /a/, the effect of gender is much more pronounced than for /i/. Therefore, there could be an interaction between vowel and gender. Similarly, we can consider the interaction of the independent variables for the effect of the vowel: The volume is generally lower for the vowel /i/ than for /a/ – but for men, the effect is stronger than for women (i.e., the difference between the two blue boxes is greater than the difference between the two red boxes).</p>
+<p>Although there is likely an interaction between vowel and gender here, for didactic reasons, let’s first look at what a multiple regression with two categorical predictors (independent variables) without interaction looks like.</p>
+<div id="without-interaction-1" class="section level3 hasAnchor" number="4.4.1">
+<h3><span class="header-section-number">4.4.1</span> Without Interaction<a href="multiple-linear-regression.html#without-interaction-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div class="sourceCode" id="cb203"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb203-1"><a href="multiple-linear-regression.html#cb203-1" tabindex="-1"></a>lm3 <span class="ot">&lt;-</span> <span class="fu">lm</span>(db <span class="sc">~</span> vowel <span class="sc">+</span> gender, <span class="at">data =</span> int)</span>
+<span id="cb203-2"><a href="multiple-linear-regression.html#cb203-2" tabindex="-1"></a>lm3 <span class="sc">%&gt;%</span> </span>
+<span id="cb203-3"><a href="multiple-linear-regression.html#cb203-3" tabindex="-1"></a>  <span class="fu">tidy</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb203-4"><a href="multiple-linear-regression.html#cb203-4" tabindex="-1"></a>  <span class="fu">select</span>(term, estimate)</span></code></pre></div>
+<pre><code>## # A tibble: 3 × 2
+##   term        estimate
+##   &lt;chr&gt;          &lt;dbl&gt;
+## 1 (Intercept)     53.2
+## 2 voweli         -20.1
+## 3 genderm         30.1</code></pre>
+<p>When dealing with <em>continuous</em> independent variables, the intercept is the estimated y-value for zero across all independent variables. But what exactly is “zero” for <em>categorical</em> variables? R determines this through treatment coding (often also referred to as dummy coding). The variable <code>gender</code> can take the values <code>f</code> (<em>female</em>) or <code>m</code> (<em>male</em>). R then proceeds alphabetically and determines that <code>f</code> should be interpreted as zero and <code>m</code> as one. The same applies to the vowels <code>vowel</code>, where <code>a</code> is interpreted as zero and <code>i</code> as one. Accordingly, the intercept in this regression is the estimated decibel mean for the female <code>a</code> sound. We can easily verify this mathematically:</p>
+<div class="sourceCode" id="cb205"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb205-1"><a href="multiple-linear-regression.html#cb205-1" tabindex="-1"></a>k <span class="ot">&lt;-</span> lm3 <span class="sc">%&gt;%</span> </span>
+<span id="cb205-2"><a href="multiple-linear-regression.html#cb205-2" tabindex="-1"></a>  <span class="fu">augment</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb205-3"><a href="multiple-linear-regression.html#cb205-3" tabindex="-1"></a>  <span class="fu">filter</span>(vowel <span class="sc">==</span> <span class="st">&quot;a&quot;</span> <span class="sc">&amp;</span> gender <span class="sc">==</span> <span class="st">&quot;f&quot;</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb205-4"><a href="multiple-linear-regression.html#cb205-4" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">m =</span> <span class="fu">mean</span>(.fitted)) <span class="sc">%&gt;%</span> </span>
+<span id="cb205-5"><a href="multiple-linear-regression.html#cb205-5" tabindex="-1"></a>  <span class="fu">pull</span>(m)</span>
+<span id="cb205-6"><a href="multiple-linear-regression.html#cb205-6" tabindex="-1"></a>k</span></code></pre></div>
+<pre><code>## [1] 53.23</code></pre>
+<p>As you can see, the two slopes in our model are called <code>genderm</code> and <code>voweli</code>. The factor (the name of the categorical variable) is always listed first, followed by the level of the factor that was <em>not</em> processed in the intercept (i.e., the level <code>m</code> for <code>gender</code> and the level <code>i</code> for <code>vowel</code>). The slope <code>genderm</code> describes the change in volume from women to men for the vowel /a/. At 30.1 dB, it is positive, meaning men produce /a/ significantly louder than women. The slope <code>voweli</code> describes the change in volume from /a/ to /i/ for women and is negative at -20.12 dB, meaning women produce /i/ more quietly than /a/. This aligns with our impressions from the boxplots.</p>
+<p>If we want to estimate the average volume levels for all four combinations of <code>vowel</code> and <code>gender</code>, we again need the two slopes <span class="math inline">\(b_1\)</span> (for the vowel /i/) and <span class="math inline">\(b_2\)</span> (for male) from the result of <code>tidy()</code>, as well as the intercept <span class="math inline">\(k\)</span>, which we already calculated above. Also, remember that the treatment coding specifies that <code>a = 0</code>, <code>i = 1</code>, <code>female = 0</code>, and <code>male = 1</code>.</p>
+<div class="sourceCode" id="cb207"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb207-1"><a href="multiple-linear-regression.html#cb207-1" tabindex="-1"></a>b_1 <span class="ot">&lt;-</span> lm3 <span class="sc">%&gt;%</span> <span class="fu">tidy</span>() <span class="sc">%&gt;%</span> <span class="fu">filter</span>(term <span class="sc">==</span> <span class="st">&quot;voweli&quot;</span>) <span class="sc">%&gt;%</span> <span class="fu">pull</span>(estimate)</span>
+<span id="cb207-2"><a href="multiple-linear-regression.html#cb207-2" tabindex="-1"></a>b_1</span></code></pre></div>
+<pre><code>## [1] -20.12</code></pre>
+<div class="sourceCode" id="cb209"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb209-1"><a href="multiple-linear-regression.html#cb209-1" tabindex="-1"></a>b_2 <span class="ot">&lt;-</span> lm3 <span class="sc">%&gt;%</span> <span class="fu">tidy</span>() <span class="sc">%&gt;%</span> <span class="fu">filter</span>(term <span class="sc">==</span> <span class="st">&quot;genderm&quot;</span>) <span class="sc">%&gt;%</span> <span class="fu">pull</span>(estimate)</span>
+<span id="cb209-2"><a href="multiple-linear-regression.html#cb209-2" tabindex="-1"></a>b_2</span></code></pre></div>
+<pre><code>## [1] 30.08</code></pre>
+<p>Estimated volume of /a/ (<span class="math inline">\(x_1 = 0\)</span>) produced by women (<span class="math inline">\(x_2 = 0\)</span>):</p>
+<p><span class="math display">\[
+\begin{aligned}
+y &amp;= k + b_1 \cdot x_1 + b_2 \cdot x_2 \\
+&amp;= 53.23 + (-20.12 \cdot 0) + 30.09 \cdot 0 \\
+&amp;= 53.23
+\end{aligned}
+\]</span></p>
+<p>… for /a/ (<span class="math inline">\(x_1 = 0\)</span>) produced by men (<span class="math inline">\(x_2 = 1\)</span>):</p>
+<p><span class="math display">\[
+\begin{aligned}
+y &amp;= k + b_1 \cdot x_1 + b_2 \cdot x_2 \\
+&amp;= 53.23 + (-20.12 \cdot 0) + 30.09 \cdot 1 \\
+&amp;= 83.31
+\end{aligned}
+\]</span></p>
+<p>… for /i/ (<span class="math inline">\(x_1 = 1\)</span>) produced by women (<span class="math inline">\(x_2 = 0\)</span>):</p>
+<p><span class="math display">\[
+\begin{aligned}
+y &amp;= k + b_1 \cdot x_1 + b_2 \cdot x_2 \\
+&amp;= 53.23 + (-20.12 \cdot 1) + 30.09 \cdot 0 \\
+&amp;= 33.11
+\end{aligned}
+\]</span></p>
+<p>… and for /i/ (<span class="math inline">\(x_1 = 1\)</span>) produced by men (<span class="math inline">\(x_2 = 1\)</span>):</p>
+<p><span class="math display">\[
+\begin{aligned}
+y &amp;= k + b_1 \cdot x_1 + b_2 \cdot x_2 \\
+&amp;= 53.23 + (-20.12 \cdot 1) + 30.09 \cdot 1 \\
+&amp;= 63.19
+\end{aligned}
+\]</span></p>
+<p>The <code>predict()</code> function can also do this calculation work for us:</p>
+<div class="sourceCode" id="cb211"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb211-1"><a href="multiple-linear-regression.html#cb211-1" tabindex="-1"></a>d3 <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">gender =</span> <span class="fu">c</span>(<span class="st">&quot;f&quot;</span>, <span class="st">&quot;f&quot;</span>, <span class="st">&quot;m&quot;</span>, <span class="st">&quot;m&quot;</span>), </span>
+<span id="cb211-2"><a href="multiple-linear-regression.html#cb211-2" tabindex="-1"></a>                 <span class="at">vowel =</span> <span class="fu">c</span>(<span class="st">&quot;a&quot;</span>, <span class="st">&quot;i&quot;</span>, <span class="st">&quot;a&quot;</span>, <span class="st">&quot;i&quot;</span>))</span>
+<span id="cb211-3"><a href="multiple-linear-regression.html#cb211-3" tabindex="-1"></a>d3 <span class="sc">%&lt;&gt;%</span> <span class="fu">mutate</span>(<span class="at">estimated_mean_dB =</span> <span class="fu">predict</span>(lm3, d3))</span>
+<span id="cb211-4"><a href="multiple-linear-regression.html#cb211-4" tabindex="-1"></a>d3</span></code></pre></div>
+<pre><code>##   gender vowel estimated_mean_dB
+## 1      f     a             53.23
+## 2      f     i             33.11
+## 3      m     a             83.31
+## 4      m     i             63.19</code></pre>
+<p>Compare these estimated means with the boxplots we created earlier or with the actual means (which you can calculate using <em>tidyverse</em> functions). We naturally aim for the most accurate estimates possible, as this indicates that our chosen model fits the data very well. In this case, the estimates already appear to be quite good:</p>
+<div class="sourceCode" id="cb213"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb213-1"><a href="multiple-linear-regression.html#cb213-1" tabindex="-1"></a>int <span class="sc">%&gt;%</span></span>
+<span id="cb213-2"><a href="multiple-linear-regression.html#cb213-2" tabindex="-1"></a>  <span class="fu">group_by</span>(gender, vowel) <span class="sc">%&gt;%</span> </span>
+<span id="cb213-3"><a href="multiple-linear-regression.html#cb213-3" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">m =</span> <span class="fu">mean</span>(db))</span></code></pre></div>
+<pre><code>## `summarise()` has grouped output by &#39;gender&#39;. You can
+## override using the `.groups` argument.</code></pre>
+<pre><code>## # A tibble: 4 × 3
+## # Groups:   gender [2]
+##   gender vowel     m
+##   &lt;fct&gt;  &lt;fct&gt; &lt;dbl&gt;
+## 1 f      a      48.2
+## 2 f      i      38.2
+## 3 m      a      88.4
+## 4 m      i      58.1</code></pre>
+<div class="gray">
+<p><strong>Further Information: Dummy Coding</strong></p>
+<p>If one of the independent variables had more than two levels (i.e., if, for example, a third vowel /o/ occurred in the dataset), then there would be another slope for that level (e.g., <code>vowelo</code>). There are also other types of dummy coding, such as sum coding, as you can read in Chapter 7 in Winter (2020).</p>
+</div>
+<p>Now let’s take a look at the statistical results of our multiple regression:</p>
+<div class="sourceCode" id="cb216"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb216-1"><a href="multiple-linear-regression.html#cb216-1" tabindex="-1"></a>lm3 <span class="sc">%&gt;%</span> <span class="fu">tidy</span>()</span></code></pre></div>
+<pre><code>## # A tibble: 3 × 5
+##   term        estimate std.error statistic  p.value
+##   &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;
+## 1 (Intercept)     53.2      3.28     16.2  8.86e-32
+## 2 voweli         -20.1      3.78     -5.32 5.09e- 7
+## 3 genderm         30.1      3.78      7.95 1.27e-12</code></pre>
+<p>This overview shows that there was a significant influence of gender (<span class="math inline">\(t\)</span> = 8.0, <span class="math inline">\(p\)</span> &lt; 0.001) and vowel (<span class="math inline">\(t\)</span> = 5.3, <span class="math inline">\(p\)</span> &lt; 0.001) on loudness; or in other words, the slopes for vowel and gender differ significantly from zero and are therefore good predictors of volume. Now let’s look at the goodness-of-fit criteria:</p>
+<div class="sourceCode" id="cb218"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb218-1"><a href="multiple-linear-regression.html#cb218-1" tabindex="-1"></a>lm3 <span class="sc">%&gt;%</span> <span class="fu">glance</span>() <span class="sc">%&gt;%</span> <span class="fu">pivot_longer</span>(<span class="at">cols =</span> <span class="fu">c</span>(r.squared<span class="sc">:</span>nobs))</span></code></pre></div>
+<pre><code>## # A tibble: 12 × 2
+##    name              value
+##    &lt;chr&gt;             &lt;dbl&gt;
+##  1 r.squared      4.39e- 1
+##  2 adj.r.squared  4.29e- 1
+##  3 sigma          2.07e+ 1
+##  4 statistic      4.58e+ 1
+##  5 p.value        2.06e-15
+##  6 df             2   e+ 0
+##  7 logLik        -5.32e+ 2
+##  8 AIC            1.07e+ 3
+##  9 BIC            1.08e+ 3
+## 10 deviance       5.02e+ 4
+## 11 df.residual    1.17e+ 2
+## 12 nobs           1.2 e+ 2</code></pre>
+<p>Here we see that the two independent variables, gender and vowel, can explain approximately 43% of the variance in the volume measurements. The <span class="math inline">\(F\)</span>-test shows that our regression model describes the data more successfully than a model without predictors (<span class="math inline">\(R^2\)</span> = 0.43, <span class="math inline">\(F\)</span>[2, 117] = 45.8, <span class="math inline">\(p\)</span> &lt; 0.001).</p>
+<p><em>(Of course, under realistic conditions, we would also test the assumptions about the residuals here!)</em></p>
+</div>
+<div id="with-interaction-1" class="section level3 hasAnchor" number="4.4.2">
+<h3><span class="header-section-number">4.4.2</span> With Interaction<a href="multiple-linear-regression.html#with-interaction-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Since we also suspect an interaction between vowel and gender in this dataset, we include it in our regression:</p>
+<div class="sourceCode" id="cb220"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb220-1"><a href="multiple-linear-regression.html#cb220-1" tabindex="-1"></a>lm4 <span class="ot">&lt;-</span> <span class="fu">lm</span>(db <span class="sc">~</span> vowel <span class="sc">*</span> gender, <span class="at">data =</span> int)</span>
+<span id="cb220-2"><a href="multiple-linear-regression.html#cb220-2" tabindex="-1"></a>lm4 <span class="sc">%&gt;%</span> </span>
+<span id="cb220-3"><a href="multiple-linear-regression.html#cb220-3" tabindex="-1"></a>  <span class="fu">tidy</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb220-4"><a href="multiple-linear-regression.html#cb220-4" tabindex="-1"></a>  <span class="fu">select</span>(term, estimate)</span></code></pre></div>
+<pre><code>## # A tibble: 4 × 2
+##   term           estimate
+##   &lt;chr&gt;             &lt;dbl&gt;
+## 1 (Intercept)        48.2
+## 2 voweli            -10.0
+## 3 genderm            40.2
+## 4 voweli:genderm    -20.2</code></pre>
+<p>The intercept still describes the estimated average decibel level for /a/ for females, which is approximately 48 dB. The influence of the vowel on loudness is again negative, while the influence of gender is positive. Now, there is also the slope for the interaction <code>voweli:genderm</code>, which is negative at -20.2 dB. Therefore, if the vowel is /i/ and the gender is male, the loudness decreases. Below, you can see how, by including the interaction, you can estimate the loudness for the four combinations of <span class="math inline">\(vowel \times gender\)</span> (all of this is again derived from the formula for the regression line with interaction):</p>
+<div class="sourceCode" id="cb222"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb222-1"><a href="multiple-linear-regression.html#cb222-1" tabindex="-1"></a>k <span class="ot">&lt;-</span> lm4 <span class="sc">%&gt;%</span> <span class="fu">tidy</span>() <span class="sc">%&gt;%</span> <span class="fu">filter</span>(term <span class="sc">==</span> <span class="st">&quot;(Intercept)&quot;</span>) <span class="sc">%&gt;%</span> <span class="fu">pull</span>(estimate)</span>
+<span id="cb222-2"><a href="multiple-linear-regression.html#cb222-2" tabindex="-1"></a>b_1 <span class="ot">&lt;-</span> lm4 <span class="sc">%&gt;%</span> <span class="fu">tidy</span>() <span class="sc">%&gt;%</span> <span class="fu">filter</span>(term <span class="sc">==</span> <span class="st">&quot;genderm&quot;</span>) <span class="sc">%&gt;%</span> <span class="fu">pull</span>(estimate)</span>
+<span id="cb222-3"><a href="multiple-linear-regression.html#cb222-3" tabindex="-1"></a>b_2 <span class="ot">&lt;-</span> lm4 <span class="sc">%&gt;%</span> <span class="fu">tidy</span>() <span class="sc">%&gt;%</span> <span class="fu">filter</span>(term <span class="sc">==</span> <span class="st">&quot;voweli&quot;</span>) <span class="sc">%&gt;%</span> <span class="fu">pull</span>(estimate)</span>
+<span id="cb222-4"><a href="multiple-linear-regression.html#cb222-4" tabindex="-1"></a>b_3 <span class="ot">&lt;-</span> lm4 <span class="sc">%&gt;%</span> <span class="fu">tidy</span>() <span class="sc">%&gt;%</span> <span class="fu">filter</span>(term <span class="sc">==</span> <span class="st">&quot;voweli:genderm&quot;</span>) <span class="sc">%&gt;%</span> <span class="fu">pull</span>(estimate)</span>
+<span id="cb222-5"><a href="multiple-linear-regression.html#cb222-5" tabindex="-1"></a></span>
+<span id="cb222-6"><a href="multiple-linear-regression.html#cb222-6" tabindex="-1"></a><span class="co"># female-a</span></span>
+<span id="cb222-7"><a href="multiple-linear-regression.html#cb222-7" tabindex="-1"></a>k</span></code></pre></div>
+<pre><code>## [1] 48.17</code></pre>
+<div class="sourceCode" id="cb224"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb224-1"><a href="multiple-linear-regression.html#cb224-1" tabindex="-1"></a><span class="co"># male-a</span></span>
+<span id="cb224-2"><a href="multiple-linear-regression.html#cb224-2" tabindex="-1"></a>k <span class="sc">+</span> b_1</span></code></pre></div>
+<pre><code>## [1] 88.36</code></pre>
+<div class="sourceCode" id="cb226"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb226-1"><a href="multiple-linear-regression.html#cb226-1" tabindex="-1"></a><span class="co"># female-i</span></span>
+<span id="cb226-2"><a href="multiple-linear-regression.html#cb226-2" tabindex="-1"></a>k <span class="sc">+</span> b_2</span></code></pre></div>
+<pre><code>## [1] 38.16</code></pre>
+<div class="sourceCode" id="cb228"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb228-1"><a href="multiple-linear-regression.html#cb228-1" tabindex="-1"></a><span class="co"># male-i</span></span>
+<span id="cb228-2"><a href="multiple-linear-regression.html#cb228-2" tabindex="-1"></a>k <span class="sc">+</span> b_1 <span class="sc">+</span> b_2 <span class="sc">+</span> b_3</span></code></pre></div>
+<pre><code>## [1] 58.14</code></pre>
+<p>The <code>predict()</code> function can once again do the calculations for you:</p>
+<div class="sourceCode" id="cb230"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb230-1"><a href="multiple-linear-regression.html#cb230-1" tabindex="-1"></a>d4 <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">gender =</span> <span class="fu">c</span>(<span class="st">&quot;f&quot;</span>, <span class="st">&quot;f&quot;</span>, <span class="st">&quot;m&quot;</span>, <span class="st">&quot;m&quot;</span>), </span>
+<span id="cb230-2"><a href="multiple-linear-regression.html#cb230-2" tabindex="-1"></a>                 <span class="at">vowel =</span> <span class="fu">c</span>(<span class="st">&quot;a&quot;</span>, <span class="st">&quot;i&quot;</span>, <span class="st">&quot;a&quot;</span>, <span class="st">&quot;i&quot;</span>))</span>
+<span id="cb230-3"><a href="multiple-linear-regression.html#cb230-3" tabindex="-1"></a>d4 <span class="sc">%&lt;&gt;%</span> <span class="fu">mutate</span>(<span class="at">estimated_mean_dB =</span> <span class="fu">predict</span>(lm4, d4))</span>
+<span id="cb230-4"><a href="multiple-linear-regression.html#cb230-4" tabindex="-1"></a>d4</span></code></pre></div>
+<pre><code>##   gender vowel estimated_mean_dB
+## 1      f     a             48.17
+## 2      f     i             38.16
+## 3      m     a             88.36
+## 4      m     i             58.14</code></pre>
+<p>By integrating the interaction into the model, the volume estimates have become more precise compared to the previous model! In fact, the estimates perfectly match the actual average values (this will almost never happen in “real life”):</p>
+<div class="sourceCode" id="cb232"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb232-1"><a href="multiple-linear-regression.html#cb232-1" tabindex="-1"></a>int <span class="sc">%&gt;%</span> </span>
+<span id="cb232-2"><a href="multiple-linear-regression.html#cb232-2" tabindex="-1"></a>  <span class="fu">group_by</span>(gender, vowel) <span class="sc">%&gt;%</span> </span>
+<span id="cb232-3"><a href="multiple-linear-regression.html#cb232-3" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">m =</span> <span class="fu">mean</span>(db))</span></code></pre></div>
+<pre><code>## `summarise()` has grouped output by &#39;gender&#39;. You can
+## override using the `.groups` argument.</code></pre>
+<pre><code>## # A tibble: 4 × 3
+## # Groups:   gender [2]
+##   gender vowel     m
+##   &lt;fct&gt;  &lt;fct&gt; &lt;dbl&gt;
+## 1 f      a      48.2
+## 2 f      i      38.2
+## 3 m      a      88.4
+## 4 m      i      58.1</code></pre>
+<p>Now let’s look at the <span class="math inline">\(t\)</span>-statistic, which shows whether our regression coefficients help to explain the variance in the decibel values:</p>
+<div class="sourceCode" id="cb235"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb235-1"><a href="multiple-linear-regression.html#cb235-1" tabindex="-1"></a>lm4 <span class="sc">%&gt;%</span> <span class="fu">tidy</span>()</span></code></pre></div>
+<pre><code>## # A tibble: 4 × 5
+##   term           estimate std.error statistic  p.value
+##   &lt;chr&gt;             &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;
+## 1 (Intercept)        48.2      3.68     13.1  1.37e-24
+## 2 voweli            -10.0      5.21     -1.92 5.69e- 2
+## 3 genderm            40.2      5.21      7.72 4.47e-12
+## 4 voweli:genderm    -20.2      7.36     -2.75 7.00e- 3</code></pre>
+<p>The slope for gender (<span class="math inline">\(t\)</span> = 7.7, <span class="math inline">\(p\)</span> &lt; 0.001) and the slope for vowel (<span class="math inline">\(t\)</span> = 1.9, <span class="math inline">\(p\)</span> = 0.06) (almost) differ significantly from zero. Additionally, there was a significant interaction between the factors (<span class="math inline">\(t\)</span> = 2.8, <span class="math inline">\(p\)</span> &lt; 0.01).</p>
+<p>Above, we established that our model with interaction better describes the data than the previous model without interaction. This is also reflected in the <span class="math inline">\(F\)</span>-statistic:</p>
+<div class="sourceCode" id="cb237"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb237-1"><a href="multiple-linear-regression.html#cb237-1" tabindex="-1"></a>lm4 <span class="sc">%&gt;%</span> <span class="fu">glance</span>() <span class="sc">%&gt;%</span> <span class="fu">pivot_longer</span>(<span class="at">cols =</span> <span class="fu">c</span>(r.squared<span class="sc">:</span>nobs))</span></code></pre></div>
+<pre><code>## # A tibble: 12 × 2
+##    name              value
+##    &lt;chr&gt;             &lt;dbl&gt;
+##  1 r.squared      4.73e- 1
+##  2 adj.r.squared  4.60e- 1
+##  3 sigma          2.02e+ 1
+##  4 statistic      3.47e+ 1
+##  5 p.value        4.29e-16
+##  6 df             3   e+ 0
+##  7 logLik        -5.29e+ 2
+##  8 AIC            1.07e+ 3
+##  9 BIC            1.08e+ 3
+## 10 deviance       4.71e+ 4
+## 11 df.residual    1.16e+ 2
+## 12 nobs           1.2 e+ 2</code></pre>
+<p>Now, approximately 46% of the variance in the data is described by the two factors and their interaction. The model with the interaction therefore describes more variance than the model without interaction; that is, it provides more precise estimates of the regression coefficients. The <span class="math inline">\(F\)</span>-test also shows that the regression model describes the data better than the intercept-only model (<span class="math inline">\(R^2\)</span> = 0.46, <span class="math inline">\(F\)</span>[3, 116] = 34.7, <span class="math inline">\(p\)</span> &lt; 0.001).</p>
+<p><em>(Of course, under realistic conditions, we would also test the assumptions about the residuals here!)</em></p>
+<div id="post-hoc-tests-with-emmeans" class="section level4 hasAnchor" number="4.4.2.1">
+<h4><span class="header-section-number">4.4.2.1</span> Post-hoc Tests with emmeans<a href="multiple-linear-regression.html#post-hoc-tests-with-emmeans" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>If, in a multiple regression with at least two categorical independent variables, the interaction has a significant effect on the measured variable, then so-called <strong>post-hoc tests</strong> should be performed. The package <a href="https://cran.r-project.org/web/packages/emmeans/vignettes/basics.html"><code>emmeans</code></a> with its eponymous function is exceptionally well-suited for this purpose. Several detailed vignettes are available for this package.</p>
+<p>The <code>emmeans()</code> function performs <span class="math inline">\(t\)</span>-tests on all combinations of the values of the categorical independent variables. This allows us to determine which combination(s) resulted in the interaction being significant in the regression. The function takes the result of the regression model as an argument, followed by the formula <code>pairwise ~ vowel | gender</code> (pronounced: <em>pairwise comparisons for vowel given gender</em>). This formula means that the difference between the vowels and its significance are determined for each gender.</p>
+<div class="sourceCode" id="cb239"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb239-1"><a href="multiple-linear-regression.html#cb239-1" tabindex="-1"></a><span class="fu">emmeans</span>(lm4, pairwise <span class="sc">~</span> vowel <span class="sc">|</span> gender)</span></code></pre></div>
+<pre><code>## $emmeans
+## gender = f:
+##  vowel emmean   SE  df lower.CL upper.CL
+##  a       48.2 3.68 116     40.9     55.5
+##  i       38.2 3.68 116     30.9     45.5
+## 
+## gender = m:
+##  vowel emmean   SE  df lower.CL upper.CL
+##  a       88.4 3.68 116     81.1     95.7
+##  i       58.1 3.68 116     50.9     65.4
+## 
+## Confidence level used: 0.95 
+## 
+## $contrasts
+## gender = f:
+##  contrast estimate  SE  df t.ratio p.value
+##  a - i        10.0 5.2 116   1.923  0.0569
+## 
+## gender = m:
+##  contrast estimate  SE  df t.ratio p.value
+##  a - i        30.2 5.2 116   5.806  &lt;.0001</code></pre>
+<p>The result of this function is two tables, one called <code>emmeans</code> and one called <code>contrasts</code>. In the <code>emmeans</code> table, column <code>emmeans</code> contains our estimates for the means, first for women (<code>gender = f</code>), then for men (<code>gender = m</code>). <code>emmeans</code> stands for <em>estimated marginal means</em>. Here you will also find the standard error <code>SE</code>, the degrees of freedom <code>df</code>, and the 95% confidence intervals <code>lower.CL</code> and <code>upper.CL</code>.</p>
+<p>In the <code>contrasts</code> table, you will find the differences between /a/ and /i/, first for women, then for men. Here, you will again first see an <code>estimate</code>. This is simply the difference between the <code>emmeans</code> for /a/ and /i/ for each gender. The standard error <code>SE</code> is followed by the degrees of freedom <code>df</code>, the <span class="math inline">\(t\)</span>-value <code>t.ratio</code>, and the <span class="math inline">\(p\)</span>-value <code>p.value</code>. In accordance with the boxplots we created at the very beginning of this chapter, we see that there is no significant volume difference between /a/ and /i/ for women (<span class="math inline">\(t\)</span>[116] = 1.9, <span class="math inline">\(p\)</span> = 0.06), but there is for men (<span class="math inline">\(t\)</span>[116] = 5.8, <span class="math inline">\(p\)</span> &lt; 0.001). Now we should also check whether there were significant differences between women and men for each vowel type. To do this, we simply change the formula to <code>pairwise ~ gender | vowel</code>:</p>
+<div class="sourceCode" id="cb241"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb241-1"><a href="multiple-linear-regression.html#cb241-1" tabindex="-1"></a><span class="fu">emmeans</span>(lm4, pairwise <span class="sc">~</span> gender <span class="sc">|</span> vowel)</span></code></pre></div>
+<pre><code>## $emmeans
+## vowel = a:
+##  gender emmean   SE  df lower.CL upper.CL
+##  f        48.2 3.68 116     40.9     55.5
+##  m        88.4 3.68 116     81.1     95.7
+## 
+## vowel = i:
+##  gender emmean   SE  df lower.CL upper.CL
+##  f        38.2 3.68 116     30.9     45.5
+##  m        58.1 3.68 116     50.9     65.4
+## 
+## Confidence level used: 0.95 
+## 
+## $contrasts
+## vowel = a:
+##  contrast estimate  SE  df t.ratio p.value
+##  f - m       -40.2 5.2 116  -7.721  &lt;.0001
+## 
+## vowel = i:
+##  contrast estimate  SE  df t.ratio p.value
+##  f - m       -20.0 5.2 116  -3.838  0.0002</code></pre>
+<p>We can report that there is a significant difference between men and women for both /a/ (<span class="math inline">\(t\)</span>[116] = 7.7, <span class="math inline">\(p\)</span> &lt; 0.001) and /i/ (<span class="math inline">\(t\)</span>[116] = 3.8, <span class="math inline">\(p\)</span> &lt; 0.001). This also agrees with our visual impression from the initial boxplots.</p>
+</div>
+</div>
+</div>
+<div id="mix-of-continuous-and-categorical-variables" class="section level2 hasAnchor" number="4.5">
+<h2><span class="header-section-number">4.5</span> Mix of Continuous and Categorical Variables<a href="multiple-linear-regression.html#mix-of-continuous-and-categorical-variables" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Finally, we examine whether the fundamental frequency values in the data frame <code>vlax</code> are influenced by the vowel <code>vowel</code> and the loudness <code>dB</code>. This will be a regression model with one categorical and one continuous independent variable. For a graph, it is useful to place the continuous independent variable on the x-axis and represent the levels of the categorical variable with colors. We also show the regression lines that <code>geom_smooth()</code> can calculate for us.</p>
+<div class="sourceCode" id="cb243"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb243-1"><a href="multiple-linear-regression.html#cb243-1" tabindex="-1"></a><span class="fu">ggplot</span>(vlax) <span class="sc">+</span> </span>
+<span id="cb243-2"><a href="multiple-linear-regression.html#cb243-2" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> dB, <span class="at">y =</span> f0, <span class="at">col =</span> vowel) <span class="sc">+</span> </span>
+<span id="cb243-3"><a href="multiple-linear-regression.html#cb243-3" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span> </span>
+<span id="cb243-4"><a href="multiple-linear-regression.html#cb243-4" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">&quot;lm&quot;</span>, <span class="at">se =</span> F)</span></code></pre></div>
+<pre><code>## `geom_smooth()` using formula = &#39;y ~ x&#39;</code></pre>
+<p><img src="statistik_r_files/figure-html/unnamed-chunk-100-1.svg" width="672" /></p>
+<p>In general, the familiar positive linear relationship between <code>f0</code> and <code>dB</code> also appears to exist here. However, this relationship seems to exist only for the vowel /I/, but not for the vowel /O/. Therefore, there is likely an interaction between the two independent variables, but for demonstration purposes, we will first calculate a model without interaction.</p>
+<div id="without-interaction-2" class="section level3 hasAnchor" number="4.5.1">
+<h3><span class="header-section-number">4.5.1</span> Without Interaction<a href="multiple-linear-regression.html#without-interaction-2" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div class="sourceCode" id="cb245"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb245-1"><a href="multiple-linear-regression.html#cb245-1" tabindex="-1"></a>lm5 <span class="ot">&lt;-</span> <span class="fu">lm</span>(f0 <span class="sc">~</span> dB <span class="sc">+</span> vowel, <span class="at">data =</span> vlax)</span>
+<span id="cb245-2"><a href="multiple-linear-regression.html#cb245-2" tabindex="-1"></a>lm5 <span class="sc">%&gt;%</span> </span>
+<span id="cb245-3"><a href="multiple-linear-regression.html#cb245-3" tabindex="-1"></a>  <span class="fu">tidy</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb245-4"><a href="multiple-linear-regression.html#cb245-4" tabindex="-1"></a>  <span class="fu">select</span>(term, estimate)</span></code></pre></div>
+<pre><code>## # A tibble: 3 × 2
+##   term        estimate
+##   &lt;chr&gt;          &lt;dbl&gt;
+## 1 (Intercept)  -259.  
+## 2 dB              6.17
+## 3 vowelO        -22.9</code></pre>
+<p>Here too, the categorical variable <code>vowel</code> is transformed behind the scenes using dummy coding. We see that the second slope is called <code>vowelO</code>, which means that the vowel “I” has already been processed in the intercept. Therefore, if the vowel is “I” and <code>dB = 0</code>, then the fundamental frequency should be -258.9 Hz. The influence of loudness on the fundamental frequency is, as expected, positive; that is, with every increase in loudness of 1 dB, the fundamental frequency increases by 6.2 Hz (you can see this, for example, in the comparison of the first two lines in <code>d5</code>). If the vowel is “O” instead of “I”, the fundamental frequency decreases by 22.9 Hz (see the first and third lines in <code>d5</code>). At average volume, the fundamental frequency is 200 Hz when producing “I” and 177.1 Hz when producing “O” (see lines four and five in <code>d5</code>).</p>
+<div class="sourceCode" id="cb247"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb247-1"><a href="multiple-linear-regression.html#cb247-1" tabindex="-1"></a>d5 <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">dB =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">0</span>, <span class="fu">mean</span>(vlax<span class="sc">$</span>dB), <span class="fu">mean</span>(vlax<span class="sc">$</span>dB)), </span>
+<span id="cb247-2"><a href="multiple-linear-regression.html#cb247-2" tabindex="-1"></a>                 <span class="at">vowel =</span> <span class="fu">c</span>(<span class="st">&quot;I&quot;</span>, <span class="st">&quot;I&quot;</span>, <span class="st">&quot;O&quot;</span>, <span class="st">&quot;I&quot;</span>, <span class="st">&quot;O&quot;</span>))</span>
+<span id="cb247-3"><a href="multiple-linear-regression.html#cb247-3" tabindex="-1"></a>d5 <span class="sc">%&lt;&gt;%</span> <span class="fu">mutate</span>(<span class="at">estimated_f0 =</span> <span class="fu">predict</span>(lm5, d5))</span>
+<span id="cb247-4"><a href="multiple-linear-regression.html#cb247-4" tabindex="-1"></a>d5</span></code></pre></div>
+<pre><code>##     dB vowel estimated_f0
+## 1  0.0     I       -258.9
+## 2  1.0     I       -252.7
+## 3  0.0     O       -281.8
+## 4 74.4     I        200.0
+## 5 74.4     O        177.1</code></pre>
+<p>We can calculate a regression line for “I” and “O” using the linear model by obtaining the regression coefficients and inserting them into the formula as before:</p>
+<div class="sourceCode" id="cb249"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb249-1"><a href="multiple-linear-regression.html#cb249-1" tabindex="-1"></a>k <span class="ot">&lt;-</span> lm5 <span class="sc">%&gt;%</span> <span class="fu">tidy</span>() <span class="sc">%&gt;%</span> <span class="fu">filter</span>(term <span class="sc">==</span> <span class="st">&quot;(Intercept)&quot;</span>) <span class="sc">%&gt;%</span> <span class="fu">pull</span>(estimate)</span>
+<span id="cb249-2"><a href="multiple-linear-regression.html#cb249-2" tabindex="-1"></a>k</span></code></pre></div>
+<pre><code>## [1] -258.9</code></pre>
+<div class="sourceCode" id="cb251"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb251-1"><a href="multiple-linear-regression.html#cb251-1" tabindex="-1"></a>b_1 <span class="ot">&lt;-</span> lm5 <span class="sc">%&gt;%</span> <span class="fu">tidy</span>() <span class="sc">%&gt;%</span> <span class="fu">filter</span>(term <span class="sc">==</span> <span class="st">&quot;dB&quot;</span>) <span class="sc">%&gt;%</span> <span class="fu">pull</span>(estimate)</span>
+<span id="cb251-2"><a href="multiple-linear-regression.html#cb251-2" tabindex="-1"></a>b_1</span></code></pre></div>
+<pre><code>## [1] 6.168</code></pre>
+<div class="sourceCode" id="cb253"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb253-1"><a href="multiple-linear-regression.html#cb253-1" tabindex="-1"></a>b_2 <span class="ot">&lt;-</span> lm5 <span class="sc">%&gt;%</span> <span class="fu">tidy</span>() <span class="sc">%&gt;%</span> <span class="fu">filter</span>(term <span class="sc">==</span> <span class="st">&quot;vowelO&quot;</span>) <span class="sc">%&gt;%</span> <span class="fu">pull</span>(estimate)</span>
+<span id="cb253-2"><a href="multiple-linear-regression.html#cb253-2" tabindex="-1"></a>b_2</span></code></pre></div>
+<pre><code>## [1] -22.93</code></pre>
+<p>For the vowel “I” (<span class="math inline">\(x_2 = 0\)</span>) the y-intercept is -258.9 Hz and the slope is 6.17 Hz.</p>
+<p><span class="math display">\[
+\begin{aligned}
+y &amp;= k + b_1 \cdot dB + b_2 \cdot x_2 \\
+&amp;= -258.87 + (6.17 \cdot dB) + (-22.93 \cdot 0) \\
+&amp;= -258.87 + (6.17 \cdot dB)
+\end{aligned}
+\]</span></p>
+<p>For the vowel “O” (<span class="math inline">\(x_2 = 1\)</span>) the y-intercept is -281.8 Hz, but the slope is also 6.17 Hz.</p>
+<p><span class="math display">\[
+\begin{aligned}
+y &amp;= k + b_1 \cdot dB + b_2 \cdot x_2 \\
+&amp;= -258.87 + (6.17 \cdot dB) + (-22.93 \cdot 1) \\
+&amp;= -281.79 + (6.17 \cdot dB)
+\end{aligned}
+\]</span></p>
+<p>The regression lines calculated here cannot correspond to those in the plot, because the lines calculated here have the same slope and are therefore parallel to each other, while the lines drawn by <code>geom_smooth()</code> intersect. From this, we can conclude that this model, without interaction, does not fit the data particularly well.</p>
+<p>Nevertheless, the <span class="math inline">\(t\)</span>-statistic shows that the regression coefficients differ significantly from zero (slope for loudness: <span class="math inline">\(t\)</span> = 8.1, <span class="math inline">\(p\)</span> &lt; 0.001; slope for vowel: <span class="math inline">\(t\)</span> = 2.6, <span class="math inline">\(p\)</span> &lt; 0.01). This means that both coefficients are good predictors of the fundamental frequency in this model.</p>
+<div class="sourceCode" id="cb255"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb255-1"><a href="multiple-linear-regression.html#cb255-1" tabindex="-1"></a>lm5 <span class="sc">%&gt;%</span> <span class="fu">tidy</span>()</span></code></pre></div>
+<pre><code>## # A tibble: 3 × 5
+##   term        estimate std.error statistic  p.value
+##   &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;
+## 1 (Intercept)  -259.      56.3       -4.60 8.25e- 6
+## 2 dB              6.17     0.761      8.11 8.74e-14
+## 3 vowelO        -22.9      8.75      -2.62 9.59e- 3</code></pre>
+<p>As always, we also take a look at the goodness-of-fit criteria for the model and find that the two independent variables, vowel sound and volume, can describe approximately 26.6% of the variance in the fundamental frequency values. The <span class="math inline">\(F\)</span>-test shows that our regression model describes the data more successfully than a model without predictors (<span class="math inline">\(R^2\)</span> = 0.27, <span class="math inline">\(F\)</span>[2, 175] = 33.0, <span class="math inline">\(p\)</span> &lt; 0.001).</p>
+<div class="sourceCode" id="cb257"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb257-1"><a href="multiple-linear-regression.html#cb257-1" tabindex="-1"></a>lm5 <span class="sc">%&gt;%</span> <span class="fu">glance</span>() <span class="sc">%&gt;%</span> <span class="fu">pivot_longer</span>(<span class="at">cols =</span> <span class="fu">c</span>(r.squared<span class="sc">:</span>nobs))</span></code></pre></div>
+<pre><code>## # A tibble: 12 × 2
+##    name              value
+##    &lt;chr&gt;             &lt;dbl&gt;
+##  1 r.squared      2.74e- 1
+##  2 adj.r.squared  2.66e- 1
+##  3 sigma          4.28e+ 1
+##  4 statistic      3.30e+ 1
+##  5 p.value        6.81e-13
+##  6 df             2   e+ 0
+##  7 logLik        -9.20e+ 2
+##  8 AIC            1.85e+ 3
+##  9 BIC            1.86e+ 3
+## 10 deviance       3.21e+ 5
+## 11 df.residual    1.75e+ 2
+## 12 nobs           1.78e+ 2</code></pre>
+<p><em>(Of course, under realistic conditions we would also check the assumptions about the residuals here!)</em></p>
+</div>
+<div id="with-interaction-2" class="section level3 hasAnchor" number="4.5.2">
+<h3><span class="header-section-number">4.5.2</span> With Interaction<a href="multiple-linear-regression.html#with-interaction-2" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Now we calculate the model including the interaction between the independent variables:</p>
+<div class="sourceCode" id="cb259"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb259-1"><a href="multiple-linear-regression.html#cb259-1" tabindex="-1"></a>lm6 <span class="ot">&lt;-</span> <span class="fu">lm</span>(f0 <span class="sc">~</span> dB <span class="sc">*</span> vowel, <span class="at">data =</span> vlax)</span>
+<span id="cb259-2"><a href="multiple-linear-regression.html#cb259-2" tabindex="-1"></a>lm6 <span class="sc">%&gt;%</span> </span>
+<span id="cb259-3"><a href="multiple-linear-regression.html#cb259-3" tabindex="-1"></a>  <span class="fu">tidy</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb259-4"><a href="multiple-linear-regression.html#cb259-4" tabindex="-1"></a>  <span class="fu">select</span>(term, estimate)</span></code></pre></div>
+<pre><code>## # A tibble: 4 × 2
+##   term        estimate
+##   &lt;chr&gt;          &lt;dbl&gt;
+## 1 (Intercept)  -319.  
+## 2 dB              6.98
+## 3 vowelO        615.  
+## 4 dB:vowelO      -8.34</code></pre>
+<p>The dummy coding remains the same, meaning the vowel “I” is treated as zero and the vowel “O” as one. The intercept is at -318.5 Hz. The influence of volume on the fundamental frequency is still positive at approximately 7 Hz. It is noticeable that the coefficient <code>vowelO</code> has changed significantly compared to the model without interaction, from -22.9 to +615.2 Hz. This makes sense when we look at the figure again (we have adjusted the x-axis so that it starts at zero):</p>
+<div class="sourceCode" id="cb261"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb261-1"><a href="multiple-linear-regression.html#cb261-1" tabindex="-1"></a><span class="fu">ggplot</span>(vlax) <span class="sc">+</span> </span>
+<span id="cb261-2"><a href="multiple-linear-regression.html#cb261-2" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> dB, <span class="at">y =</span> f0, <span class="at">col =</span> vowel) <span class="sc">+</span> </span>
+<span id="cb261-3"><a href="multiple-linear-regression.html#cb261-3" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span> </span>
+<span id="cb261-4"><a href="multiple-linear-regression.html#cb261-4" tabindex="-1"></a>  <span class="fu">xlim</span>(<span class="dv">0</span>, <span class="dv">90</span>) <span class="sc">+</span></span>
+<span id="cb261-5"><a href="multiple-linear-regression.html#cb261-5" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">&quot;lm&quot;</span>, <span class="at">se =</span> F)</span></code></pre></div>
+<pre><code>## `geom_smooth()` using formula = &#39;y ~ x&#39;</code></pre>
+<p><img src="statistik_r_files/figure-html/unnamed-chunk-107-1.svg" width="672" /></p>
+<p>If you trace the blue regression line to the y-axis, you’ll arrive at just under 300 Hz – this corresponds to the intercept (<code>db = 0</code> and <code>vowel = "I"</code>) plus the slope for <code>vowelO</code>. The same applies to the red line, which intersects the y-axis at a point not shown here, namely at approximately -311 Hz – this corresponds to the intercept plus the slope for <code>dB</code>. We can replicate these calculations as follows (or you can manually insert the regression coefficients into the formula, as shown above):</p>
+<div class="sourceCode" id="cb263"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb263-1"><a href="multiple-linear-regression.html#cb263-1" tabindex="-1"></a>k <span class="ot">&lt;-</span> lm6 <span class="sc">%&gt;%</span> <span class="fu">tidy</span>() <span class="sc">%&gt;%</span> <span class="fu">filter</span>(term <span class="sc">==</span> <span class="st">&quot;(Intercept)&quot;</span>) <span class="sc">%&gt;%</span> <span class="fu">pull</span>(estimate)</span>
+<span id="cb263-2"><a href="multiple-linear-regression.html#cb263-2" tabindex="-1"></a>b_1 <span class="ot">&lt;-</span> lm6 <span class="sc">%&gt;%</span> <span class="fu">tidy</span>() <span class="sc">%&gt;%</span> <span class="fu">filter</span>(term <span class="sc">==</span> <span class="st">&quot;dB&quot;</span>) <span class="sc">%&gt;%</span> <span class="fu">pull</span>(estimate)</span>
+<span id="cb263-3"><a href="multiple-linear-regression.html#cb263-3" tabindex="-1"></a>b_2 <span class="ot">&lt;-</span> lm6 <span class="sc">%&gt;%</span> <span class="fu">tidy</span>() <span class="sc">%&gt;%</span> <span class="fu">filter</span>(term <span class="sc">==</span> <span class="st">&quot;vowelO&quot;</span>) <span class="sc">%&gt;%</span> <span class="fu">pull</span>(estimate)</span>
+<span id="cb263-4"><a href="multiple-linear-regression.html#cb263-4" tabindex="-1"></a>b_3 <span class="ot">&lt;-</span> lm6 <span class="sc">%&gt;%</span> <span class="fu">tidy</span>() <span class="sc">%&gt;%</span> <span class="fu">filter</span>(term <span class="sc">==</span> <span class="st">&quot;dB:vowelO&quot;</span>) <span class="sc">%&gt;%</span> <span class="fu">pull</span>(estimate)</span>
+<span id="cb263-5"><a href="multiple-linear-regression.html#cb263-5" tabindex="-1"></a></span>
+<span id="cb263-6"><a href="multiple-linear-regression.html#cb263-6" tabindex="-1"></a><span class="co"># &quot;I&quot; at 0 dB</span></span>
+<span id="cb263-7"><a href="multiple-linear-regression.html#cb263-7" tabindex="-1"></a>k</span></code></pre></div>
+<pre><code>## [1] -318.5</code></pre>
+<div class="sourceCode" id="cb265"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb265-1"><a href="multiple-linear-regression.html#cb265-1" tabindex="-1"></a><span class="co"># &quot;I&quot; at 1 dB</span></span>
+<span id="cb265-2"><a href="multiple-linear-regression.html#cb265-2" tabindex="-1"></a>k <span class="sc">+</span> b_1</span></code></pre></div>
+<pre><code>## [1] -311.5</code></pre>
+<div class="sourceCode" id="cb267"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb267-1"><a href="multiple-linear-regression.html#cb267-1" tabindex="-1"></a><span class="co"># &quot;O&quot; at 0 dB</span></span>
+<span id="cb267-2"><a href="multiple-linear-regression.html#cb267-2" tabindex="-1"></a>k <span class="sc">+</span> b_2</span></code></pre></div>
+<pre><code>## [1] 296.6</code></pre>
+<div class="sourceCode" id="cb269"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb269-1"><a href="multiple-linear-regression.html#cb269-1" tabindex="-1"></a><span class="co"># &quot;O&quot; at 1 dB</span></span>
+<span id="cb269-2"><a href="multiple-linear-regression.html#cb269-2" tabindex="-1"></a>k <span class="sc">+</span> b_1 <span class="sc">+</span> b_2 <span class="sc">+</span> b_3</span></code></pre></div>
+<pre><code>## [1] 295.3</code></pre>
+<p>Once again, the <code>predict()</code> function can do the calculations for you:</p>
+<div class="sourceCode" id="cb271"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb271-1"><a href="multiple-linear-regression.html#cb271-1" tabindex="-1"></a>d6 <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">dB =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">0</span>, <span class="dv">1</span>), </span>
+<span id="cb271-2"><a href="multiple-linear-regression.html#cb271-2" tabindex="-1"></a>                 <span class="at">vowel =</span> <span class="fu">c</span>(<span class="st">&quot;I&quot;</span>, <span class="st">&quot;I&quot;</span>, <span class="st">&quot;O&quot;</span>, <span class="st">&quot;O&quot;</span>))</span>
+<span id="cb271-3"><a href="multiple-linear-regression.html#cb271-3" tabindex="-1"></a>d6 <span class="sc">%&lt;&gt;%</span> <span class="fu">mutate</span>(<span class="at">estimated_f0 =</span> <span class="fu">predict</span>(lm6, d6))</span>
+<span id="cb271-4"><a href="multiple-linear-regression.html#cb271-4" tabindex="-1"></a>d6</span></code></pre></div>
+<pre><code>##   dB vowel estimated_f0
+## 1  0     I       -318.5
+## 2  1     I       -311.5
+## 3  0     O        296.6
+## 4  1     O        295.3</code></pre>
+<p>If you now look at the difference between lines 1 and 2 in <code>d6</code>, you will see that the loudness for the vowel “I” is positively correlated with the fundamental frequency, because as the loudness increases (from 0 to 1 dB), the estimated fundamental frequency also increases. For the vowel “O”, however, the fundamental frequency <em>decreases</em> with increasing loudness (see lines 3 and 4 in <code>d6</code>), i.e., the correlation between loudness and fundamental frequency is negative for the vowel “O” – this also corresponds to the regression lines in the plot above and the correlation values <span class="math inline">\(r\)</span> calculated as follows:</p>
+<div class="sourceCode" id="cb273"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb273-1"><a href="multiple-linear-regression.html#cb273-1" tabindex="-1"></a>vlax <span class="sc">%&gt;%</span> </span>
+<span id="cb273-2"><a href="multiple-linear-regression.html#cb273-2" tabindex="-1"></a>  <span class="fu">group_by</span>(vowel) <span class="sc">%&gt;%</span> </span>
+<span id="cb273-3"><a href="multiple-linear-regression.html#cb273-3" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">r =</span> <span class="fu">cor</span>(dB, f0))</span></code></pre></div>
+<pre><code>## # A tibble: 2 × 2
+##   vowel      r
+##   &lt;fct&gt;  &lt;dbl&gt;
+## 1 I      0.591
+## 2 O     -0.115</code></pre>
+<p>Now let’s look at the <span class="math inline">\(t\)</span>-statistic, which shows whether our regression coefficients help to reliably estimate the fundamental frequency values:</p>
+<div class="sourceCode" id="cb275"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb275-1"><a href="multiple-linear-regression.html#cb275-1" tabindex="-1"></a>lm6 <span class="sc">%&gt;%</span> <span class="fu">tidy</span>()</span></code></pre></div>
+<pre><code>## # A tibble: 4 × 5
+##   term        estimate std.error statistic  p.value
+##   &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;
+## 1 (Intercept)  -319.      57.6       -5.53 1.17e- 7
+## 2 dB              6.98     0.779      8.96 4.93e-16
+## 3 vowelO        615.     192.         3.21 1.58e- 3
+## 4 dB:vowelO      -8.34     2.50      -3.33 1.05e- 3</code></pre>
+<p>The slope for loudness (<span class="math inline">\(t\)</span> = 9.0, <span class="math inline">\(p\)</span> &lt; 0.001) and the slope for vowel (<span class="math inline">\(t\)</span> = 3.2, <span class="math inline">\(p\)</span> &lt; 0.01) differ significantly from zero and are therefore well-suited as predictors of fundamental frequency. Additionally, there was a significant interaction between the factors (<span class="math inline">\(t\)</span> = 3.3, <span class="math inline">\(p\)</span> &lt; 0.001).</p>
+<p>The <span class="math inline">\(F\)</span>-statistic shows that the regression model with the two predictors and their interaction describes the data better than a mean model (<span class="math inline">\(R^2\)</span> = 0.31, <span class="math inline">\(F\)</span>[3, 174] = 27.0, <span class="math inline">\(p\)</span> &lt; 0.001). Based on the <span class="math inline">\(R^2\)</span> value, we see that the model now also describes more variance in the fundamental frequency values than the model without interaction; that is, the goodness-of-fit of the model has increased with the addition of the interaction.</p>
+<div class="sourceCode" id="cb277"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb277-1"><a href="multiple-linear-regression.html#cb277-1" tabindex="-1"></a>lm6 <span class="sc">%&gt;%</span> <span class="fu">glance</span>() <span class="sc">%&gt;%</span> <span class="fu">pivot_longer</span>(<span class="at">cols =</span> <span class="fu">c</span>(r.squared<span class="sc">:</span>nobs))</span></code></pre></div>
+<pre><code>## # A tibble: 12 × 2
+##    name              value
+##    &lt;chr&gt;             &lt;dbl&gt;
+##  1 r.squared      3.18e- 1
+##  2 adj.r.squared  3.06e- 1
+##  3 sigma          4.17e+ 1
+##  4 statistic      2.70e+ 1
+##  5 p.value        2.21e-14
+##  6 df             3   e+ 0
+##  7 logLik        -9.14e+ 2
+##  8 AIC            1.84e+ 3
+##  9 BIC            1.85e+ 3
+## 10 deviance       3.02e+ 5
+## 11 df.residual    1.74e+ 2
+## 12 nobs           1.78e+ 2</code></pre>
+<p>For this model, we do not calculate post-hoc tests despite the significant interaction between the independent variables because one of the independent variables is continuous. Post-hoc tests with <code>emmeans</code> only make sense for multiple categorical variables.</p>
+<p><em>(Of course, under realistic conditions, we would also test the assumptions about the residuals here!)</em></p>
 
+</div>
+</div>
 </div>
             </section>
 
@@ -244,6 +1111,20 @@ gitbook.start({
 });
 </script>
 
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
 </body>
 
 </html>
